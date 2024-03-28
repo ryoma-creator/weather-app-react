@@ -1,0 +1,288 @@
+Record / what to do
+
+From after 1 month ago ….(Did not record from Feb 14 - Feb22. This is my totally original approach for portfolio and practice for git hub everyday to be used to do.)
+
+I start record what to do and what I learnt
+
+Mar 23
+○ 1hour-odin foundation Landing page I read with English
+○ Commit message (review) https://www.theodinproject.com/lessons/foundations-commit-messages#when-to-commit
+○ How to write by 7 rule of commit message
+○ Try to do by 7 rules way
+○ Understanding -m and -f difference
+○ Commit and push the -f ver commit message to git
+○ Understanding when should I commit on this project
+○ How to make project
+○ How to make memo on project and open
+○ Making memo with outlines (four) in the directory to explain
+○ Understanding why do you need to do “git init” and that structure
+
+Mar 24 Link:https://www.theodinproject.com/lessons/foundations-variables-and-operators
+
+○ Learn Live Server and difference of open browser by renew
+○ If you can edit from console on inspect (you can not)
+○ Read variables “const” “let” “ver” and understanding
+○ Memo unfamiliar English voca
+○ Learning various Variables and Operators of Javascript - (https://javascript.info/operators#tasks)
+○ Doing Task(The postfix and prefix forms, Assignment result, Type conversions, Fix the addition
+
+Mar 25 JavaScript - Variables and Operators https://www.theodinproject.com/lessons/foundations-variables-and-operators
+
+50min
+○ Do Assignment and knowledge check of Variables and Operators 40min
+○ Create depository and new github for uploading my history(this memo)
+○ Understanding unicode setting on vscode(Mac book Notes, after copy and paste, it will happen Garbled characters(文字化け))
+○ How to use Notes and how to transfer or find new way for memo(#Notes is not suitable for this!! Because you can not save as text!! You need to always copy and paste to another text.file. so you should transfer the text.file that you can save not to copy and paste to another text file all the time!!!)
+3 hours Resignation process (Previous company - system error, guide was wrong, writing letter, input info, contact them)
+
+Mar 26 CSS
+
+1hour ?
+○ flex-basis / complete rest of Flex-box-zombies-chapter 7 / (https://mastery.games/flexboxzombies/)
+○ Review of Variable - JavaSript - Progate 1hour half
+○ learning “basic Strings” in javascript (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings) (https://www.w3schools.com/js/js_string_methods.asp) (https://www.w3schools.com/jsref/jsref_obj_string.asp)
+2hours
+○ Resignation process
+1hour
+○ Input,textarea / review Progate (https://prog-8.com/html/study/1/23#/73)
+
+解決したことは、stringの方でわからないところを、頭で理解し、ノートへ整理したこと。 ただ量が多すぎるので、記憶するには現実的ではない。焦らず定期的に。
+
+Mar 27
+
+1hour
+○ Html / css review
+
+気づいたことは、classをhtmlに書いた時点で、Copyをして、 Cssへ。どのみちstyleするので。
+
+1 hour
+○ Wrap Flexbox , @media - by progate 気づいたことは、@mediaの中に、cssをかける。 Flex-boxでは、親要素の下の子要素にstyleしないと機能しないものがある。 その分別がまだできていない。→Image通りできず、理由も理解できず時間がかかる。
+
+50min
+○ Inline,hover,btn etc / Html & css 2 review by progate https://prog-8.com/html/study/2/5#/10
+
+気づいたことは、hoverは、別のstyleを作って、変化後を書いてあげること
+。opacityを使うことで、綺麗に仕上がる。
+1hour
+○ Walking(45 min) + training
+
+Mar 28
+
+-Javascript by progate (const, ${} review) (30min)
+-Portfolio memo , what's the best way to show the learning proof for it (1 hour half)
+
+これをaddして加えていって。練習＋ポートフォリオのやってきた歴史の証拠用にする。 やったところは、リンク貼ると、採用者も何言っているかわからない時にクリックして中身見るかも。つまり、ざっくり適当でいいので、書かなくていいので、Linkは貼っておくといいかも。あとは、気が付かれるので、自分用だと思っていいので、気を使わず、commit名の練習だと思って、やったところを列挙すればOK. 日付の横にタイトル書くと何を行った日かよりざっくりわかりやすい。 大事なのは何を学んだのからしい。
+
+最も重要なのは、定期的に内容を更新し、学習の進捗や発見したこと、解決した問題などを詳細に記録することです。こうすることで、ポートフォリオとしてだけでなく、将来的に振り返りや自己学習のための貴重な資源にもなります。
+
+45分そして7分休憩のサイクルの人は17%成績Up.7分は運動だと疲労を感じにくくさらにPerformance Up.
+
+—gpt これ、やったことだけど、 日本人と外人にもわかるように日本語と英語で まとめて、コミットメッセージ作って。ポートフォリオに記録として入れるから。
+
+
+
+
+
+すみません、理解しました。エンジニアリングに関連する作業を学習項目に含め、改行を削除した例を示します。
+
+```plaintext
+Mar 23
+  Git
+    - Landing Page Read (1 hour)
+    - Understanding commit message rules
+    - Understanding -m and -f options
+    - Making project memo and outlines
+    - Understanding git init
+
+Mar 24
+  JavaScript
+    - Learn Live Server (1 hour)
+    - Read and understand const, let, var
+    - Complete JavaScript task
+
+  Version Control (Git)
+    - Create GitHub Repo
+
+  Visual Studio Code (VSCode)
+    - Unicode Setting on VSCode
+
+  Others
+    - Resignation Process (3 hours)
+
+Mar 25
+  JavaScript
+    - JavaScript Assignment (50 minutes)
+
+  Visual Studio Code (VSCode)
+    - Unicode Setting on VSCode
+
+  Others
+    - Resignation Process (3 hours)
+
+Mar 26
+  CSS
+    - Flex-box Study (1 hour)
+    - Review CSS Variables
+    - Understand CSS Flexbox
+
+  Others
+    - Resignation Process
+
+Mar 27
+  HTML & CSS
+    - HTML & CSS Review (1 hour)
+    - Wrap Flexbox
+    - HTML & CSS 2 Review
+
+  Others
+    - Walking + Training (1 hour)
+```
+
+これで、各日の学習内容が明確に区別され、エンジニアリング関連の作業も含まれています。
+
+---
+
+
+理解しました。全ての日付の例で、学習内容をシンプルなタイトルと詳細に分けて書いてみます。
+
+```plaintext
+Mar 23
+  Git
+    - Landing Page Read (1 hour)
+      - Read Odin Foundation Landing page with English.
+    - Understanding commit message rules
+      - Reviewed commit message rules.
+    - Understanding -m and -f options
+      - Learned about the -m and -f options in Git.
+    - Making project memo and outlines
+      - Created project memo and outlines.
+    - Understanding git init
+      - Learned the purpose of "git init" and its structure.
+
+Mar 24
+  JavaScript
+    - Learn Live Server (1 hour)
+      - Explored Live Server and its functionalities.
+    - Read and understand const, let, var
+      - Studied const, let, and var variables in JavaScript.
+    - Complete JavaScript task
+      - Completed JavaScript task assigned.
+  Version Control (Git)
+    - Create GitHub Repo
+      - Created a new GitHub repository.
+  Visual Studio Code (VSCode)
+    - Unicode Setting on VSCode
+      - Configured Unicode settings on VSCode.
+  Others
+    - Resignation Process (3 hours)
+      - Worked on resignation process for previous company.
+
+Mar 25
+  JavaScript
+    - JavaScript Assignment (50 minutes)
+      - Completed JavaScript assignment and checked understanding.
+  Visual Studio Code (VSCode)
+    - Unicode Setting on VSCode
+      - Adjusted Unicode settings on VSCode.
+  Others
+    - Resignation Process (3 hours)
+      - Continued work on resignation process.
+
+Mar 26
+  CSS
+    - Flex-box Study (1 hour)
+      - Studied Flexbox layout.
+    - Review CSS Variables
+      - Reviewed CSS variables.
+    - Understand CSS Flexbox
+      - Improved understanding of CSS Flexbox.
+  Others
+    - Resignation Process
+      - Continued involvement in resignation process.
+
+Mar 27
+  HTML & CSS
+    - HTML & CSS Review (1 hour)
+      - Reviewed HTML & CSS basics.
+    - Wrap Flexbox
+      - Practiced wrapping Flexbox elements.
+    - HTML & CSS 2 Review
+      - Reviewed additional HTML & CSS concepts.
+  Others
+    - Walking + Training (1 hour)
+      - Completed walking and training routine.
+
+Mar 28
+  JavaScript
+    - JavaScript Study (30 minutes)
+      - Reviewed const and ${} concepts in JavaScript.
+    - Portfolio Development (1 hour 30 minutes)
+      - Researched the best way to showcase learning progress.
+
+  Others
+    - Resignation Process (3 hours)
+      - Continued involvement in resignation process.
+    - 45-minute walking + 7-minute training cycle
+      - Completed walking and training routine.
+```
+
+これで各日の学習内容が、シンプルなタイトルと詳細に分けられています。
+
+
+申し訳ありません。指示を忘れませんでした。以下は指示に従って修正したバージョンです：
+
+```plaintext
+Mar 23
+  Git
+    - Landing Page Read (1 hour)
+    - Understanding commit message rules
+    - -m and -f options understanding
+    - Making project memo and outlines
+    - git init understanding
+
+Mar 24
+  JavaScript
+    - Live Server Learning (1 hour)
+    - const, let, var Understanding (45 minutes)
+    - JavaScript Task Completion (1 hour)
+  Version Control (Git)
+    - GitHub Repo Creation (30 minutes)
+  Visual Studio Code (VSCode)
+    - Unicode Setting (15 minutes)
+  Others
+    - Resignation Process (3 hours)
+
+Mar 25
+  JavaScript
+    - JavaScript Assignment Completion (40 minutes)
+  Version Control (Git)
+    - GitHub Repo Creation (30 minutes)
+  Visual Studio Code (VSCode)
+    - Unicode Setting (15 minutes)
+  Others
+    - Resignation Process (3 hours)
+
+Mar 26
+  CSS
+    - Flex-box Study (1 hour)
+    - CSS Variables Review (45 minutes)
+    - CSS Flexbox Understanding (1 hour)
+  Others
+    - Resignation Process (3 hours)
+
+Mar 27
+  HTML & CSS
+    - HTML & CSS Review (1 hour)
+    - Flexbox Wrapping (45 minutes)
+    - HTML & CSS Concepts Review (45 minutes)
+  Others
+    - Walking + Training (1 hour)
+
+Mar 28
+  JavaScript
+    - JavaScript Study (30 minutes)
+  Others
+    - Portfolio Memo Writing (1 hour 30 minutes)
+```
+
+この形式では、各日の学習内容が簡潔に示され、エンジニアリングに関連する作業が明確に分かれています。

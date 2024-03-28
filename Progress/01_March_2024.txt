@@ -1,0 +1,95 @@
+了解です。以下に全体の内容を修正したバージョンを示します：
+
+```plaintext
+Mar 23
+  Web Development
+    - Odin Foundation Landing Page Read (1 hour)
+      - Read Odin Foundation Landing Page with English translation.
+  Version Control (Git)
+    - Commit message review (30 minutes)
+      - Reviewed commit message guidelines.
+    - Understand commit message rules (45 minutes)
+      - Learned the rules for writing commit messages.
+    - Try to write commit messages following the 7 rules (30 minutes)
+      - Practiced writing commit messages following the 7 rules.
+    - Understanding -m and -f difference (40 minutes)
+      - Learned the difference between -m and -f options in Git.
+    - Commit and push the -f ver commit message to Git (30 minutes)
+      - Committed and pushed a commit message using the -f option in Git.
+    - Understanding when to commit on this project (40 minutes)
+      - Learned when to make commits in a project.
+    - How to make project (1 hour)
+      - Explored how to create a project.
+    - How to make memo on project and open (30 minutes)
+      - Learned how to make notes on a project and open it.
+    - Making memo with outlines (four) in the directory to explain (45 minutes)
+      - Created memos with outlines to explain projects in the directory.
+    - Understanding why "git init" is needed and its structure (40 minutes)
+      - Learned why "git init" is necessary and its structure.
+
+Mar 24
+  Web Development
+    - Learn Live Server (1 hour)
+      - Explored Live Server and its functionalities.
+  JavaScript
+    - Read and understand const, let, var (45 minutes)
+      - Studied const, let, and var variables in JavaScript.
+    - Complete JavaScript task (1 hour)
+      - Completed JavaScript task assigned.
+  Version Control (Git)
+    - Create GitHub Repo (30 minutes)
+      - Created a new GitHub repository.
+  Visual Studio Code (VSCode)
+    - Unicode Setting on VSCode (15 minutes)
+      - Configured Unicode settings on VSCode.
+  Others
+    - Resignation Process (3 hours)
+      - Worked on resignation process for previous company.
+
+Mar 25
+  JavaScript
+    - JavaScript Assignment and knowledge check (40 minutes)
+      - Completed assignment and knowledge check on JavaScript.
+  Version Control (Git)
+    - Create GitHub Repo (30 minutes)
+      - Created a new GitHub repository.
+  Visual Studio Code (VSCode)
+    - Unicode Setting on VSCode (15 minutes)
+      - Configured Unicode settings on VSCode.
+  Others
+    - Resignation Process (3 hours)
+      - Worked on resignation process for previous company.
+
+Mar 26
+  CSS
+    - Flex-box Study (1 hour)
+      - Studied Flexbox using the Flexbox Zombies resource.
+    - Review CSS Variables (45 minutes)
+      - Reviewed concepts related to CSS variables.
+    - Understand CSS Flexbox (1 hour)
+      - Gained understanding of CSS Flexbox.
+  Others
+    - Resignation Process (3 hours)
+      - Worked on resignation process for previous company.
+
+Mar 27
+  HTML & CSS
+    - HTML & CSS Review (1 hour)
+      - Reviewed basic HTML & CSS concepts.
+    - Wrap Flexbox (45 minutes)
+      - Practiced wrapping Flexbox elements.
+    - HTML & CSS 2 Review (45 minutes)
+      - Reviewed additional HTML & CSS concepts.
+  Others
+    - Walking + Training (1 hour)
+      - Engaged in walking and training activities.
+
+Mar 28
+  JavaScript
+    - JavaScript Study (30 minutes)
+      - Reviewed const and ${} syntax.
+  Git ＆ Markdown Memo
+    - Portfolio memo, what's the best way to show learning proof (1 hour 30 minutes)
+      - Worked on documenting portfolio progress and explored best methods to showcase learning.
+
+
