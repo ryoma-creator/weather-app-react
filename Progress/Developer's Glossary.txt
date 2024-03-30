@@ -1,0 +1,1104 @@
+IT important Tips(Developer's Glossary)
+
+- [ ] Vs code閉じちゃったとき
+開き方は、command + spaceで検索して開くのが一番早い
+- [ ] Dev tool, shortcut  Use the keyboard shortcut  (Mac: Opt + Cmd + C) 
+- [ ] 一括で、全てのファイルを保存したいとき！
+Visual Studio Code (VS Code) では、全ての開いているファイルを一度に保存する機能があります。以下の手順で実行できます：
+
+### ショートカットを使用
+
+- **Windows/Linux**: `Ctrl+K` を押した後、`S` を押します。
+- **macOS**: `Cmd+Option+S` を使用します。
+
+このショートカットは「すべて保存」のコマンドで、VS Code で開いている未保存のすべてのファイルを保存します。
+
+### コマンドパレットを使用
+
+もう一つの方法として、コマンドパレットを通じてこの操作を行うこともできます：
+
+1. `Ctrl+Shift+P`（Windows/Linux）または`Cmd+Shift+P`（macOS）を押してコマンドパレットを開きます。
+2. 「Save All」と入力し、表示された「File: Save All」コマンドを選択します。
+
+これらの方法を用いることで、VS Code で開いているすべてのファイルを一括で保存できます。特定のファイルだけでなく、変更が加えられている全てのファイルに対して、この操作が適用される点に注意してください。
+
+- [ ] How to open Terminal on VScode
+use the Ctrl+` keyboard shortcut. To create a new terminal, use the Ctrl+Shift+` keyboard shortcut.
+
+- [ ] Code
+・「View」メニューから「Command Palette...」を選択します。 ショートカットはMacではCmd + Shift + P、Windows/LinuxではCtrl + Shift + Pです。
+* 		パレットに「Shell Command: Install 'code' command in PATH」を入力し、選択します。 このコマンドを実行すると、VSCodeのcodeコマンドがシステムのPATHに追加され、ターミナルからVSCodeを開くことができるようになります。
+* 		ターミナルを再起動します。 これにより、変更が反映されます。
+* 		再起動後、再度code index.htmlコマンドを実行してみてください。このコマンドにより、VSCodeが開きindex.htmlファイルがエディタにロードされるはずです。
+
+- [ ] Terminalで一括削除する方法
+ Me
+ターミナルだと、バックスペースで削除しようとすると、範囲全指定しても、一括で削除されません。方法はありますか？
+
+Gpt
+ターミナルでテキストを一括で削除する方法は、使用しているターミナルやシェルによって異なります。一般的な方法をいくつか紹介します：
+
+- **Ctrl + U**: カーソル位置から行の先頭までを削除します。
+- **Ctrl + K**: カーソル位置から行の末尾までを削除します。
+- **Ctrl + A** で行の先頭に移動し、**Ctrl + K** を使って行全体を削除することもできます。
+- **Ctrl + W**: カーソルの左にある単語を削除します。
+- **Cmd + Backspace** (Macの場合): 行全体を削除します。
+
+これらは一般的なショートカットであり、特定のターミナルやシェルによっては異なる挙動を示す場合があります。使用しているシステムのドキュメントを確認するか、設定を調べて、利用可能なショートカットを確認してください。
+
+- [ ] What is the lang attribute?
+lang specifies the language of the text content in that element. This attribute is primarily used for improving accessibility of the webpage. It allows assistive technologies, for example screen readers, to adapt according to the language and invoke correct pronunciation.
+
+- [ ] 
+
+
+- [ ] Font Family
+If the font name contains a space, you need to surround it with double quotes.
+
+
+- [ ] Title
+
+- [ ] Float
+「float」はCSSにおいて、要素を左や右に「浮かせる」ためのプロパティです。`float: left;`を使用すると、要素が左側に寄り、可能であればその横に他の要素が配置されるようになります。これにより、要素が水平に並ぶ効果が生まれます。例えば、いくつかのブロック（`<div>`要素など）に`float: left;`を適用すると、これらのブロックが横一列に並んで表示されるようになります。これは、ウェブページのレイアウトを整えるのによく使われるテクニックです。
+
+イメージとして、複数のブロックが左側に向かって順番に「浮かんで」配置される様子を想像してみてください。これが`float: left;`の基本的な動作です。ただし、`float`を使用する際には、浮かせた要素の周りのコンテンツの流れに影響を与えたり、親要素の高さが子要素を包含しなくなる「高さの崩れ」などの副作用に注意する必要があります。
+
+- [ ] Padding
+
+はい、その通りです。「Clockwise」は「時計回り」のことを指します。CSSにおいて`padding`（または他のプロパティ）の値を複数指定する場合、それらの値は上（Top）、右（Right）、下（Bottom）、左（Left）の順に、時計回りに適用されます。
+
+- [ ] Lorem
+1. To get some practice working with text in HTML, create a plain blog article page which uses different headings, uses paragraphs, and has some text in the paragraphs bolded and italicized. You can use Lorem Ipsum to generate dummy text, in place of real text as you build your sites. VS Code includes a shortcut to generate lorem ipsum for you. To trigger the shortcut, type lorem on the line where you want the dummy text, then press the Enter key, and voila, you have generated dummy text without a hitch.
+- [ ] Target
+想像してみてください、あなたが大きなショッピングモールにいて、特定の店舗の案内板をクリックすると、その店舗に直接連れて行ってくれる特別な扉があるとします。この扉（target="_blank"）を使うと、あなたは新しい場所に行けますが、元いたモールの場所はそのまま残しておけます。これが、新しいタブでリンクを開くことの便利さです。
+- [ ] Rel
+しかし、問題が一つあります。悪い人がその特別な扉の仕組みを悪用して、あなたを本来の目的地ではない、全く別の場所（例えば偽物の店舗）に連れて行く可能性があるのです。あなたが新しい場所にいる間に、元のモール（あなたのウェブサイト）が何者かによって変更されてしまうかもしれません。
+ここでrel="noopener"属性が登場します。これを特別な扉に設定することで、「この扉を使って別の場所に行く時、扉の後ろにいる悪い人が、元のモールを操作することができないようにする」という安全装置を作動させることができます。つまり、新しい場所へ行っても、元のモールは安全が保たれ、悪い人による操作から守られます。
+rel="noreferrer"属性は、さらに一歩進んで、あなたがその特別な扉を使って移動したときに、あなたがどこのモールから来たか（つまり、元のページの情報）を新しい場所の人に教えないようにします。これにより、プライバシー保護にも役立ちますし、悪い人が情報を得る手段もさらに制限されます。
+
+- [ ] Absoute links/Relative Links
+絶対リンクと相対リンクについて、もっと分かりやすく整理してみましょう。
+
+### 絶対リンク
+- **定義**: インターネット上の他のウェブサイトへのリンク。
+- **構成**: `プロトコル://ドメイン/パス`の形式をとります。
+- **例**: `https://www.theodinproject.com/about` - このリンクは、プロトコル（https://）とドメイン（www.theodinproject.com）を含んでいます。
+- **使用場面**: 外部サイトへリンクする場合に使います。
+
+### 相対リンク
+- **定義**: 同じウェブサイト内の別のページへのリンク。
+- **構成**: リンクを作成しているページから見たファイルパスのみを含みます。
+- **基本例**: `<a href="about.html">About</a>` - このリンクは、現在のディレクトリ内の`about.html`へのリンクです。
+- **使用場面**: 自サイト内のページ間でのナビゲーションに使います。
+
+### ディレクトリ構造と相対リンク
+- ファイルを整理するために、通常、HTMLファイルはディレクトリ（フォルダ）内に配置されます。
+- 例えば、`about.html`を`pages`ディレクトリに移動した場合、リンクは`<a href="pages/about.html">About</a>`のように更新する必要があります。
+- リンクが壊れる（リンク先が見つからない）問題を防ぐためには、ファイルパスを正確に指定する必要があります。
+- `./`をリンクの先頭に追加する（例: `<a href="./pages/about.html">About</a>`）ことで、現在のディレクトリからの相対的な位置を指定し、リンクの正確さを保証できます。
+
+### まとめ
+- **絶対リンク**: 外部サイトへの直接的なリンク。プロトコルとドメインを含む。
+- **相対リンク**: 同一サイト内のページへのリンク。現在の位置からの相対パスを使用。
+- **ディレクトリ構造**: ページ間の正確なナビゲーションを保証するため、ファイルの配置とリンクのパスを適切に管理する必要があります。
+
+これにより、絶対リンクと相対リンクの基本と、それらをどのように使い分けるかが明確になります。
+
+- [ ] Same directory
+This works because the index and about page are in the same directory. That means we can use its name (about.html) as the link’s href value.
+
+- [ ] /.
+In many cases, this will work just fine; however, you can still run into unexpected issues with this approach. Prepending ./ before the link will in most cases prevent such issues. By adding ./ you are specifying to your code that it should start looking for the file/directory relative to the current directory.
+
+- [ ] Jpg png/ rogo icon
+PNGが画質が劣化せず、アイコンやロゴなどの用途に適している理由は、PNGが無損失圧縮を使用しているからです。無損失圧縮は、画像を圧縮する際に元の画像の情報を失わないようにする方法です。そのため、PNG形式で保存された画像は、元の画像と同じ品質で保存されます。
+
+一方で、JPGは損失圧縮を使用しており、画像を圧縮する過程で一部の情報が失われ、画質が劣化する可能性があります。特に多くの色を含む写真など、細かいディテールが重要な場合、JPGは劣化が発生しやすいです。
+
+PNGがアイコンやロゴに適している理由は以下の通りです：
+
+1. **透明度のサポート:** PNGは透明度をサポートしており、アイコンやロゴなどで背景が透明で表示されることができます。これにより、画像が他のコンテンツと統合されやすくなります。
+
+2. **色の正確性:** PNGはカラーパレットの制限がなく、正確な色再現が可能です。アイコンやロゴは通常、特定の色が重要であり、PNGはその要件に適しています。
+
+3. **細かいディテールの保存:** PNGは無損失圧縮を使用しているため、細かいディテールが失われずに保存されます。これがアイコンやロゴなど、ディテールが重要な場合に適している理由です。
+
+総じて、写真などの写実的な画像においてはJPGが適していますが、アイコンやロゴなどの図形やシンボルを含む場合にはPNGが有利です。
+
+- [ ] Git hub limit
+GitHub has a 72-character limit so we recommend keeping your commits’ subject to within this amount.
+
+- [ ] Commit message
+この文章の主なポイントは、Gitのコミットメッセージの書き方に関するガイドラインです。以下はその要点です：
+
+1. **Commit Messages Matter:** コミットメッセージは重要であり、良いメッセージを書く方法を知ることが重要です。
+  
+2. **例:** 古いGitリポジトリのコミットメッセージは混乱していることがありますが、新しいメッセージは簡潔で一貫性があります。これにより、開発者同士や将来の自分に変更の文脈を伝えるのに役立ちます。
+
+3. **重要なGitコミットメッセージの7つのルール:**
+   - 本文とタイトルを空行で区切る。
+   - タイトルを50文字以内に制限する。
+   - タイトルは大文字で始め、ピリオドで終えない。
+   - タイトルは命令形で書く。
+   - 本文は72文字で折り返す。
+   - 本文は何となくではなく、何故や何を変更したのかを説明する。
+   - メタデータ（例: チケット番号）は本文の最後に追加する。
+
+これらのガイドラインに従うことで、コミットメッセージが読みやすく、理解しやすくなります。また、他の開発者や将来のメンテナーにとっても有益です。
+
+—
+もちろんです。以下に、Type、Scope、Description、Body、Footerそれぞれの要素に焦点を当て、どのように書くべきか詳しく説明します。
+
+### 1. Type:
+- **目的:** コミットの種類（変更の性質）を示す。
+- **例:** `feat`, `fix`, `docs`, `style`, `chore`, など。
+- **指針:** 
+  - `feat`: 新機能の追加
+  - `fix`: バグ修正
+  - `docs`: ドキュメンテーションの変更
+  - `style`: コードのスタイル修正（フォーマットなど）
+  - `chore`: その他の雑務
+
+### 2. Scope:
+- **目的:** コミットの影響範囲を示す。どの部分に変更を加えたかを明示。
+- **例:** `auth`, `readme`, `config`, `css`, など。
+- **指針:** 
+  - 簡潔で明確な名前を使用。
+  - 必要に応じて、括弧で囲って表現。
+
+### 3. Description:
+- **目的:** コミットの要約。変更の主な目的を簡潔に表現。
+- **例:** `implement user authentication`, `update webpack configuration`, `format styles using BEM convention`, など。
+- **指針:** 
+  - 50文字以内に収め、簡潔かつわかりやすく。
+
+### 4. Body:
+- **目的:** コミットの詳細説明。変更の背景や理由、関連する情報を提供。
+- **例:** 
+  ```
+  Adds user authentication feature including login and registration.
+  Closes #456
+  ```
+- **指針:** 
+  - 変更が複雑でない場合は省略可能。
+  - 72文字で改行して本文を記述。
+
+### 5. Footer:
+- **目的:** コミットに関連する追加情報。通常はイシュートラッキング番号やリンクなどを含む。
+- **例:** `Closes #456`, `See also: #789`, など。
+- **指針:** 
+  - イシューのステータスを示す `Closes`, `Fixes`, `Resolves` などを使う。
+
+### 具体的なコミットメッセージ例:
+```
+type: feat(auth): implement user authentication
+
+Adds user authentication feature including login and registration.
+Closes #456
+```
+
+このように、Type、Scope、Description、Body、Footerを組み合わせることで、明確で理解しやすいコミットメッセージが作成できます。
+https://www.youtube.com/watch?v=OJqUWvmf4gg&ab_channel=JustinBrooks
+
+ーー
+以下は、Conventional Commitsの仕様から重要なポイントを抽出したものです。
+
+1. **構造:**
+   - コミットメッセージは以下の構造に従うべきです。
+     ```
+     <type>[optional scope]: <description>
+
+     [optional body]
+
+     [optional footer(s)]
+     ```
+
+2. **コミットタイプ:**
+   - `feat`: 新しい機能の追加
+   - `fix`: コードベースのバグ修正
+   - `BREAKING CHANGE`: 重要なAPI変更
+   - 他のタイプも使用可能（`build`, `chore`, `ci`, `docs`, `style`, `refactor`, `perf`, `test` など）
+
+3. **フッター:**
+   - フッターは `BREAKING CHANGE` を含むことができ、git trailer形式に似た規則に従います。
+   - 例: `BREAKING CHANGE: environment variables now take precedence over config files`
+
+4. **Scope:**
+   - タイプの後にスコープが提供されることがあります。スコープはコードベースのセクションを説明する名詞で、括弧で囲まれます。
+   - 例: `feat(parser): add ability to parse arrays`
+
+5. **本文とフッター:**
+   - 本文は短い説明で始まり、必要に応じて詳細な情報を提供することができます。
+   - フッターは1つ以上提供可能で、それぞれ単語トークン、コロンまたはハッシュセパレータ、文字列値で構成されます。
+
+6. **大文字・小文字の扱い:**
+   - Conventional Commitsの情報ユニットは、大文字小文字を区別せずに扱う必要があります（ただし、`BREAKING CHANGE`は大文字）。
+
+7. **利用目的:**
+   - CHANGELOGの自動生成
+   - セマンティックバージョンの自動判定
+   - 変更の性質を共有
+   - ビルドおよびパブリッシュプロセスのトリガー
+   - プロジェクトへの貢献の容易化
+
+8. **FAQ:**
+   - 初期開発フェーズでは既に製品がリリースされているかのように進めることが推奨される。
+   - コミットタイトルの大文字小文字は任意だが、一貫性が良い。
+   - 複数のコミットタイプに適合する場合は、可能な限り複数のコミットに分割する。
+
+9. **Revertコミット:**
+   - Revertコミットについては、明示的な定義がなく、ツールの柔軟性を活かしてツール開発者が対応する。
+
+これらのポイントにより、Conventional Commitsは意味のあるコミットメッセージの構造化と、それに基づく様々な利点を提供しています。    ⭕️IDとClassの違い
+正確に理解していますね。IDは「Identity」つまり「識別子」として機能し、HTML内で一意であるべきです。つまり、1つのページ内で同じIDを複数の要素に割り当てるのは、技術的には可能ですが、HTMLとCSSの規則に反しています。これは、各IDがページ内で一つだけ存在することを前提としているためです。ブラウザやJavaScriptなどの技術は、IDがページ内で唯一無二であることを期待して動作します。
+
+一方で、クラスは再利用可能で、ページ内の複数の要素に同じスタイルを適用するために使います。クラスは「グループ」や「カテゴリ」と考えるとわかりやすいでしょう。同じクラス名を持つ要素は、CSSによって定義されたスタイルルールを共有します。
+
+たとえば、複数の要素を同じスタイルで装飾したい場合、それらの要素に同じクラス名を割り当て、CSSでそのクラスに対するスタイルを定義します。この場合、指定したクラス名を持つすべての要素にスタイルが適用されます。
+
+### IDの使用例
+```html
+<!-- HTML -->
+<div id="uniqueElement">ここはページ内で一つだけです。</div>
+```
+
+```css
+/* CSS */
+#uniqueElement {
+  color: blue;
+}
+```
+
+### クラスの使用例
+```html
+<!-- HTML -->
+<div class="groupStyle">グループ1</div>
+<div class="groupStyle">グループ2</div>
+```
+
+```css
+/* CSS */
+.groupStyle {
+  color: red;
+}
+```
+
+まとめると、IDはページ内で一意の要素（世界で一人の人のようなもの）に使い、クラスは複数の要素に共通のスタイルを適用する（クローンやグループのようなもの）ために使用します。IDを複数の要素に使用することは、HTMLとCSSの標準的な使い方に反しているため、避けるべきです。
+
+
+- [ ] Grouping
+共通のスタイルを適用する際にgrouping selectorを使用したい場合は、例として以下のように記述できます：
+css
+
+Copy code
+.black, .yellow { font-size: 28px; font-family: Helvetica, 'Times New Roman', sans-serif; } .black { color: white; background-color: black; font-weight: bold; } .yellow { background-color: yellow; }
+この方法では、.blackと.yellow両方の要素に共通のフォントサイズとフォントファミリーを一度に適用し、それぞれの要素に固有のスタイル（背景色等）も個別に設定しています。
+↓
+共通したクラスのところへ反映させたいときは、この書き方が便利！
+
+- [ ] Source Order
+
+You
+そして、ソースオーダーです。2人のお客様が「砂糖少なめ」と「アイスで」のように、異なるオプションを同じカフェラテに注文したとします。どちらの注文が最後に来たかによって、そのオプションが最終的なカフェラテに適用されます。つまり、後から来た注文が優先されるわけです。
+
+このソースオーダーって、
+例えばpythonとかで、
+age = 24
+age = 35
+とあったとして、後からのやつが優先されて上書きされる特質のことを話していますか？
+
+だとしたら、Htmlとcssだとどんなことが起きますか。
+
+（僕の質問内容も念のため、英語で表示してください。英語の学習をしたいです。）
+
+ChatGPT
+はい、その通りです。あなたの例で説明すると、Pythonのコードでage = 24と記述した後にage = 35と記述すると、後者の値が優先されてageの値は35に上書きされます。これはプログラミングの多くの言語で見られる基本的な概念ですが、CSSのSource Order（ソースオーダー）も同様の原理に基づいています。
+HTMLとCSSの文脈では、ソースオーダーはスタイルシート内のルールの記述順序を指します。同じ要素に対して複数のCSSルールが適用される場合、特定性が同じであれば、文書内で後に位置するルールが優先されて適用されます。
+例えば、以下のCSSがあるとします：
+css
+
+p {
+	color: blue; 
+	} 
+p { 
+	color: red;
+	 }
+ HTML内で<p>タグを使ってテキストを記述した場合、このテキストは赤色になります。なぜなら、同じ特定性（この場合は要素セレクタによる特定性）を持つ2つのルールがあり、ソースオーダーに基づいて後に記述されたcolor: red;が優先されるからです。
+この概念を念頭に置くと、CSSを書く際にはルールの順序が非常に重要であることがわかります。予期しないスタイルの上書きを避けるために、どのルールがどの順序で適用されるかを意識する必要があります。
+
+→優先度の話だ。同じ対象物に対して、複数cssを書いても１つしか適応されない。その場合、後から書いたものが優先されますよって話。それをsource orderって一言で呼んでいますよって話。 (Source Order): CSSでは、特定性が同じ場合、ソースコード内で後に記述されたスタイルが優先されます。この場合、ルール2はルール1の後に記述されているため、特定性が同じだと仮定しても、ルール2が優先されることになります。
+
+- [ ] Specificity
+さて、カフェには様々なお客様がいますが、VIPのお客様（例えばIDが#vip）は「特別なスパイスを加えたカフェラテ」を注文することができます。ここで、このVIPのお客様の注文は、通常のお客様の注文よりもSpecificity（特定性）が高いため、優先されるわけです。
+
+ここでのspecificityっていうのは、
+例えば、IDはclassよりも優先度が高いと聞きました。
+したがって、同じようなものが指定されていても、classはIDによって上書きされて、IDが優先される状況って感じでしょうか。CSSで例えているのですが。
+良かったらspecificityのsituationを具体例で教えて。 
+ChatGPT
+はい、その通りです。CSSにおけるSpecificity（特定性）は、異なるタイプのセレクタに異なる「重み」を割り当てることによって決定されます。具体的には、IDセレクタはクラスセレクタや要素セレクタよりも高い特定性を持ちます。そのため、IDセレクタとクラスセレクタが同じ要素に適用される場合、IDセレクタのスタイルが優先されます。
+具体例
+HTML:
+
+<div id="vip" class="customer">VIP Customer</div>
+
+-
+CSS:
+
+#vip { color: gold; } 
+.customer { color: blue; }
+
+この場合、<div>要素はcolor: gold;でスタイルされます。なぜなら、IDセレクタ（#vip）はクラスセレクタ（.customer）よりも特定性が高いため、IDセレクタによる定義が優先されるからです。
+
+→用はId等、同じ要素でも優先度の高いやつがある。それをひと単語で、Specificityって呼んでますよってだけの話。優先度の話だ。
+
+- [ ] Inheritance
+もちろんです。Inheritance（継承）とは、特定のHTML要素に明示的にスタイルが指定されていない場合、その要素が親からスタイルを「受け継ぐ」概念を指します。これはCSSの基本的な原則の一つで、特にテキストの色やフォントのようなプロパティで顕著に見られます。
+HTMLとCSSの例
+HTML:
+
+<div class="parent"> 親要素 <p>子要素</p> </div>
+
+—
+CSS:
+
+.parent { 
+	color: blue; /* 親要素に青色を指定 */
+}
+
+この場合、<p>タグ（子要素）には色が明示的に指定されていませんが、親要素からcolor: blue;のスタイルを継承します。したがって、この<p>タグのテキストも青色になります。
+継承を利用すると、全体的なスタイルを効率的に管理できます。たとえば、全てのテキスト要素に対してフォントスタイルを一元的に適用したい場合、親要素（例えば<body>）にそのスタイルを設定するだけで済みます。
+
+→ようは囲っている親ってやつが優先されるって話。それを一言で表すとinheritanceって呼んでいるってだけのこと。優先度の話だ。
+
+- [ ] Selector (CSSのやつのこと)
+Selector（セレクタ）とは？
+セレクタは、CSSルールが適用されるべきHTML要素を指定するために使用されるパターンです。HTML内の特定のタグ（要素）、クラス、ID、またはそれらの組み合わせにスタイルを適用するためにセレクタを使用します。
+
+- [ ] Element (HTML内のやつのこと)
+Element（要素）との違い
+「要素」とはHTMLドキュメントを構成する個々の部品のことで、例えば<div>や<p>などのタグによって示されます。一方、「セレクタ」はこれらの要素をCSSで指定し、スタイルを適用するための方法です。簡単に言えば、要素はHTMLの構成部分であり、セレクタはその要素にCSSスタイルをどう適用するかを定義するものです。
+例えば、以下のCSSルールでは、pがセレクタであり、このセレクタはすべての<p>要素にスタイルを適用します。
+css
+
+Copy code
+p { color: blue; }
+ここでは、pセレクタがHTMLドキュメント内の全ての<p>要素（パラグラフ）をターゲットにして、それらのテキスト色を青に変更することを指示しています。
+
+- [ ] Attribute (HTML内のやつの話)
+はい、その通りです。要素（Element）の中に書かれるもので、その要素に対してもっと細かい情報や設定を提供するのが属性（Attribute）です。属性は要素の開始タグ内に配置され、その要素の振る舞いや特性を定義します。
+
+例えば、`<input>`要素に`type="text"`という属性を設定することで、その入力フィールドがテキスト入力用であることを示します。また、`<a>`要素に`href="https://www.example.com"`という属性を追加することで、そのリンクがクリックされた際にユーザーを`https://www.example.com`に導くように指示します。
+
+属性はHTML要素のさまざまな側面をカスタマイズするために使用され、ウェブページの機能性やアクセシビリティ、外見を向上させるのに役立ちます。
+
+- [ ] Chaining selectors
+CSSのセレクタを連結する（Chaining selectors）とは、複数のクラスを持つHTML要素に対して特定のスタイルを適用する方法です。これにより、同じクラスを持つ要素でも、追加のクラスによって異なるスタイルを適用することができます。
+
+HTML:
+
+<div class="box important"></div> <div class="box"></div>
+ CSS:
+
+/* すべての.box要素に適用 */ 
+
+.box { 
+	width: 100px; height: 100px; 
+	} 
+
+/* .boxと.importantの両方のクラスを持つ要素にのみ適用 */ 
+
+.box.important { 	
+	background-color: red; 
+}
+
+この例では、.box.importantセレクタを使って.boxクラスと.importantクラスの両方を持つ要素にのみ背景色を赤に設定しています。他の.box要素にはこのスタイルは適用されません。
+
+- [ ] Descendant Combinator
+CSSの子孫結合子（Descendant Combinator）は、ある要素の子孫である要素にスタイルを適用するために使用されます。子孫結合子はスペース（ ）で表され、2つのセレクタ間に置かれます。これにより、最初のセレクタにマッチする要素の中で、2番目のセレクタにマッチする子孫要素にスタイルを適用できます。
+簡潔な例:
+HTML:
+
+<div class="container"> 
+	<p>この段落はスタイルが適用されます。</p> 
+  <div> 
+	<p>この段落にもスタイルが適用されます。
+	</p>
+    </div> 
+</div> 
+<p>この段落にはスタイルが適用されません。</p>
+
+CSS:
+
+.container p { color: red; }
+
+この例では、.container pセレクタは.containerクラスを持つ要素の子孫であるすべてのp要素に対して赤いテキストカラーを適用します。最後のp要素は.containerの子孫ではないため、このスタイルの影響を受けません。
+
+- [ ] Cascade
+（Cascade）は、CSSにおいてスタイルがどのように適用されるかを決定するプロセスを総称して指します。このプロセスには、特定性（Specificity）、継承（Inheritance）、およびルール順序（Rule Order）の3つの主要な概念が含まれます。これらの要素は互いに関連しており、最終的にどのCSSルールが特定のHTML要素に適用されるかを決定します。
+* 特定性は、セレクタがどれだけ具体的にHTML要素にマッチするかを示し、IDセレクタ、クラスセレクタ、タイプセレクタの重みによって計算されます。
+* 継承は、ある要素に適用されたスタイルがその子孫に自動的に適用される場合があることを示しますが、すべてのプロパティが継承されるわけではありません。
+* ルール順序は、CSSファイル内で定義されたスタイルルールの順序が、同じ特定性を持つルール間の優先順位を決定することを示します。特定性が同じである場合、後に定義されたルールが前に定義されたルールを上書きします。
+これらの概念を理解することは、CSSを効果的に使用し、期待通りのスタイルをHTML要素に適用するために重要です。
+
+- [ ] Inspect(web わかりやすい例)
+はい、その通りです！右クリックでInspectを使う方法を、もっと簡単な例で説明しますね。
+
+### イメージしてみてください：
+
+あなたが美味しいケーキを食べていて、どんな材料が使われているのか知りたくなったとします。ケーキの一部を指さして「これは何でできているの？」と聞くようなものです。
+
+ウェブページで言うと、あなたが見ているページはケーキで、そのページの中のテキストや画像、ボタンなどがケーキの材料にあたります。
+
+### 実際にやってみる：
+
+1. **ウェブページを開く**：
+   お気に入りのウェブサイトを開いてください。
+
+2. **気になる要素を見つける**：
+   サイトの中で、「これはどうやって作られているの？」と思う部分、例えば特定のテキストや画像、ボタンなどを見つけます。
+
+3. **右クリック**：
+   その気になる部分を右クリックします。すると、メニューが開きます。
+
+4. **「Inspect」を選ぶ**：
+   出てきたメニューの中から「Inspect」（または「要素を検証」）を選びます。
+
+5. **材料を確認**：
+   「Inspect」を選ぶと、画面の一部が変わり、その部分の「レシピ」や「材料」―つまり、HTMLやCSSが表示されます。これにより、その部分がどのように作られているかがわかります。
+
+### まとめ：
+
+右クリックで「Inspect」を選ぶことは、ウェブページの中で「これは何でできているの？」と気になる部分を指して、その「レシピ」や「材料」を教えてもらうことです。これにより、ウェブページがどのように組み立てられているかを学ぶことができます。とても便利な機能なので、ぜひ使いこなしてみてくださいね！
+
+- [ ] Dom Tree(webのinspectで表示されるものらしい)
+はい、その通りです。HTMLは「DOM Tree」と呼ばれることもあります。これをもっと簡単に説明してみましょう。
+
+### DOM Treeとは？
+
+DOMは「Document Object Model」の略です。これは、ウェブページの内容をブラウザがどのように理解しているかを表すものです。そして、「Tree（木）」という言葉が使われるのは、ウェブページが様々な要素（枝や葉っぱ）によって構成されていると考えると、それがまるで木のように見えるからです。
+
+### 簡単な例で説明：
+
+想像してみてください。あなたの前に大きな木があります。この木は根っこから始まり、大きな幹があり、そこから枝が伸び、枝には葉っぱがついています。
+
+- **根っこ**：これはウェブページ自体を表します。つまり、HTMLドキュメント全体です。
+- **幹**：これはウェブページの大枠を表す`<body>`タグのようなものです。
+- **枝**：これはさらに細かい部分、例えば段落を表す`<p>`タグや、リストを表す`<ul>`や`<li>`タグなどです。
+- **葉っぱ**：これは最も細かい要素、例えばリンクを表す`<a>`タグや、画像を表す`<img>`タグなどです。
+
+### DOM TreeとInspect：
+
+「Inspect」機能を使ってウェブページの要素を見るとき、実際に見ているのはこの「DOM Tree」です。ブラウザはウェブページのHTMLコードを読み取り、それをDOM Treeという形で解釈します。このTreeを通じて、開発者はページの構造を見たり、特定の要素を見つけたり、編集したりできます。
+
+### まとめ：
+
+HTMLが「DOM Tree」と呼ばれるのは、ウェブページの構造が木のように階層的になっているからです。そして、このTreeを使って、ブラウザや開発者はページの各部分にアクセスし、操作することができます。「Inspect」機能は、このDOM Treeの中を探検し、特定の枝や葉っぱ（要素）にフォーカスを当てるためのツールなのです。
+
+- [ ] inspection　ボタン
+Elementの横にある矢印のボタン。
+これは、inspectを開いた後、
+Webないで気になる箇所をこのボタンをクリックした後に,webを見ると全ての気になる箇所がhightlihgtされるようになる。
+そして、それをクリックすると、
+Dom Tree(htmlって呼べよ。。)内で、
+気になる箇所が何で作られているのか、
+飛ぶことができて、見ることが可能になる。
+つまり、何で作られているのか、webないでクリックすれば、そこの箇所を見れるようになる。
+
+- [ ] Node
+
+「Inspecting a node」という言葉で、ここでの「node」とは、DOM Treeの中の一つ一つの要素のことを指します。簡単に言えば、ウェブページを構成する各部分（たとえば、テキスト、画像、リンクなど）が「node」です。
+Node（ノード）とは？
+DOM Treeを構成する各要素は、プログラミングの世界では「node（ノード）」と呼ばれます。このノードには、HTMLタグ（例えば<div>、<p>、<a>など）、テキスト、さらにはコメントなど、ページ上のあらゆるものが含まれます。
+
+- [ ] Style
+Cssの部分はhtmlの部分と違い、
+ハイライトされない。ありすぎる。
+その場合、検索ボックスがあるので、
+知りたいclass名とか入力すると、
+検索したものと同じもののみが表示されるようになる。
+
+- [ ] Console
+ConsoleとCSS/HTMLとの違い
+* CSS：スタイルシート言語で、ウェブページのレイアウトや見た目を定義します。
+* HTML：マークアップ言語で、ウェブページの構造を定義します。
+* Console（JavaScript）：ウェブページに動的な機能を追加するために使用されるプログラミング言語です。コンソールは、JavaScriptやウェブページの動作に関連する情報を表示したり、JavaScriptコードを直接実行するためのインターフェイスを提供します。
+つまり、HTMLとCSSがウェブページの「骨組み」と「外見」を形作るのに対して、JavaScript（そしてConsole）はウェブページに「動き」や「機能性」を加える役割を担っています。コンソールはそのJavaScriptを扱うための強力なツールであり、開発者にとって欠かせないもので
+
+- [ ] Viewport
+「Viewport」は、ユーザーがウェブページを見るためのウィンドウまたは画面の領域を指します。具体的には、ブラウザで現在表示されている部分、つまりユーザーが直接見ることができるページのセクションを意味します。ウェブ開発では、ビューポートのサイズ（高さと幅）に基づいて、ページのレイアウトやデザインを調整することがよくあります。例えば、スマートフォンとデスクトップではビューポートのサイズが異なるため、レスポンシブデザインではこれらの違いに応じてコンテンツが最適に表示されるように設計されます。
+
+「Reposition the viewport」という表現は、Inspectツールやブラウザの現在のHTMLコンテンツを物理的に移動または再配置することを意味するわけではありません。この文脈では、ブラウザのビューポート（画面上でユーザーが見ることができるページの部分）の表示位置を調整することを指しています。具体的には、スクロール操作や他のナビゲーション方法を使って、特定のDOMノードがビューポート内に見えるように画面を移動させることを意味します。
+
+例えば、ページの下部にスクロールしていて、ページ上部にある`<h1>`タグなどの要素を見たい場合、「Scroll into view」機能を使ってその要素が画面に表示されるようビューポートを「再配置」します。この操作により、ユーザーがスクロールせずとも、指定された要素が自動的にビューポート内に表示されるようになります。
+
+この「再配置」は、ビューポートの視点を変えることであり、新しいウィンドウやビューポートを開くのではなく、現在のブラウザウィンドウ内で表示されているコンテンツのどの部分を見るかを変える操作です。
+
+
+- [ ] Scroll into view(inspection)
+Nodeのところをさらに右クリックして,
+Scroll into viewをselectすると、nodeのweb箇所,表示箇所へjump upすることができる。
+
+- [ ] Search on Viewport
+ Command+F (Mac). The Search bar opens at the bottom of the DOM Tree.
+
+ If you always work with long search queries, you can make DevTools run search only when you press Enter.
+
+検索バーがあわわれ、hightlightされる
+探すのに便利
+
+- [ ] Htmlを変える方法
+In the DOM Tree, double-click Michelle. In other words, double-click the text between <li> and </li>. The text is highlighted blue to indicate that it's selected.
+
+Double clickすると、””を除いた変えたい文章の部分だけhightlightされる。あとは変える
+だけ.
+
+1. Delete Michelle, type Leela, then press Enter to confirm the change. The text above changes from Michelle to Leela.
+
+<li>とかもstyle変えたければ、そこをdouble clickすればliの横から書き込めるようになり、編集できる
+You can also use the Edit attribute right-click option.
+
+Codeの編集も楽。
+Liを他のものに変更したい場合、
+Buttonと入れるだけで、</button>まで全て一括で自動で変更してくれるので、楽。（cssのファイルでやるより楽）
+
+Type Sheldon inside the tag and press Control / Command + Enter to apply changes.
+
+https://developer.chrome.com/docs/devtools/dom/#scroll2
+
+- [ ] Border-sizing: border-box
+https://www.youtube.com/watch?v=QctF-i4-GuM
+この動画がわかりやすい。
+
+website上では、heightやwidthを指定したときに、
+２つ以上のコンテンツを並べたときに、サイズが大きすぎて、
+floatをしても機能しない時があります。
+自分でサイズを測るのは面倒なので、そうした事態に、対応すべく、
+自動的に、サイズ調整をしてくれるのが、box-sizing: border-box;なのではないでしょうか。
+
+Gpt
+すみませんでした。ご指摘の通り、`box-sizing: border-box;`の主なメリットを具体的に説明します。
+
+ウェブサイトをデザインするとき、特に複数のコンテンツ（要素）を横に並べたい場合、それぞれの要素に`width`（幅）や`height`（高さ）を指定します。しかし、要素に`padding`（内側の余白）や`border`（境界線）を追加すると、それらは`width`や`height`に**上乗せ**されてしまいます。これにより、全体のサイズが予想よりも大きくなり、レイアウトが崩れる可能性があります。特に、`float`などを使用して要素を横に並べる場合に問題が発生しやすいです。
+
+例えば、幅が100%のコンテナ内に幅50%の2つのボックスを並べたいとします。ボックスに`padding`や`border`を追加すると、それぞれの実際の幅は50%よりも大きくなり、2つが並ばずに1つが次の行に押し出されてしまいます。
+
+ここで`box-sizing: border-box;`が役立ちます。この設定を使うと、`width`や`height`に`padding`と`border`が**含まれる**ようになります。つまり、`width`や`height`を指定すると、そのサイズ内に`padding`と`border`が収まるように調整されます。これにより、要素のサイズ計算が簡単になり、レイアウトが予定通りになりやすくなります。
+
+### 結論:
+
+`box-sizing: border-box;`を使用するメリットは、指定した`width`や`height`が`padding`や`border`を含む全体のサイズになるため、レイアウト時に要素のサイズを簡単に予測でき、計算が楽になる点です。これにより、要素を横に並べたり、精密なレイアウトを作成したりする際に、サイズが大きすぎて期待通りに動作しないという問題を解決できます。
+
+Ryoma
+つまり、余計にはみ出る長さをしまってくれるようになるってことですよね、内側に。
+box-sizing: border-box;とはそういうことですよね？
+また、box-sizing: border-box;の意味は何でしょうか。
+
+はい、その通りです。`box-sizing: border-box;`を使用すると、要素の`padding`と`border`が、指定した`width`や`height`の内側に収まるように調整されます。これにより、`padding`や`border`を追加しても、要素の全体サイズは指定した`width`や`height`を超えなくなり、レイアウトが予想通りに保たれます。つまり、余計にはみ出る長さを内側にしまってくれるということです。
+
+### `box-sizing: border-box;`の意味
+
+`box-sizing`プロパティは、要素のサイズ計算方法を指定するCSSのプロパティです。このプロパティに設定できる値の一つが`border-box`です。
+
+- **`content-box`**（デフォルト値）: 要素の`width`と`height`がコンテンツエリアのみを指します。`padding`と`border`はこのサイズの外側に加算されます。
+- **`border-box`**: 要素の`width`と`height`が`padding`と`border`を含むサイズを指します。これにより、全体のサイズが指定した`width`と`height`を超えないように内側に調整されます。
+
+したがって、`box-sizing: border-box;`は、ウェブページのレイアウト設計をより容易にし、特に複数の要素を並べる際に役立つ重要なツールと言えます。
+
+↓
+Box sizeの計算方式を変えているんだ。
+↓
+ボックスサイズの計算:
+* content-box（デフォルト）: widthとheightはコンテンツのサイズのみを示し、パディングとボーダーはその外側に加わります。
+* border-box: widthとheightはパディングとボーダーを含む全体のサイズを示し、これにより要素のサイズ計算が直感的になります。
+
+だから、こうなるんだ。
+
+- [ ] Normal flow
+ノーマルフローとは、CSSで特別なレイアウトスタイルを適用しない場合に、ウェブページ上の要素がどのように自動的に配置されるかのデフォルトの振る舞いです。
+
+
+- [ ] Inline / block
+https://www.w3schools.com/html/html_blocks.asp
+ inline / block / inline - block　は視覚的に、
+そして、じぶんで codeを書いて、表示させて違いを体感した方がいい。
+文字だけだと想像できない。（いろんなの読んだけど、画像で違いを見る方が一番理解できた。）
+
+
+- [ ] Margin-left: auto;
+Div Threeを右寄せにするためには、`margin`を使ってその配置を調整する必要があります。具体的には、`margin-left`を自動（`auto`）に設定することで、左側の余白を可変にし、それによってDiv Threeを右側に押し出すことができます。
+
+以下のようにCSSを変更してみてください：
+
+```css
+.three {
+  background: peachpuff;
+  border: 3px solid brown;
+  width: 200px;
+  padding: 32px;
+  margin-left: auto; /* 左のマージンをautoに設定 */
+}
+```
+
+この設定により、`margin-left: auto;`がDiv Threeの左側の余白をブラウザが利用可能な最大限まで広げ、その結果、Div Threeが親要素（ここでは`body`タグで指定された600pxの最大幅内）の右端に配置されます。`margin-right`を明示的に設定する必要はありませんが、もしDiv Threeの右側に特定の余白を設けたい場合は、それも指定することができます。ただし、この問題では右寄せを`margin`のみで達成するよう指示があるので、`margin-left: auto;`の設定だけで十分です。  「左側の余白を可変にする」というのは、簡単に言うと、「左側のスペースを自動的に調整して、物を右側に動かす」ということです。
+
+例えば、お部屋の中にあるおもちゃ箱を考えてみましょう。おもちゃ箱を部屋の右側に置きたいとき、おもちゃ箱と部屋の左側の壁の間に、どれだけスペースを空けるかを決めるのはあなたです。この「スペース」をどれだけにするかを自動的に決めて、おもちゃ箱がぴったり右側に来るようにするのが、「margin-left: auto;」の役割です。
+
+つまり、コンピューターの画面でウェブページを作っているとき、ある箱（ここではDiv Three）を画面の右側に置きたいなら、「左側のスペースを自動で調整してくださいね」とコンピューターにお願いするのです。そうすると、コンピューターは自動的に計算して、箱を右側にきれいに配置してくれます。これが、「左側の余白を可変にする」ということです。
+
+
+- [ ] Blockの時の中央揃えのやり方。margin: 0 auto; 
+`margin: 0 auto;`が要素を中央に配置する理由と、`align: center;`が期待通りに動作しない理由について説明します。
+
+### `margin: 0 auto;`で中央揃えが行われる理由:
+
+`margin: 0 auto;`による中央揃えは、CSSのマージンの自動計算機能を利用したものです。ここでの`auto`は、利用可能なスペースを自動的に計算して、左右のマージンに均等に分配することをブラウザに指示します。この方法はブロックレベル要素（`display: block;`が適用されている要素）で有効です。
+
+- `0`は上下のマージンが0であることを意味します。
+- `auto`は左右のマージンをブラウザが自動的に計算し、要素を中央に配置するために必要な値に設定することを意味します。
+
+この時、要素には固定の幅（`width`）が設定されている必要があります。幅が指定されていないと、ブロックレベル要素はデフォルトで親要素の全幅を取るため、中央揃えが視覚的に認識できません。
+
+### `align: center;`が中央揃えに使えない理由:
+
+まず、`align: center;`というCSSプロパティは存在しません。おそらく`text-align: center;`を指していると思われますが、このプロパティはテキストやインライン要素（`display: inline;`や`display: inline-block;`など）の水平方向の配置を制御します。`text-align: center;`は、親要素に適用された場合、その子要素であるテキストやインライン要素を中央に配置します。しかし、ブロックレベル要素自体の配置を直接制御するものではありません。
+
+要約すると、`margin: 0 auto;`はブロックレベル要素を中央に配置するための一般的な手法であり、幅が指定されている必要があります。`align: center;`（正しくは`text-align: center;`）はテキストやインライン要素の配置を制御するためのもので、ブロックレベル要素自体を中央揃えするためには使用できません。
+
+- [ ]  /*    */  (css 上だと、このようにMemoマークで囲めば、cssは発動しない。発動前後を確認したい時のtechnic)
+by removing the /* and */ tags surrounding them, then check out the result.
+Comments prevent the browser from interpreting lines as code, and are wrapped between specific tags. CSS uses /*as an opening comment tag and */ as a closing comment tag, while HTML and JavaScript have their own syntax. Commented out lines of code can be ‘re-enabled’ by removing the comment tags surrounding the code.
+
+- [ ] Code pen
+code penって言うけど、何にも説明ないからわからない。何を指しているの？擬似的なhtmlやcssをブラウザ上で書けるところ？
+
+ChatGPT
+ChatGPT
+はい、その通りです。CodePenはウェブ開発者やデザイナーがHTML、CSS、JavaScriptを使ってフロントエンドのコードを書き、リアルタイムでその結果を確認できるオンラインの開発環境です。ユーザーは自分のプロジェクトを作成したり、他の人のプロジェクトを見たり、フォーク（コピーして編集）することができます。このツールは、特にCSSのレイアウト技術（例えば、FlexboxやGridなど）を学ぶ時や試す時に非常に役立ちます。"Edit on CodePen" や "Fork on CodePen" ボタンをクリックすると、そのコード例をCodePenのウェブサイトでフルサイズで開き、より大きな画面で実験や編集ができるようになります。
+
+
+- [ ] Flex-basis (水平か垂直かで変更箇所が変わる。)
+`flex-basis: 0%;`の設定は、フレックスアイテムの基本的なサイズを0にしますが、これはフレックスコンテナの`flex-direction`プロパティに依存します。`flex-direction`が`row`（デフォルト）の場合、`flex-basis: 0%`はフレックスアイテムの幅（width）を基本的なサイズとして0に設定します。一方で、`flex-direction`が`column`の場合、`flex-basis: 0%`はフレックスアイテムの高さ（height）を基本的なサイズとして0に設定します。
+
+つまり、`flex-basis`はフレックスアイテムの幅か高さのいずれかを基本的なサイズとして定義するプロパティであり、フレックスコンテナの軸（水平軸または垂直軸）に基づいてその動作が変わります。
+
+—
+あなたの理解に少し混乱があるようですが、確認してみましょう。
+
+- `flex: 1` は `flex-grow`, `flex-shrink`, `flex-basis` のショートハンドで、`flex: 1 1 0`と等価です。つまり、`flex-basis`はデフォルトで`0`に設定されます。
+- `flex: 1 1 auto` の場合、`flex-basis`は `auto`に設定されます。これは、アイテムが自身の内容または指定されたサイズ（`width`や`height`属性で指定）に基づいて初期サイズを取ることを意味します。
+
+`flex-direction: column` を使用すると、フレックスアイテムは縦方向に配置されます。この場合、`flex-basis`の値が`0`だと、フレックスアイテムの高さの計算基準が`0`から始まるため、内容がない（空の）`div`は高さが`0`になり、見た目上「消えて」しまうように見えます。一方で、`flex-basis: auto`だと、アイテムはその内容または明示的に指定された高さに基づいて高さを取りますので、`flex-direction: column`の場合でも期待通りの動作（内容に応じて高さを取る）をします。
+
+つまり、`flex: 1`（`flex-basis: 0`を含む）を使用すると、`flex-direction: column`の場合、`div`の高さが`0`からの計算になるため、期待通りに動作しないことがあります。一方で、`flex: 1 1 auto`（`flex-basis: auto`を含む）を使用すると、`div`は自身の内容や指定された高さに基づいてサイズを取るため、縦方向にきちんと表示されます。
+
+あなたの理解には正確さが欠けていた部分がありますが、`flex-basis`の値とその動作の違いに関する混乱は理解できるものです。重要なのは、`flex-basis`がアイテムの初期サイズをどのように影響するか、そしてそれがフレックスアイテムの成長や縮小の挙動にどう関わるかを理解することです。  
+
+
+https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
+
+- [ ] Flexbox
+Flexbox（フレキシブルボックス）レイアウトは、コンテナ内のアイテム間でスペースを効率的に配置、整列させ、分配することを目的としたレイアウトモジュールです。2017年10月時点でW3Cの候補推奨事項となっています。アイテムのサイズが未知であったり、動的に変更される場合でも、柔軟に（"flex"という言葉から）対応できる点が特徴です。
+
+Flexboxの背景にある主な考え方は、コンテナがそのアイテムの幅/高さ（および順序）を変更して、利用可能なスペースを最適に埋める能力を持たせることです。これは、さまざまなディスプレイデバイスや画面サイズに対応するために特に重要です。Flexboxコンテナは、利用可能な空きスペースを埋めるためにアイテムを拡大したり、オーバーフローを防ぐために縮小させたりします。
+
+最も重要な点は、Flexboxレイアウトが方向に依存しないことです。これは、通常のレイアウト（ブロックが垂直ベース、インラインが水平ベース）とは対照的です。これらのレイアウトはページには適していますが、大規模または複雑なアプリケーションをサポートするための柔軟性（意図したダジャレではありません）に欠けています（特に、向きの変更、リサイズ、伸縮などが関係する場合）。
+
+注記: Flexboxレイアウトは、アプリケーションのコンポーネントや小規模なレイアウトに最適ですが、グリッドレイアウトはより大規模なレイアウトに適しています。
+
+- [ ] Align-items(flex box)
+- [ ] 重要なのは、main axisの方向へ行くこと
+       Flex-startは左, center,中央, flex-end、右。
+　　なぜならmain axisの矢印は左から右なので。
+　　これでrowからcolumnへ変更しても、矢印方向さえ間違わなければわかる。
+
+- [ ] 03-flex-header時の経験—Mar 20
+上記ですが、なぜ, class=logo, links
+の２つだけ、左へ行って、他は右寄せになるのかわからないです。
+親である、headerのところは,space ~betweenにしていますが、
+それだとすると、均等にそれぞれのclassが離れるだけだと思うのです。
+なぜでしょうか
+↓
+Answer
+直接の子要素のみへ反映される。
+説明いただいたコードに基づいて、`class="logo"`と`class="links"`が左側に配置され、他の要素が右側に配置される理由は、`class="header-left"`と`class="header-right"`で分けているからです。`.header`に`display: flex;`と`justify-content: space-between;`が設定されているため、その直下にある子要素（この場合は`.header-left`と`.header-right`）は、スペースを最大限に利用して左右に配置されます。
+
+`.header`がフレックスコンテナとして動作し、`.header-left`と`.header-right`を直接の子要素として持っています。`justify-content: space-between;`は直接の子要素にのみ作用するので、`.header-left`内の`class="logo"`と`class="links"`は`.header-left`のスペース内で配置され、`.header-right`内の`class="notifications"`と`class="profile-image"`は`.header-right`のスペース内で配置されます。
+
+`.header-left`と`.header-right`が`display: flex;`と設定されているため、それぞれの内部の要素もフレックスアイテムとして扱われます。`.header-left`には`.logo`と`.links`が含まれ、`.header-right`には`button`と`.profile-image`が含まれています。`justify-content: space-between;`が`.header`に適用されると、これらのグループ（`.header-left`と`.header-right`）がコンテナの両端に配置されます。
+
+この結果、`.header-left`に含まれる`class="logo"`と`class="links"`は左側に配置され、`.header-right`に含まれる`class="notifications"`と`class="profile-image"`は右側に配置されることになります。これにより、ヘッダー内での要素の配置が決まります。
+
+<!--Do not use special character for class name 
+    such as "+". use - or _ instead"-->
+    <div class="img-info">
+
+- [ ] Flex-grow, flex-shrinkは共存可能か
+flex-grow:
+  flex-shrink: 
+
+これらは共存可能なのでしょうか。
+例えば、ウェブサイトに余白が残る場合、growで最大限伸ばすように設定し、
+仮にそのウェブサイトで、横幅が小さく表示されすぎるとき、コンテンツがはみ出てしまう時には、shrinkも設定しておく、という２段か前は可能なのでしょうあk
+
+Answer
+はい、`flex-grow`と`flex-shrink`は共存可能で、実際に一緒に使われることが多いです。これらのプロパティは、フレックスアイテムの伸縮の振る舞いを制御するために設計されています。具体的には：
+
+- `flex-grow`はフレックスアイテムがフレックスコンテナ内の余剰スペースをどの程度埋めるかを定義します。例えば、`flex-grow: 1;`を設定したアイテムは、利用可能なスペースを均等に分割して使用します。
+- `flex-shrink`はフレックスコンテナのサイズがフレックスアイテムを収容できないほど小さい場合に、フレックスアイテムがどの程度縮小するかを定義します。例えば、`flex-shrink: 1;`を設定したアイテムは、必要に応じて他のアイテムと同様に縮小します。
+
+これにより、フレックスアイテムはコンテナのサイズに応じて動的にサイズを調整でき、レスポンシブデザインに非常に有効です。コンテナのサイズが大きい場合にアイテムが拡大し、サイズが小さい場合に縮小することで、さまざまなディスプレイサイズに適応することができます。
+
+したがって、あなたが述べたように、コンテンツのサイズがウェブサイトの表示領域に応じて動的に調整されるように`flex-grow`と`flex-shrink`を設定することは、フレックスボックスを使ったレイアウトにおいて一般的で効果的な方法です。
+
+Me
+ということはどちらにも対応できるように両方使った方が安全ですね。
+片方だけじゃないということですね
+
+Gpt
+その通りです。`flex-grow`と`flex-shrink`を適切に使うことで、フレックスアイテムがフレックスコンテナ内の利用可能なスペースに応じて柔軟に調整されるようになります。コンテナのサイズが大きい場合はアイテムが拡大し、サイズが小さい場合は縮小することで、さまざまな画面サイズや表示領域に対応できるようになります。
+
+実際のプロジェクトでは、コンテンツの表示方法を最適化し、ユーザー体験を向上させるために、これらのプロパティをバランス良く使用することが重要です。特にレスポンシブデザインにおいては、これらのプロパティの組み合わせが非常に有効です。
+
+
+
+- [ ] 親と子
+<div> 	<div>
+		<img>
+		<p>
+	<div>
+	<div>
+		<img>
+		<p>
+	<div>
+<div>  と  <div>
+		<img>
+		<p>
+		<img>
+		<p>
+<div>
+
+上記は異なる。
+２つ目のやつは効果が一括でかかる。
+Display-felxで全て一括で横になる。
+１つ目のやつはimgとpは１つのセットのことみなされるので、
+Display-flexの効果は直属の子のみ影響あル。
+したがって、imgとpは縦のセットとなりつつ、横になる。
+
+これはcontentsを作る時に重要。
+写真とその下に情報を入れるので。
+
+- [ ] Modal
+モーダルとは、メインページのコンテンツの上に表示されるウィンドウやポップアップのことを指します。主に、ユーザーの注意を特定のアクションや情報に集中させるために使用されます。例えば、フォームの送信を促す、追加情報を提供する、警告を表示するなどの目的で使用されます。モーダルは、ユーザーがそれに対応するまで、背後のコンテンツとのインタラクションを一時的に遮断することが多いです。
+
+
+Mar 21
+- [ ] list-style: none;
+`.header`クラスに`list-style: none;`を直接適用しても、リストアイテムの前のマーカー（点や番号）は消えないです。`list-style`プロパティは、`<ul>`や`<ol>`などのリスト要素に直接適用する必要があります。そのため、`.header`クラス内にあるリスト要素に対してスタイルを指定する必要があります。
+
+例えば、`.header`クラス内の`<ul>`タグにスタイルを適用する場合は、次のようにCSSを記述します：
+
+```css
+.header ul {
+  list-style: none;
+}
+```
+
+このCSSルールは、`.header`クラス内の全ての`<ul>`要素に適用され、リストアイテムの前にある点を非表示にします。
+
+- [ ] Ul の liの・を消した時に生まれるspaceのTrick(超重要)
+ulのliですが、私の仮説ですが、・を消しても、それは、
+見えなくなっているだけで、Spaceとして残っているのではないでしょうか。
+
+Gpt
+あなたの仮説は一部正しいです。list-style: none;を適用してリストマーカー（点）を非表示にすると、マーカー自体は表示されなくなりますが、それによって生じるスペースが自動的になくなるわけではありません。リストマーカーのスペースは、実際には<ul>や<ol>にデフォルトで適用されるパディングやマージンによるものです。これらのデフォルトのスペースを取り除きたい場合は、明示的にパディングやマージンを0に設定する必要があります。
+例えば、以下のCSSスタイルは<ul>のマーカーを消し、それに関連するスペースも取り除きます。
+css
+
+Copy code
+ul { list-style: none; /* マーカーを消す */ padding: 0; /* パディングをリセット */ margin: 0; /* マージンをリセット */ }
+このスタイルを適用することで、リストマーカーが消え、リストの左側に余分なスペースが生まれなくなります。
+
+- [ ] body tagは、.bodyじゃない。
+body{
+と書かないとダメ！
+.body{
+だとclassなので、効果反映されなくなる！
+これで1時間考え込んだのでもうしないで！
+
+
+- [ ] Footerを一番したへ固定する方法 ←ただ、これをsolutionは使用しないで、flexboxの特性だけで行ってできている。。。
+  position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/ ⇩
+- [ ] But it will shrink ⇩solution
+
+The background shrinking issue happens because, by default, an absolutely positioned element's width is only as wide as its content. To solve this problem and make the footer stretch across the full width of the viewport, you can add left: 0; and right: 0; to the .footer style. This tells the footer to stretch from the left edge of the positioned ancestor to the right edge.
+Here's how you can adjust your CSS to solve the issue:
+css
+
+Copy code
+.footer{ position: absolute; /* Position the footer absolutely at the bottom */ bottom: 0; /* Stick it to the bottom */ left: 0; /* Stretch from the left edge */ right: 0; /* to the right edge */ background-color: lightgray; /* Example background color */ }
+
+
+- [ ] Flex-boxで３分割したあと、真ん中のcontentsとfooterの間に余分なspaceが生まれて対処できない。
+,→Mar 21に対応したが覚えているか？
+
+- [ ] Align-itemsは必ず、flex-contatinerではなく、itemsの方でないとできない。
+つまり、構造上、
+--- <div>囲むもの。親にここがならないと、⇩の
+Header,main,footerが個にならず、flexで配置を指定できないため  (example:structure) 
+-<div to be parent（親）for Header,main,footer>-
+ <div header>親(flex container)
+  <img>子(flex items)
+  <p>子(flex items)
+ </div> 
+<div main>親(flex container)
+   <img>子(flex items)
+</div> 
+<div footer>親(flex container)
+  <img>子(flex items)
+
+</div>
+ -</div>-
+
+Itemsの中のものでないと、指示的ないものがある。
+まず、この型を作らないと、そもそもitemsまで辿り着かない。
+
+
+
+ーーーーー
+Mar 22
+- [ ] Width, Flex-basis, min-width
+
+
+—
+- [ ] Container or Items 
+Flex box propertiesで、Containerのみに適応できるもの、itemsのみに適応できるものの理解。
+
+Certainly! Here's a breakdown of Flexbox properties, distinguishing between those that are applied to the flex container (the parent element) and those that are applied to the flex items (the children):
+
+### Flex Container Properties
+These properties are applied to the parent element that establishes the flex context for its children (flex items).
+
+- `display: flex` or `display: inline-flex`: Establishes the flex context.
+- `flex-direction`: Defines the main axis direction (`row`, `row-reverse`, `column`, `column-reverse`).
+- `flex-wrap`: Allows the items to wrap onto multiple lines (`nowrap`, `wrap`, `wrap-reverse`).
+- `justify-content`: Aligns items along the main axis (`flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`).
+- `align-items`: Aligns items along the cross axis (`flex-start`, `flex-end`, `center`, `baseline`, `stretch`).
+- `align-content`: Aligns multiple lines of items when wrapping (`flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `stretch`).
+- `flex-flow`: A shorthand property for setting both `flex-direction` and `flex-wrap`.
+
+### Flex Item Properties
+These properties are applied to the children of a flex container.
+
+- `flex-grow`: Defines the ability of a flex item to grow if necessary. It accepts a unitless value that serves as a proportion.
+- `flex-shrink`: Defines the ability of a flex item to shrink if necessary.
+- `flex-basis`: Defines the default size of an element before the remaining space is distributed.
+- `flex`: A shorthand property for `flex-grow`, `flex-shrink`, and `flex-basis` combined.
+- `align-self`: Allows the default alignment (or the one specified by `align-items`) to be overridden for individual flex items.
+- `order`: Changes the order in which a flex item appears in the flex container.
+
+These distinctions are crucial for understanding how to control layout with Flexbox, applying the right properties to either the container for overall layout control or to items for specific adjustments.
+
+- [ ] Commit message作成方法
+もちろんです！以下は、再度コミットメッセージを作成してファイルに保存し、そのファイルを使用してGitコミットを行う手順です。
+
+1. まず、ターミナルを開きます。
+
+2. コミットメッセージを記述するための新しいテキストファイルを作成します。例えば、"commit-message.txt"という名前のファイルを作成します。次のコマンドを使用します。
+
+```bash
+touch commit-message.txt
+```
+
+3. 作成したテキストファイルをVisual Studio Codeで開きます。以下のコマンドを使用します。
+
+```bash
+code commit-message.txt
+```
+
+4. Visual Studio Codeが開いたら、コミットメッセージを記述します。コミットメッセージの書き方に関するガイドラインに従って、適切なタイトルと詳細な説明を記入します。
+
+5. メッセージを保存してVisual Studio Codeを閉じます。
+
+6. 作成したメッセージファイルを使用して、Gitコミットを行います。以下のコマンドを使用します。
+
+```bash
+git commit -F commit-message.txt
+```
+
+これにより、作成したメッセージファイルに含まれるコミットメッセージが使用され、Gitコミットが行われます。
+
+以上が手順です。この方法を使用すると、Visual Studio Codeの内蔵ターミナルを介して、詳細なコミットメッセージを簡単に作成し、Gitリポジトリに適用できます。
+
+- [ ] commit messageの７つのルール
+理解しました。以下に、7つのコミットメッセージのルールを日本語の例とともに振り返ってみましょう：
+
+1. **主題行は50文字以内にする**: 主題行は変更内容を短く要約したものであり、50文字以内で簡潔に記述する必要があります。
+
+   **例**: "ユーザーログイン機能の修正"
+
+2. **主題行の最初は動詞で始める**: 主題行は変更の種類を明確に示す動詞で始めるべきです。
+
+   **例**: "バグ修正：ログインページのエラーメッセージの表示が正しくない問題を修正"
+
+3. **詳細な説明は本文に記述する**: 主題行の後には詳細な説明を本文に記述します。本文は変更の理由や背景、影響範囲などを説明するのに使います。
+
+   **例**: 
+   ```
+   - ログイン画面のバリデーションメッセージを修正し、ユーザーエクスペリエンスを向上させる
+   - ユーザーが間違った情報を入力した際に、正確なエラーメッセージを表示することで、ユーザーが問題を特定しやすくする
+   ```
+
+4. **本文を適切にフォーマットする**: 本文は適切なフォーマットで整え、読みやすくする必要があります。
+
+   **例**: 
+   ```
+   - ログイン画面のバリデーションメッセージを修正し、ユーザーエクスペリエンスを向上させる
+   - ユーザーが間違った情報を入力した際に、正確なエラーメッセージを表示することで、ユーザーが問題を特定しやすくする
+   ```
+
+5. **関連するIssueやプルリクエストを参照する**: コミットに関連するIssueやプルリクエストがあれば、それらを参照することで、コード変更と関連するコンテキストを提供します。
+
+   **例**: "Fixes #123"、"Refs PR #456"
+
+6. **文末のピリオドを省略する**: 主題行や本文の最後にはピリオドを付けないようにします。
+
+   **例**: "ユーザーログイン機能の修正"
+
+7. **コミットは独立して完結するようにする**: 1つのコミットには1つの変更内容に集中し、それが独立して理解できるようにします。
+
+   **例**: "ユーザーログイン機能の修正"、"ユーザー登録ページのリファクタリング"
+
+これらのルールに従うことで、コミットメッセージが明確で一貫性のあるものになり、プロジェクトのメンテナビリティが向上します。
+
+- [ ] Commit時の-m / -f の違い
+はい、正しい理解です。通常の `-m` オプションを使用してコミットメッセージを直接指定する方法と、テキストファイルにコミットメッセージを書いて `-F` オプションで指定する方法の違いについて説明します。
+
+1. **`-m` オプションを使用した直接指定**:
+   ```bash
+   git commit -m "ユーザーログイン機能の修正"
+   ```
+   この方法では、コマンドの中で直接コミットメッセージを指定します。簡単で手軽ですが、短いメッセージしか書けないため、変更内容や背景を詳細に記述することが難しいです。また、長いコミットメッセージを指定するとコマンドが複雑になる可能性があります。
+
+2. **`-F` オプションを使用したファイルからの指定**:
+   ```bash
+   git commit -F commit-message.txt
+   ```
+   この方法では、テキストファイルに詳細なコミットメッセージを記述し、そのファイルを `-F` オプションで指定します。これにより、変更内容や背景をより詳細に説明することができます。また、コマンドが長くなることもありません。
+
+どちらの方法を選択するかは、プロジェクトやチームの方針、個々の好みによります。一般的には、変更内容が短く明確な場合や、変更が小さい場合は `-m` オプションを使用し、より詳細な説明が必要な場合や、変更が複雑な場合は `-F` オプションを使用することが推奨されます。
+
+どちらの方法を使用しても、コミットメッセージはログとして機能し、Gitの履歴に記録されます。ただし、詳細な情報が必要な場合は、テキストファイルに記述した方がわかりやすく、可読性が高くなります。 
+--
+- [ ] Commit message をポートフォリオようにいつ書くべきかのgptへすべき質問と回答
+
+You
+OKです。モチベーションも高まる書き方ありがとう。
+
+commitmessageをポートフォリオを将来採点する面接官が見る可能性があるので、頻繁に行うことって言っています。
+
+具体的に１から私は作成していきますが、どの時点でどうcommitmessageを残しておけばベストでしょうか。手順を教えてくれますか。
+例えば、htmlとcssを作成した時点で、先ほどの７つのルールを使って、書いたほうがいいでしょうか。書くべきポイントとなるであろう箇所を教えてくれますか。
+その時点に沿って、気をつけて、commitmessageを行っていきます。
+
+ー
+ポートフォリオを将来的に見るかもしれない面接官のために、意味のあるコミットメッセージを残すことは非常に良い戦略です。コミットメッセージは、プロジェクトの歴史を通じて、あなたの思考過程と問題解決能力を示す貴重な資料となり得ます。以下に、プロジェクトを進める上での具体的なコミットポイントと、それに対応するコミットメッセージの例を挙げます。
+
+### 1. 基本的なプロジェクト構造のセットアップ
+プロジェクトのディレクトリを作成し、基本的なHTMLファイル（例：`index.html`）とCSSファイル（例：`style.css`）を作成した時点。
+- **コミットメッセージ例**: `init: Setup initial project structure with HTML and CSS files`
+
+### 2. HTMLの基本構造の完成
+`index.html`に、ページの大枠となるHTMLの骨組み（ナビゲーションバー、ヘッダー、フッターなど）を追加した時点。
+- **コミットメッセージ例**: `feat: Add basic HTML structure for the homepage`
+
+### 3. CSSでの基本スタイリング
+`style.css`に基本的なスタイル（フォント、色、マージンなど）を適用し、ページが整った見た目を持つようになった時点。
+- **コミットメッセージ例**: `style: Apply basic styling with CSS`
+
+### 4. 特定セクションの完成
+例えば、"About"セクションのコンテンツをHTMLとCSSで完成させた時点。
+- **コミットメッセージ例**: `feat: Complete the About section with detailed information`
+
+### 5. 画像やアセットの追加
+プロジェクトに画像やその他のアセットを追加した時点。
+- **コミットメッセージ例**: `assets: Add images for the product gallery`
+
+### 6. レスポンシブデザインの適用
+メディアクエリを使用して、ページが異なるデバイスサイズに対応するようCSSを調整した時点。
+- **コミットメッセージ例**: `feat: Implement responsive design for mobile devices`
+
+### 7. 最終的なレビューと調整
+プロジェクトを再確認し、微調整を行った後。
+- **コミットメッセージ例**: `polish: Final review and adjustments for deployment`
+
+コミットを行う際は、変更を小さな単位で行い、各コミットが一つの具体的な変更点や改善に焦点を当てるようにします。この方法では、プロジェクトの各段階で行われた変更の意図を明確に伝えることができ、後で変更履歴を見た時に、プロジェクトがどのように進化してきたかを容易に追跡できます。
+
+- [ ] メモ帳が開く↓コマンド
+メモ帳が開くし、そこで書いたやつはvscodeでもみれる。 
+メモ帳開く⇩
+cd path/to/Portfolio/LandingPageProject
+touch ProjectOutline.txt
+open -a TextEdit ProjectOutline.txt
+
+VScode上でそれを開く⇩
+code ProjectOutline.txt
+
+メモ帳をこれでポートフォリオへ今までの記載も載せることが可能！
+
+- [ ] Git initを最初に行うわかりやすい理由・理解（見ずらかったら、gptへ貼り付けて読んで）
+もちろんです。Gitというのは、プロジェクトの変更履歴を管理するためのツールです。Gitを使うためには、まず「Gitリポジトリ」というものをプロジェクトのフォルダに作成する必要があります。Gitリポジトリは、そのフォルダとその中のファイルの変更履歴を追跡するための隠しフォルダ（`.git`）を含んでいます。
+
+あなたが遭遇しているエラーメッセージは、Gitがその隠しフォルダ`.git`を現在のディレクトリ（またはその親ディレクトリ）で見つけられなかったときに表示されます。これは、そのディレクトリがまだGitリポジトリとして初期化されていない、つまりGitでのバージョン管理が開始されていないことを意味します。
+
+### わかりやすい例：
+
+あなたが新しいプロジェクト「LandingPageProject」という名前のウェブサイトを作り始めたとします。このプロジェクトをGitで管理したい場合、最初に行うべきことはそのプロジェクトのフォルダをGitリポジトリに変換することです。
+
+プロジェクトフォルダが次のようになっているとしましょう：
+
+```
+LandingPageProject/
+├── index.html
+└── style.css
+```
+
+ここで、ターミナルを開いて`LandingPageProject`フォルダに移動します。そして、次のコマンドを実行します：
+
+```
+git init
+```
+
+このコマンドは、`LandingPageProject`フォルダ内に`.git`という隠しフォルダを作成し、このフォルダをGitリポジトリとして機能させます。これにより、Gitはこのフォルダ内のファイルの変更を追跡できるようになります。
+
+`.git`フォルダが作成された後、フォルダの構造は次のようになります：
+
+```
+LandingPageProject/
+├── .git/        # Gitが追跡情報を保持する隠しフォルダ
+├── index.html
+└── style.css
+```
+
+これで、`git add` や `git commit` などのGitコマンドを使って、ファイルの変更を追跡し、プロジェクトのバージョン履歴を管理できるようになります。
+
+つまり、`git init` コマンドはプロジェクトをGitで管理するための「スタート地点」を作る操作です。これを実行しないと、Gitはそのフォルダで何もできないというわけです。  では、見えないディレクトリが作られて、gitっていうのを機能するためのものが作られるってことでしょうか
+
+はい、その通りです。`git init` コマンドを実行すると、現在のディレクトリ内に `.git` という見えないディレクトリ（隠しフォルダ）が作成されます。この `.git` ディレクトリが、Gitがプロジェクトのバージョン管理を行うための核心部分です。このディレクトリ内には、プロジェクトの履歴、設定ファイル、各バージョンのスナップショットなど、Gitによるバージョン管理に必要な全ての情報が保存されます。
+
+`.git` ディレクトリがあることによって、Gitは以下のようなことが可能になります：
+
+- **変更追跡**: ファイルの追加、変更、削除など、プロジェクトに加えられた変更を追跡します。
+- **バージョン管理**: プロジェクトのある時点での「スナップショット」をコミット（保存）し、過去のバージョンに簡単に戻ることができます。
+- **ブランチの作成とマージ**: 複数の開発者が同時に異なる機能を開発できるように、プロジェクトの分岐版（ブランチ）を作成し、後でそれらを統合（マージ）します。
+- **コラボレーション**: プロジェクトに貢献する他の開発者との変更を共有し、統合するための基盤を提供します。
+
+この`.git`ディレクトリは通常、ユーザーには見えませんが、プロジェクトディレクトリ内で`ls -a`コマンド（macOSやLinuxで隠しファイルを含むディレクトリの内容を表示するコマンド）を実行することで確認することができます。
+
+簡単に言うと、`.git` ディレクトリがプロジェクトフォルダ内に存在することで、そのフォルダはGitリポジトリとして機能し、Gitの全機能を利用してプロジェクトを管理できるようになります。
+
+
+
+- [ ] Argument and parameter
+引数は関数に与える具体的な値やデータであり、パラメータはその値を受け取るための変数名です。
