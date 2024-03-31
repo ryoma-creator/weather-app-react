@@ -106,5 +106,34 @@ Mar 29
 	how to study toppest people 10min
 
 	2 hours
-	Dev Tool 
+	Dev Tool
+	1 hour
+	javascript/function
+	other(1 hour)
+	gym/walking
+	
+Mar 30 
+	other 15min
+	gym/ walking
+	git 30min
+	commit message by 7 rules/make and transfer my glossaries memo to git hub
+	
+	javascript 
+	argument, parameter, function / ${}
+
+Mar 31  
+	(English only day)
+	3hours 
+	javascript
+	if, boolean ,loops, array, etc
+	ruby
+	ruby1(progate 14 lessons) , each methods, array
+	2 hours half
+	Dev Tool
+	debug, break point (until step 5 https://developer.chrome.com/docs/devtools/javascript/)
+	in English only)
+
+	
+
+
 	
