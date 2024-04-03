@@ -78,6 +78,9 @@ function capitalize(FirstC){
 const capitalizeC = capitalize("RyomaRyoma");
 console.log(capitalizeC);
 
-
+//Practice
+const lastLetter = "ryomaaepigjapijg"
+console.log(lastLetter.charAt(-1));
+ 
 
 
