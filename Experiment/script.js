@@ -18,8 +18,35 @@ function multiply(a,b){
 }
 
 console.log("7X7=", multiply(7,7));
-//miss
+// correct
 
+
+
+//Practice
+console.log("Hello".toUpperCase()); // 出力: "HELLO"
+//Practice
+const str = "hello world";
+console.log(str.substring(6)); // 出力: "world"
+//Practice
+console.log(str.charAt(1)); // 出力: "e"
+//Practice
+console.log("Hello".toLowerCase()); // 出力: "hello"
+//Practice
+function add(a, b) {
+    // Return
+    return a + b;
+}
+const result = add(3, 5); 
+console.log(result); // 出力: 8
+
+
+//Assignment
+function capitalize(FirstC){
+    return FirstC.charAt(0).toUpperCase()+substring(1).toLowerCase
+}
+
+
+const FirstC=
 
 
 
