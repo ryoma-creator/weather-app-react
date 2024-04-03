@@ -32,22 +32,51 @@ console.log(str.charAt(1)); // 出力: "e"
 //Practice
 console.log("Hello".toLowerCase()); // 出力: "hello"
 //Practice
-function add(a, b) {
+function cross(c, s) {
     // Return
-    return a + b;
+    return c - s;
 }
-const result = add(3, 5); 
-console.log(result); // 出力: 8
+const Chrono = cross(7,5); 
+console.log(Chrono); // 出力: 2
 
 
 //Assignment
 function capitalize(FirstC){
-    return FirstC.charAt(0).toUpperCase()+substring(1).toLowerCase
+    return FirstC.charAt(0).toUpperCase()+substring(1).toLowerCase;
 }
 
+//miss⇨functionとparameters→ const FirstC = 
+const capitalize = FirstC("Ryoma Ryoma");
+console.log(FirstC);
 
-const FirstC=
+//revise
+//Assignment
+function capitalize(FirstC){
+    return FirstC.charAt(0).toUpperCase()+substring(1).toLowerCase();
+}
 
+const capitalizeC = FirstC("RyomaRyoma");
+console.log(FirstC);
+
+//revise
+//revise
+//Assignment
+function capitalize(FirstC){
+    return FirstC.charAt(0).toUpperCase()+FirstC.substring(1).toLowerCase();
+}
+
+const capitalizeC = capitalize("RyomaRyoma");
+console.log(capitalize);
+
+//revise
+//revise
+//Assignment
+function capitalize(FirstC){
+    return FirstC.charAt(0).toUpperCase()+FirstC.substring(1).toLowerCase();
+}
+
+const capitalizeC = capitalize("RyomaRyoma");
+console.log(capitalizeC);
 
 
 
