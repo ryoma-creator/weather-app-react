@@ -1,0 +1,50 @@
+Voca
+- [ ] Land on この文脈での「land」は、「到着する」や「着く」という意味です。したがって、「when users land on our websites」とは、ユーザーがウェブサイトにアクセスして、そのページに「到着する」時のことを指します。インターネットでの「着地」は、ウェブブラウザを使用して特定のウェブページやウェブサイトに入る行為を指す比喩的な表現です。
+- [ ] Render
+ここでの「render」は、「レンダリングする」「描画する」という意味で使われています。ウェブブラウザがHTML文書を解釈し、それを画面上に視覚的に表現するプロセスを指します。つまり、ブラウザがコードを読み取り、それをユーザーが見ることのできるウェブページの形に変換することです。この文脈で言えば、DOCTYPEはブラウザにHTML文書がどのHTMLバージョンに従って書かれているかを伝え、ブラウザがその情報を基に文書を正しくレンダリングできるようにするためのものです。
+
+- [ ] Refer to
+「refer to」のもっと優しい日本語の言い方は、「〜のことを言う」、「〜について話す」、「〜をさす」などがあります。これらの表現は日常会話でよく使われ、分かりやすいです。
+
+- 日常的な例：
+  - 「この言葉は、あの人のことを言っているよ」
+  - 「この部分は、どういう意味について話してるの？」
+  - 「このマークは、注意が必要ってことをさしてるんだ」
+
+これらの言い方は、もっとカジュアルで、誰でも理解しやすいです。
+
+- [ ] In terms of
+「in terms of」は日本語で「〜の観点から」「〜に関して」と訳すことができます。文脈によっては「〜の面で」「〜という点で」という意味になります。短く簡単に役割を説明する際に使えます。
+
+- [ ] Pesky
+「pesky」という言葉は、煩わしい、厄介な、邪魔なといった意味を持つ形容詞です。日常的には、小さな不快や迷惑を引き起こすものに対して用いられることが多いです。この文脈では、リンクの下線がデザイン上望ましくない「厄介な」存在として捉えられていることを示しています。
+
+- Finding out how to style links in CSS might help you get rid of that pesky underline decoration...
+
+- [ ] Please note that…
+"Please note that"は、「どうかご注意ください」「注目してほしいのは」という意味で、何か重要な点や注意すべきことを指摘する際に使われます。この表現は、読者や聞き手に特定の情報に特に注意を払うよう促すために使用され、しばしば重要な詳細や例外事項を前に置く際に用いられます。
+
+- [ ] Embark
+"Embark"は、「乗り出す」「始める」「着手する」という意味の動詞です。文脈によっては、「（新しいプロジェクトや旅などに）乗り出す」「開始する」といったニュアンスで使われます。したがって、「Before you embark on this Web Development Course, let us confirm the below contents.」の文では、「このウェブ開発コースを始める前に、以下の内容を確認しましょう」という意味になります。ここでは、ウェブ開発コースを始めるという新しい取り組みに取り掛かる前に、コースの内容や目標などを確認することを勧めています。
+
+- [ ] Latter
+"Latter"は、「後者」「後の方」という意味です。文脈によっては、比較している二つのものの中で、二番目に言及されたものを指します。したがって、「Since we want to apply the same CSS to both "Lessons" and "Contact us", let's label the latter with the same class name.」の文では、「"Lessons"と"Contact us"の両方に同じCSSを適用したいので、後者に同じクラス名を付けましょう」という意味になります。ここでの「後者」は"Contact us"を指しています。
+
+- [ ] In regards to This article serves to give a simple and easy to understand image in regards to the web application that you'll be learning.
+"in regards to"は、「〜に関して」「〜について」という意味で使われるフレーズです。文章全体を通して、読者が学ぶウェブアプリケーションに関する内容を、わかりやすく説明するための記事であることを表現しています。
+
+- [ ] Involves
+"involves"は、「〜を含む」「〜を関与させる」という意味です。したがって、"The flow of the exchange involves the server responding to the client"は、「情報のやり取りの流れは、サーバーがクライアントに応答することを含んでいます」という意味になります。
+
+- [ ] a continuation to
+"a continuation to"は、「〜の続き」という意味で使われます。この文脈では、「この記事は、『ウェブについてさらに理解を深める』記事の続きです」という意味になります。つまり、以前の記事に続いて新しいトピックや情報を提供する記事であることを示しています。
+This article is a continuation to the Understanding More about the Web article. 
+
+- [ ] subdivide
+細分化する
+
+- [ ] functionalities
+"functionalities"は、機能性や機能という意味の名詞です。つまり、この文脈では、ウェブサイトにHTML以外の機能を追加する方法について学ぶことを指しています。HTMLだけでなく、JavaScriptやCSSなどの技術を使用して、ウェブサイトにさまざまな機能を追加する方法について学ぶことを意味しています。
+you will learn to add functionalities to your website with more than just HTML.
+
+
