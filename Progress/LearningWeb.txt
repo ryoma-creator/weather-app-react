@@ -1,0 +1,108 @@
+	◦	Understanding More about the Web  Memo
+	◦	The Web is a system for viewing information on the Internet.
+	◦	The computer that obtains the server information is called a client.
+	◦	Each piece of information has a URL that indicates its location within the Internet. You can think of a URL as an address for the Internet.
+	◦	Information on the Internet is stored on computers called servers all over the world. 
+	◦	Clients and servers are connected via the Internet and they exchange information.
+	◦	The message sent by the client is called a request 
+	◦	the server's reaction is called a response.
+
+	◦	(Clientが変数で、requestがargumentの値で、Serverが関数で、responseが戻り値ににみえてきた。。。)
+	◦	When sending a request, the location is specified within the URL.
+
+
+2. Client and Server
+	◦	A web page's HTML is stored in the server.
+	◦	The client that displays the HTML is called a browser.
+　　※ブラウザは、PC（パーソナルコンピュータ）やモバイルデバイスなどのデバイス上で動作するソフトウェアの一種です。
+	つまり、PC上で実行されるアプリケーションのひとつであり、インターネットブラウジングやウェブページの表示を可能にします。
+	ブラウザは、HTMLやCSS、JavaScriptなどのウェブページのコンテンツを解釈し、ユーザーが理解できる形で表示します。
+	ブラウザは、PC上で動作するため、PC上のソフトウェアとして扱われます。
+	⇨つまり、HTMLをServerから獲得し、ここのPCに搭載されたBrowserという解釈ソフトウェアを通して、人間が理解できる形で表示する。
+　　　⇨例えると、情報を海外から得て、それを翻訳機（browser）で解釈して情報を得るって言ってるようなもの。で、その機械はPCに搭載されている。
+	
+
+
+How a Web Page Is Displayed
+
+	◦	1. The browser sends a request to the server
+	By entering in the Progate company information page's URL (https://progate.com/about) in the address bar, 
+	or by clicking the Progate link on the results from a search engine, 
+	such as Google, a request will be sent to the server from the browser.
+        ( Browser⇨Request⇨Server ) 
+##Question Requestを送る、ClientとBrowserの違いは？同一にもの？
+"Request"という用語は、通信の文脈で使用されることがあります。クライアントがサーバーに対して送信する要求を指します。
+一方、"client"は、通常はネットワーク上でサービスを要求する側を指します。
+そして、"browser"は、ウェブページやコンテンツを表示するためのソフトウェアを指します。
+一般的に、ブラウザはクライアントの一種と見なされますが、"request"という用語がクライアントとブラウザを同一視するわけではありません。
+
+つまり、ブラウザはクライアントの一種であり、クライアントがリクエストを送る手段の1つとしてブラウザが利用されることがあります。
+しかし、クライアントはブラウザだけではなく、他のソフトウェアやデバイスも含む広いカテゴリーです。
+
+	◦	
+
+
+	◦	
+  ———  Read Time: 30 mins
+This article will introduce some new information that you should take note of prior to learning how to build a web application.
+This series will be divided into two parts.
+	•			Understanding More About the Web (this article)
+	•			Understanding More About Web Applications
+
+I have carefully selected the information that will help you understand how to build a web application, so make sure to read both articles thoroughly.
+1. What is the Web?
+The Web is a system for viewing information on the Internet.
+Information on the Internet is stored on computers called servers all over the world.
+Each piece of information has a URL that indicates its location within the Internet. You can think of a URL as an address for the Internet.
+
+The computer that obtains the server information is called a client.
+
+Clients and servers are connected via the Internet and they exchange information.
+Client-Server Information Exchange
+Let's take a look at how clients and servers exchange information.
+The flow of the exchange involves the server responding to the client, based on the client's request. The message sent by the client is called a request and the server's reaction is called a response.
+
+If we use a cafe as an example, the customer is the client and the waiter is the server. The customer places an order (request) and the waiter responds to that order (response).
+
+When sending a request, the location is specified within the URL.
+The URL indicates the "server's location" as well as the "location of the information within the server", as shown in the image below. Because of this, it is possible to obtain specific information from a single server out of the millions of servers all over the world.
+
+Check
+Do you now have a better understanding of the web?
+Done?
+2. Client and Server
+A web page's HTML is stored in the server. The client that displays the HTML is called a browser.
+
+
+A browser...? I've heard of browsers!
+
+Yes, you must have. It's a tool that people often use. I've listed a few examples of browsers below.
+
+Oh! I always use the browser on the left for researching information online!
+
+How a Web Page Is Displayed
+Let's take a look at the process of how browsers and servers interact in order to display a web page.
+As an example, we will examine the process involved in displaying the Progate company information page: https://progate.com/about
+1. The browser sends a request to the server
+By entering in the Progate company information page's URL (https://progate.com/about) in the address bar, or by clicking the Progate link on the results from a search engine, such as Google, a request will be sent to the server from the browser.
+
+2. The server responds to the URL and returns the HTML to the browser
+
+3. The HTML gets displayed in the browser
+The HTML returned from the server is displayed in the browser, and at this point, you will finally be able to see the web page you initially requested.
+
+
+Do you now have a better understanding of URLs and the process involved in displaying a web page?
+
+Yes, I do!
+Check
+Do you now have a better understanding of clients and servers?
+Done?
+3. Final Note
+How did you find this article? Do you now understand how the Web and web pages operate?
+Once you have learned how to build a web application, please revisit this article, as you will be able to have a clearer and greater understanding of the information provided.
+Next, let's move on to Understanding More About Web Applications!
+Check
+Do you understand how the Web nad web pages operate?
+Done?
+
