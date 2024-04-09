@@ -1,0 +1,365 @@
+Web Applications
+Understanding More about Web Applications
+- [ ] A website that is made purely with HTML is static, and will always show the same content unless the developer updates it.
+
+
+- [ ] However, this can be handled with languages other than just HTML.
+- [ ] A website with such functionalities is known as a Web Application.
+- [ ] web applications that are integrated with servers and databases.
+###Question  What is Web Application?
+HTMLだけじゃないってのはわかった。
+Serverから情報を得て、Browserで情報を獲得するが、それはHTMLだけではない。
+
+- [ ] じゃあ、WebApplicationってなんですか
+⇩GPT
+ウェブアプリケーションは、ウェブサイトよりも多機能で対話的なウェブ上のアプリケーションです。
+⇩
+- [ ] web上のapplicationってなんですか
+⇩
+ウェブ上のアプリケーションは、インターネットを介してアクセスできるアプリケーションのことです。
+これらのアプリケーションは、ウェブブラウザを介して動作し、ユーザーがウェブページを通じて情報を入力したり、
+操作したりすることができます。
+例えば、オンラインショッピングサイト、ウェブメール、ソーシャルメディアプラットフォームなどが
+ウェブ上のアプリケーションの一例です。Youtubeとかも。
+
+Webっていうのは、Internetを通して見ているもの。
+見ているっていうのは、情報送って、Serverから拾って、それをBrowser通して、見ている。
+この見ているものの中で、”多様な機能”を持ったものがある。
+それがWeb Applicationって呼ばれるHTMLだけでは作れないものだ。 ⇩（考察へのAI回答）
+はい、その理解で正しいと思います。
+
+ウェブアプリケーションとは、以下の特徴を持つものを指します。
+
+- インターネット(Web)を介してアクセスできるアプリケーション
+- HTMLだけでは実現できない高度な機能やインタラクティブな処理を備えている
+- サーバーやデータベースと連携して動的なコンテンツを生成する
+- メールやショッピング、動画視聴など多様な目的で利用される
+
+つまり、従来のHTMLベースの静的なウェブサイトとは異なり、ユーザーの入力に応じて内容が変わったり、
+サーバー側で処理が行われるような、より高機能なウェブ上のアプリケーションのことをウェブアプリケーションと呼んでいます。
+
+HTMLだけでは実現できない「多様な機能」が、ウェブアプリケーションの核となる重要な点ですね。
+貴方の理解は正しいと思われます。 -
+
+- [ ] A web application is an application that utilizes the mechanisms of the web.
+- [ ] the applications on your smartphone are different from web applications.
+
+
+
+3. The Web Application Mechanism
+
+- [ ] The flow of the web application mechanism is similar, with some differences when interacting with the server, like:(つまり、WEBの流れと同じだがServerとのやりとりの時だけ違う。)
+- [ ] 1. Browser sends a request to the server
+- [ ] 2. Server receives the request (e.g URL) and handles it, then responds the HTML to the browser
+- [ ] During these two situations, if needed, the below execution may happen:
+* Interact with the database to retrieve, insert, update or delete data
+* Use the data retrieved from the database to mutate the HTML and change the content displayed on the page
+A database in terms of web applications is a tool that allows the storage of text and number data.  #Question  上記の２つの状況の間に、databaseやdataを使うところがweb appとwebのやり取りの違いだって聞きましたが、
+具体的にどういうシチュエーションでしょうか。
+あと、
+A database in terms of web applications is a tool that allows the storage of text and number data.
+ってどういう意味でしょうか
+ Claud
+はい、この説明の中で挙げられている具体的なシチュエーションとは次のようなことを指しています。
+
+1. データベースからデータを取得する場合
+例えば、ユーザーがウェブサイトで自分の過去の投稿を見たいときに、
+サーバーはデータベースから該当するデータを取得し、HTMLにその内容を埋め込んでブラウザに返す。
+
+2. データベースにデータを挿入/更新/削除する場合 
+例えば、ユーザーがウェブサイト上で新しい投稿をしたり、
+既存の投稿を編集/削除したりするときに、サーバーはその内容をデータベースに保存/更新/削除する。
+
+つまり、ウェブアプリケーションではデータベースとのやり取りが発生する機会が多く、
+リクエストを処理する過程でデータベースの読み書きが必要になる場合があるということです。
+
+一方、通常のウェブサイトではHTMLファイルがあらかじめ用意されていて、
+ブラウザへの応答はそのファイルを返すだけですので、データベースを介する必要がありません。
+
+データベースについての説明 "A database allows the storage of text and number data" は、
+データベースがテキストデータや数値データを保存するためのツールであることを意味しています。
+投稿の本文、ユーザー名、スコアなどのデータをデータベースに保存し、
+必要に応じて参照・更新できるということです。 
+— #Question  具体例で、みじかなものとかありますか。
+例えば、私はよくyoutubeでデジモンやクロノ・トリガーのbgmを聴きます。
+それは上記の具体例として挙げるとどんな状況でしょうか
+ 分かりました。YouTubeでデジモンやクロノ・トリガーのBGMを聴く場合を例に挙げると、
+以下のようなシチュエーションが考えられます。
+
+1. YouTubeにアクセスした際:
+- ブラウザからYouTubeのサーバーに対してリクエストが送信される
+- サーバーは公開済みの動画データをデータベースから取得し、HTMLを生成
+- 生成したHTMLをブラウザに返して、YouTubeのトップページが表示される
+
+2. 検索を行った際:
+- ブラウザから検索クエリを含むリクエストがサーバーに送信される
+- サーバーはデータベースから検索クエリに該当する動画データを取得
+- 取得したデータを使ってHTMLを生成し、検索結果ページをブラウザに返す
+
+3. 動画を視聴した際:
+- 選択した動画のURLに対してリクエストが送信される
+- サーバーは動画データとメタデータ(タイトル、説明など)をデータベースから取得
+- 取得したデータを使って動画プレーヤーページのHTMLを生成し、ブラウザに返す
+
+このように、YouTubeではデータベースに動画データやメタデータが保存されており、
+ユーザーの行動に応じてサーバーがデータベースを参照・HTMLを生成するという
+ウェブアプリケーションの典型的な流れが発生しています。
+
+— 
+
+In the image above, a flow is shown from retrieving the memo of "yesterday", until it's displayed on the browser. 
+The memo of "yesterday" is retrieved using the URL https://example.com/yesterday. 
+When looking at this from the web application mechanism perspective, 
+there's no need to prepare a file named "yesterday". 
+Instead, a request could be made to the server to retrieve the saved data of the memo, 
+and then manipulate the HTML content using the retrieved data.
+
+3. Display HTML on the browser
+ #Question 
+manipulate the HTML content using the retrieved data.ってありますが、(文中の話)
+この図で言うと、serverのところでhtmlを操作して、
+データベースには行かずにサーバー内のみでデータを取り出して、
+クライアントへ返していることを意味しているのでしょうか。
+それとも、HTMLを操作して、
+さらにデータを取り出すためにデータベースから呼び出しているのでしょうか。
+
+⇩
+
+この図を見る限り、2通りの解釈が可能だと思います。
+
+1. サーバー内部でHTMLを操作し、そのサーバー内のデータ(ストレージ)から必要なデータを取得して、
+    HTMLにその取得データを反映させている。
+   この場合、外部のデータベースを参照する必要はありません。
+
+2. サーバー内部でHTMLを操作する際に、外部のデータベースからデータを取得し、
+    そのデータを使ってHTMLのコンテンツを変更している。
+   この場合、データベースからのデータ取得が行われています。
+
+どちらの解釈も "manipulate the HTML content using the retrieved data" という記述から導き出せます。
+
+ただし、一般的なウェブアプリケーションではデータの永続化のためにデータベースを利用することが多いです。
+そう考えると、2番目の解釈の方が自然でしょう。
+
+つまり、この図ではサーバー側でHTMLを操作する際に、データベースから関連データを取得し、
+そのデータに基づいてHTMLコンテンツを動的に生成していると理解するのが妥当と思われます。
+
+ですので、あなたの後者の解釈 "HTMLを操作して、
+さらにデータを取り出すためにデータベースから呼び出している" というのが、
+この図から一般に考えられる流れだと言えるでしょう。
+ 
+
+
+————
+
+
+4. Programming Languages Needed to Develop a Web Application
+
+- [ ] 1. Languages to Utilize on the Browser
+* 		HTML
+* 		CSS
+* 		JavaScript
+- [ ] These can be known as client-side languages, front-end languages, and so on.
+- [ ] HTML and CSS are languages that define the content that's displayed on the browser.
+- [ ] 2. Languages to Utilize on the Server
+* 		JavaScipt (Node.js)
+* 		Ruby
+* 		Python
+* 		PHP
+- [ ] These are languages used to define how processing is done on the server. 
+- [ ] These can be known as server-side languages, backend languages, and so on.
+- [ ] Although JavaScript is a client-side language, runtimes like Node.js allow it to be utilized as a server language.
+- [ ] 3. Language to Utilize on the Database
+* 		SQL
+- [ ] This is a language that allows the retrieval, saving, updating, and deletion of data on the database.
+- [ ] (In the case of Ruby on Rails, although it might seem that there are ways  to interact with the database without writing SQL,  those actions actually perform SQL executions at the back, so SQL is still used.)  #Question 
+- [ ] なぜjavascriptはclientサイドとserverサイドの２つに分類されるのですか 
+JavaScriptがクライアント側とサーバー側の両方に分類されている理由は、以下の2点からです。
+
+1. 本来のJavaScriptはブラウザ上で動作するクライアント側の言語として設計されました。
+そのためHTMLページ上での動作を記述するのに使われ、クライアント側の言語としてリストアップされています。
+
+2. しかし近年、Node.jsという実行環境が登場し、JavaScriptをサーバー側でも実行できるようになりました。
+このためサーバー側の言語としても分類されるようになったのです。
+
+つまり、JavaScriptはもともとクライアント側言語でしたが、
+Node.jsの登場によりサーバー側でも使用可能になり、両方の側面を持つ言語となったためです。
+
+クライアント側では、ページの動作などUIの振る舞いを記述するのに使われます。
+一方でサーバー側Node.jsでは、APIの構築やデータベース操作、ファイル操作などのバックエンド処理を記述できます。
+
+このようにJavaScriptは現在、フロントエンドとバックエンドの両方で活用できる柔軟な言語であり、
+そのため両方のカテゴリに分類されているということになります。
+
+#Question 
+上記ですが、Ruby on Railsっていうのが出てきました。
+rubyとは違うのですか？また、これは３のデータベースからデータを引き出す時のSQL…（切れてしまった）
+ #Answer
+はい、Ruby on Railsは単なるRubyとは異なるものです。
+
+Rubyは一般的なプログラミング言語ですが、
+Ruby on RailsはそのRubyを利用したWebアプリケーションフレームワーク（？）です。
+
+具体的には:
+
+- Ruby - プログラミング言語の一種
+- Ruby on Rails - RubyでWebアプリケーションを作成するためのフレームワーク
+
+ということになります。
+
+Ruby on Railsは、
+Webアプリケーション開発で必要となる機能(ルーティング、モデル、ビュー、コントローラなど)
+をまとめて提供してくれるフレームワークです。
+開発者はRubyを使ってそのフレームワークに沿ってコーディングすることで、
+効率的にWebアプリケーションを作ることができます。
+
+そしてこの文章では、Ruby on Railsを使ってデータベースとやり取りする際、
+SQLを直接記述しなくてもデータベースの操作ができるように見えますが、
+実際の所はフレームワークの裏側でSQLが実行されていると説明しています。
+
+つまり、どのような方法でデータベースにアクセスしても、
+最終的にはSQL(3に分類されている言語)が使われているということです。
+
+ですのでRubyとRuby on Railsは異なるものだが、
+データベースとのやり取りには共通してSQLが使われているということを理解しておく必要があります。
+
+#Question 
+- [ ] Node.JSは近年出てきたと言いますが、具体的に何時ごろですか。
+- [ ] Ruby on Railsの説明ですが、フレームワークが何のことかわからないです。
+- [ ] SQLの操作はRuby on Railsがあれば必要はないが、実際にはSQLの操作をRuby on Railsで行なっているという解釈であっていますか。
+- [ ] つまり、Ruby on Railsは、データベースを操作する言語で、
+       RubyはServerを操作する言語ってことでよろしいでしょうか。
+- [ ] Javascriptはいくら Node.JSがあってもデータベースまでは操作できないですよね。
+ #Answer
+いくつかご質問がありましたので、順を追って答えさせていただきます。
+
+1. Node.jsの登場時期
+Node.jsは2009年にリリースされました。
+JavaScriptをサーバーサイドでも実行できるようにするための実行環境として登場し、
+近年のサーバーサイドJavaScript利用の広がりを後押ししました。
+
+2. フレームワークの説明
+フレームワークとは、あらかじめ決められた設計に従ってプログラムを作成するための基盤となるソフトウェアのことです。
+開発者が規約に沿ってプログラミングすることで、効率的で堅牢なアプリケーションを作ることができます。
+Ruby on Railsは、そういったWebアプリ開発向けのフレームワークの一種です。
+
+3. Ruby on RailsとSQLの関係
+SQLはデータベースを操作する言語です。 Ruby on Railsはフレームワークなので、SQLそのものではありません。
+しかし、Ruby on Railsを使ってデータベースにアクセスする際、裏側ではSQLが実行されているということです。
+つまり、Ruby on Railsを使えばRuby側でSQLを直接書かなくてもデータベース操作ができるわけですが、
+実際にはSQLが使われているということになります。
+
+4. Ruby、Ruby on Rails、JavaScriptの役割
+- Ruby - サーバーサイドのプログラミング言語
+- Ruby on Rails - Rubyを使ったWebアプリフレームワーク 
+- JavaScript(Node.js) - サーバーサイドのプログラミング言語
+- JavaScript(ブラウザ) - クライアントサイドのプログラミング言語
+
+JavaScriptはNode.jsがあれば一部データベースにアクセスできますが、
+ブラウザ上のJavaScriptではセキュリティ上の制限からデータベースには直接アクセスできません。
+
+ですので、概ね以下のような使い分けとなります。
+
+- サーバーサイド処理 - Ruby、Node.js(JavaScript)など
+- Webアプリフレームワーク - Ruby on Rails
+- データベース操作 - SQL(RDBMSに合わせた構文)
+
+このように、それぞれの役割は異なりますが、連携して総合的にWebアプリケーションが構築されています。  #Question 
+- [ ] ２のフレームワークは設計図みたいなものですか？プラモデルを作る時の。
+ただ、その設計図がなんでソフトウェアっていう何というか、
+アプリケーションみたいなやつなのか理解できないです。設計図は、なんかに書いて、
+みんなに画面シェアできるようなやつですよね。
+
+- [ ] 3ですが、　何で、フレームワークっていう設計図なのに、
+SQLを使ってRuby On Railsで操作できるんですか。
+
+- [ ] ４ですが、つまり、
+イメージとしては、
+クライアントサイド-サーバーサイド-データベース
+っていう３つのカテゴリーが分かればいいと思っていましたが、
+クライアントサイド-サーバーサイド-Web アプリフレームワーク-データベース
+Web アプリフレームワークっていうのが間に入ってくるのでしょうか。。。
+ #Answer はい、フレームワークは設計図に例えられますが、
+プログラミングの世界では実際にコードで書かれた"設計"そのものを指します。
+
+1. フレームワークとは具体的に何か
+フレームワークとは、あらかじめプログラムの基本的な設計や構造が決められているソフトウェアのことです。
+開発者はその設計に沿ってコーディングすることで、効率良くアプリケーションが作れます。
+つまり、プログラミング上の"設計図"そのものがフレームワークということです。
+
+2. フレームワークがソフトウェアである理由
+フレームワークはコードで記述された設計そのものなので、
+それ自体がソフトウェア(プログラム)になります。
+単なる設計書ではなく、実際に動作するプログラムなのです。
+
+3. Ruby on RailsとSQLの関係 
+Ruby on Railsはフレームワークとして、データベースへのアクセス機能を持っています。
+しかしその機能の内部では、実際にはSQLによるデータベース操作が行われているということです。
+フレームワークはSQLを使ってデータベースと通信しているわけです。
+
+4. フレームワークの位置づけ
+おっしゃる通り、
+
+クライアント - サーバー - データベース
+
+が基本的な構成ですが、サーバー側でWebアプリケーションを作る際に、
+Ruby on Railsのようなフレームワークが間に入ることがあります。
+
+フレームワークはサーバー側のプログラミング言語(Ruby、Node.jsなど)と連携し、
+効率的にWebアプリを開発できるよう支援するものです。
+
+ですので、構成は次のようになります。
+
+クライアント - (サーバー+Webアプリフレームワーク) - データベース
+
+このように、フレームワークはサーバー側に位置づけられ、 言語・データベースと連携しながらWebアプリの開発を助ける役割を果たします。
+
+#Question 
+1. フレームワークとは具体的に何か フレームワークとは、 あらかじめプログラムの基本的な設計や構造が決められているソフトウェアのことです。 開発者はその設計に沿ってコーディングすることで、効率良くアプリケーションが作れます。 つまり、プログラミング上の"設計図"そのものがフレームワークということです。
+2. フレームワークがソフトウェアである理由 フレームワークはコードで記述された設計そのものなので、 それ自体がソフトウェア(プログラム)になります。単なる設計書ではなく、実際に動作するプログラムなのです。 
+- [ ] 上記の１と２がよくイメージできないです。
+ソフトウェアも曖昧に理解しています。
+設計図がコードって具体的にどんなものでしょうか
+簡単なもので実例を見せることってできますか。 
+- [ ] ３も、
+Ruby on Railsはフレームワークとして、データベースへのアクセス機能を持っています。
+フレームワークであれば、なぜアクセスできるんですか。
+
+- [ ] Javascriptは、クライアントとサーバーの２つこなせますが、
+逆に、データベースと何かをこなせる言語は他に存在するのでしょうか
+
+
+#Answer 
+分かりにくい部分があったようですので、具体例を交えてご説明させていただきます。
+
+1. フレームワークとはコード上の設計そのものを指します。
+例えば、Ruby on Railsのフレームワークには次のようなコードが含まれています。
+
+```ruby
+# config/routes.rb
+Rails.application.routes.draw do
+  resources :posts
+end
+
+# app/controllers/posts_controller.rb
+class PostsController < ApplicationController
+  def index
+    @posts = Post.all
+  end
+end
+```
+
+このコードは、"/posts"というURLに対してPostsコントローラのindexアクションが呼び出され、 Postモデルから全ての投稿データを取得して@postsに代入する、というアプリケーションの基本的な動きを規定しています。
+
+つまり、フレームワークはこのように設計やルール、基本的な構造がコード上で決められているものです。 開発者はこの設計に沿ってアプリ固有のロジックを書き加えていきます。
+
+2. ソフトウェアであるのは実行可能なコードだからです。
+フレームワークはコードで書かれた設計そのものですから、実行可能なプログラム、つまりソフトウェアになります。 単なる設計書ではなく、Ruby on Railsそのものを実行することでWebサーバーが立ち上がるのです。
+
+3. フレームワークがデータベースアクセスできる理由
+フレームワークは言語の機能を踏襲しつつ、追加の機能を備えています。 Ruby on Railsは Ruby 言語の機能に加え、データベースアクセス機能(ActiveRecord)などを フレームワーク側で備えているため、データベースアクセスが可能になっているのです。
+
+4. データベースアクセス言語
+一般的にアプリケーションからデータベースにアクセスする際は、SQLを使用します。 JavaScriptでもNode.jsと組み合わせればSQLでデータベースアクセスができます。 つまり、言語自体にデータベースアクセス機能はありませんが、 SQLなどを使えばどの言語からでもデータベースアクセスが可能です。
+
+フレームワークはあくまでプログラミング言語の機能を補完するものです。 Ruby on Railsのような一部フレームワークでは、 SQLを使わずともデータベースアクセスできる機能が付与されていますが、 その裏側ではSQLが実行されているという仕組みになっています。
+
