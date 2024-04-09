@@ -16,3 +16,60 @@ apr 1
   1hour
   Problem Solving / how to make best performance daily life and fix
 
+  apr 3
+   (Too busy(for learning odin), due to fatigue, I did not have energy to write)
+   
+
+  apr 4
+   2 hours 
+   1 hour half 
+   2 hours
+   error / document.querySelector()の使い方
+   Gym
+
+   Apr5
+   DOM
+	2hours 
+
+   Apr6(sleepless due to air pollution)
+   For,roop, Array(review)
+   Object(review) , Arrays in Objects 
+   Object{object} , difference of Array and Object access way
+   Object key: value , key = primitive only, value → object also ok
+
+
+ Apr 7 5:30 am 
+
+  	7am
+	running 5min
+	training few min
+	
+	1hour
+	1hour
+	1hour
+	mainly Arrow and function
+
+Apr 8   9:30 am woke up
+	10:00? Start 
+	1 hour
+	array/function
+	1 hour
+	call back - deep understanding
+
+Apr9    4:00 woke up (toothache...) 4hours sleep
+	7:00 running 15min run-I found new good habit
+	8:00-9:30 callback function
+	11:30-13:30? / WEB-client-Server with English
+	3:15 running
+	3:40?-4:   / WEB-Application, Review and Find How To Learn Effectively
+
+
+
+	
+	
+
+
+
+	
+
+
