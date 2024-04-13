@@ -44,17 +44,17 @@ const playGame = () => {
     const result = playRound(playerSelection,computerSelection);
     
 
-    if(result.includes("WIN")){
+        if(result.includes("WIN")){
         playerScore++;
         
-    }
-    else if(result.includes("LOSE")){
+         }
+        else if(result.includes("LOSE")){
         computerScore++;
         
-    }
+        }
 
-    //index is starting from 0, so you need to use 4 instead of 5//
-    if (i === 4){
+        //index is starting from 0, so you need to use 4 instead of 5//
+         if (i === 4){
             console.log("Gameset!");
 
 
@@ -63,6 +63,9 @@ const playGame = () => {
         }else{
             console.log(`YOU LOST....Never mind!! Your Score was ${playerScore}, Computer Score was ${computerScore}`);
         }
-    }
+        }
 
+    };
 };
+
+playGame();
