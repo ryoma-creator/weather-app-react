@@ -33,7 +33,7 @@ const playGame = () => {
     playerScore=0;
     computerScore=0;
 
-    for ( i = 0; i < 5; i++)
+    for (let i = 0; i < 5; i++)
     playerSelection = prompt("Whats your choice?");
     computerSelection = getComputerChoice().toLowerCase();
     playRound(playerSelection,computerSelection);
