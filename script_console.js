@@ -31,31 +31,30 @@ const playRound = (playerSelection,computerSelection) => {
 
 const playGame = () => {
     let playerScore=0;
-    let computerScore=0;
+    let computerScore=0;}
 
-    for (let i = 0; i < 5; i++)
+    for (let i = 0; i < 5; i++){
     const playerSelection = prompt("Whats your choice?");
     const computerSelection = getComputerChoice().toLowerCase();
     
-    //"You cannot apply the includes method directly to the playRound function itself;
-    //instead, you need to use the includes method on the string, which is the return value of the function."
-    //if(playRound.includes("WIN")){
+    //"You cannot apply the includes method directly to the playRound function itself;//
+    //instead, you need to use the includes method on the string, which is the return value of the function."//
+    //if(playRound.includes("WIN")){//
+
     const result = playRound(playerSelection,computerSelection);
     
 
-    if(const result.includes("WIN")){
+    if(result.includes("WIN")){
         playerScore++;
         
     }
-    else if(playRound.includes("LOSE")){
+    else if(result.includes("LOSE")){
         computerScore++;
         
     }
-    else{
 
-    }
-
-    if (i === 5){
+    //index is starting from 0, so you need to use 4 instead of 5//
+    if (i === 4){
             console.log("Gameset!");
         if(playerScore > computerScore){
             return `YOU ARE WINNER!! Your Score was ${playerScore}), Enemy Score was ${enemyScore}`;
