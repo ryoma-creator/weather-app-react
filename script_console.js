@@ -12,7 +12,7 @@ const playRound = (playerSelection,computerSelection) => {
 
     //Make a "tie"　"引き分け"//
     if (playerSelection === computerSelection) {
-        return "It's a tie!（引き分け！）”;    
+        return "It's a tie!（引き分け！）";
     }
     //Make a "Win"//
      else if(   
