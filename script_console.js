@@ -24,7 +24,7 @@ const playRound = (playerSelection,computerSelection) => {
     }
     //Make a "lose"//
      else {
-        return `You LOSE!(負け!) ${playerSelection} beats ${computerSelection}`;
+        return `You LOSE!(負け!) ${computerSelection} beats ${playerSelection}`;
      }
      
 };
