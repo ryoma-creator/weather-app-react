@@ -1,0 +1,30 @@
+分かりました、もっとシンプルに説明します。
+
+`if(playRound.includes("WIN"))`とした場合、JavaScriptは次のように処理を行います:
+
+1. `playRound`関数を呼び出す
+2. `includes("WIN")`を実行しようとする
+
+ここで問題があります。`includes`はあくまで**文字列**に対するメソッドです。しかし、`playRound`は**関数**なので、そのままでは`includes`を実行できません。
+
+つまり、JavaScriptは`playRound`関数を文字列として認識できないのです。
+
+そこで、一度`playRound`関数の**戻り値**を変数に入れる必要があります。これにより、関数の実行結果である**文字列**を取り出せるようになります。
+
+```javascript
+const result = playRound(playerSelection, computerSelection);
+```
+
+ここで`result`には、`playRound`関数から返された**文字列**が入ります。
+
+そして、この`result`変数に対して`includes`メソッドを呼び出せば、文字列に対する操作ができるようになります。
+
+```javascript
+if (result.includes("WIN")) {
+  // 勝ちの処理
+}
+```
+
+要するに、`playRound.includes("WIN")`とは書けず、一度`playRound`関数の戻り値を変数に入れる必要があるのです。なぜなら、`includes`は**文字列**に対するメソッドだからです。
+
+関数とその戻り値の違い、文字列に対するメソッドの使い方を理解することが重要です。関数の戻り値は別の変数で受け取る必要があります。
