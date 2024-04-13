@@ -30,8 +30,8 @@ const playRound = (playerSelection,computerSelection) => {
 };
 
 const playGame = () => {
-    let playerScore=0;
-    let computerScore=0;
+    let playerScore = 0; 
+    let computerScore = 0;
 
     for (let i = 0; i < 5; i++){
     const playerSelection = prompt("Whats your choice?");
@@ -60,12 +60,16 @@ const playGame = () => {
 
         if(playerScore > computerScore){
             console.log(`YOU ARE WINNER!! Your Score was ${playerScore}, Computer Score was ${computerScore}`);
-        }else{
+        }else if(playerScore < computerScore){
             console.log(`YOU LOST....Never mind!! Your Score was ${playerScore}, Computer Score was ${computerScore}`);
+        }
+        else {
+            console.log(`DRAW ! Your Score was ${playerScore}, Computer Score was ${computerScore}`);
         }
         }
 
     };
 };
+
 
 playGame();
