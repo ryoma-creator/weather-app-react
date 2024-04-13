@@ -4,3 +4,8 @@ const getComputerChoice = () => {
     return janken[jankenRandom];
 };
 
+const playRound = (playerSelection,computerSelection) => {
+
+
+    computerSelection = getComputerChoice();
+};
