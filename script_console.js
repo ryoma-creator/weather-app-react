@@ -59,9 +59,9 @@ const playGame = () => {
 
 
         if(playerScore > computerScore){
-            return `YOU ARE WINNER!! Your Score was ${playerScore}), Enemy Score was ${computerScore}`;
+            console.log(`YOU ARE WINNER!! Your Score was ${playerScore}, Computer Score was ${computerScore}`);
         }else{
-            return `YOU LOST....Never mind!! Your Score was ${playerScore}), Enemy Score was ${computerScore}`;
+            console.log(`YOU LOST....Never mind!! Your Score was ${playerScore}, Computer Score was ${computerScore}`);
         }
     }
 
