@@ -28,3 +28,35 @@ const playRound = (playerSelection,computerSelection) => {
      }
      
 };
+
+const playGame = () => {
+    playerScore=0;
+    computerScore=0;
+
+    for ( i = 0; i <= 5; i++)
+    playerSelection = prompt("Whats your choice?");
+    computerSelection = getComputerChoice().toLowerCase();
+    playRound(playerSelection,computerSelection);
+    
+    if(playRound.includes("WIN")){
+        playerScore++;
+        
+    }
+    ifelse(playRound.includes("LOSE")){
+        computerScore++;
+        
+    }
+    else{
+
+    }
+
+    if (i === 5){
+            console.log("Gameset!");
+        if(playerScore > computerScore){
+            return `YOU ARE WINNER!! Your Score was ${playerScore}), Enemy Score was ${enemyScore}`;
+        }else{
+            return `YOU LOST....Never mind!! Your Score was ${playerScore}), Enemy Score was ${enemyScore}`;
+        }
+    }
+
+};
