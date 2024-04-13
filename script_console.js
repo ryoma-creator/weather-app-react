@@ -1,5 +1,5 @@
 const getComputerChoice = () => {
-    const janken = ['Rock',`Paper`, `Scissors`];
+    const janken = ['Rock','Paper', 'Scissors'];
     const jankenRandom = Math.floor(Math.random()*janken.length);
     return janken[jankenRandom];
 };
@@ -31,7 +31,7 @@ const playRound = (playerSelection,computerSelection) => {
 
 const playGame = () => {
     let playerScore=0;
-    let computerScore=0;}
+    let computerScore=0;
 
     for (let i = 0; i < 5; i++){
     const playerSelection = prompt("Whats your choice?");
@@ -56,10 +56,12 @@ const playGame = () => {
     //index is starting from 0, so you need to use 4 instead of 5//
     if (i === 4){
             console.log("Gameset!");
+
+
         if(playerScore > computerScore){
-            return `YOU ARE WINNER!! Your Score was ${playerScore}), Enemy Score was ${enemyScore}`;
+            return `YOU ARE WINNER!! Your Score was ${playerScore}), Enemy Score was ${computerScore}`;
         }else{
-            return `YOU LOST....Never mind!! Your Score was ${playerScore}), Enemy Score was ${enemyScore}`;
+            return `YOU LOST....Never mind!! Your Score was ${playerScore}), Enemy Score was ${computerScore}`;
         }
     }
 
