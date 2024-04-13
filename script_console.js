@@ -30,17 +30,20 @@ const playRound = (playerSelection,computerSelection) => {
 };
 
 const playGame = () => {
-    playerScore=0;
-    computerScore=0;
+    let playerScore=0;
+    let computerScore=0;
 
     for (let i = 0; i < 5; i++)
     playerSelection = prompt("Whats your choice?");
     computerSelection = getComputerChoice().toLowerCase();
-    //playRound(playerSelection,computerSelection);
-    //"The reason this part is incorrect is that the return value 
-    //of the playRound function is a string, and therefore, the includes method cannot be used."
     
-    if(playRound.includes("WIN")){
+    //"You cannot apply the includes method directly to the playRound function itself;
+    //instead, you need to use the includes method on the string, which is the return value of the function."
+    //if(playRound.includes("WIN")){
+
+    const result = playRound(playerSelection,computerSelection);
+    
+    if(){
         playerScore++;
         
     }
