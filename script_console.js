@@ -20,7 +20,7 @@ const playRound = (playerSelection,computerSelection) => {
         (playerSelection === "paper" &&  computerSelection === "rock")||
         (playerSelection === "scissors" &&  computerSelection === "paper")
     ){
-        return "You WIN!（勝ち！）"
+        return "You WIN!（勝ち！）";
     }
     //Make a "lose"//
      else(
@@ -28,6 +28,6 @@ const playRound = (playerSelection,computerSelection) => {
         (playerSelection === "paper" &&  computerSelection === "scissors")||
         (playerSelection === "scissors" &&  computerSelection === "rock")
      ){
-        return "You LOSE!(負け!)"
+        return "You LOSE!(負け!)";
      }
 };
