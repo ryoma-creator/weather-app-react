@@ -8,6 +8,8 @@ const playRound = (playerSelection,computerSelection) => {
     //Make your function’s playerSelection parameter case-insensitive// 
     //(so users can input rock, ROCK, RocK or any other variation).//
     playerSelection = playerSelection.toLowerCase();
+    computerSelection = getComputerChoice.toLowerCase();
 
-    computerSelection = getComputerChoice();
+    if (getComputerChoice = jaken[1]) 
+
 };
