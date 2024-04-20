@@ -3,40 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice dot.install</title>
-    <script src="dot.install.js"></script>
+    <title>Document</title>
 </head>
-
 <body>
-    <div id = "container"></div>
-    
-    <button>Click me</button>
-    <p id="message"></p>
-
-<script>
-    document.querySelector('button').addEventListener('click',()=>{
-    alert('Hello,World');
-    document.querySelector('#message').textContent= "You clicked the button!" 
-    });
-</script>
-
-    <script>
-        //p
-       const pElement = document.createElement('p');
-       pElement.textContent = 'Hey Im red!';
-       pElement.style.color= 'red';
-
-       const bodyElement = document.querySelector('body');
-       bodyElement.appendChild(pElement);
-
-        //h3
-        const h3Element = document.createElement('h3');
-        h3Element.textContent = 'Im a blue h3!';
-        h3Element.style.color = 'blue';
-        bodyElement.insertBefore(h3Element,document.querySelector('p'));
-        
-
-    </script>
+    <form action="">
+        <div>
+            <input type = "text">
+        </div>
+        <div>
+            <textarea></textarea>
+        </div>
+    </form>
 </body>
 </html>
-
