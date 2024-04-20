@@ -133,7 +133,7 @@ Mar 31
 	debug, break point (until step 5 https://developer.chrome.com/docs/devtools/javascript/)
 	in English only)
 
-  Mar 1
+  apr 1
   1hour
   error
   1hour
@@ -142,7 +142,7 @@ Mar 31
   Project 
 
 
-  Mar 2
+  apr 2
 
   1hour
   gym

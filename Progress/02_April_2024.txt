@@ -62,13 +62,72 @@ Apr9    4:00 woke up (toothache...) 4hours sleep
 	11:30-13:30? / WEB-client-Server with English
 	3:15 running
 	3:40?-4:   / WEB-Application, Review and Find How To Learn Effectively
+	5:00 - 6:30 
+	8:00 - 9:00 Review
 
+Apr 10   
+	running 10min
+	2 hour Finding Effective Reviewing way with Ai   ←prioritize what you need first on am
+	1 hour Reviewing by Memo 
+	2 hour Node JS 
+	
+	[Midnight "Cough" Problem - Air pollution and dusty dovey cover]
+ 	Until morning, I could not sleep!!
+	
+Apr 11 ###sleepless , feel fatigue###	
+		
+	running 10min
+	2 hours 
+	Github→github message setting. it took 1hour/Rock/scissors paper project/
 
+        2 hours→ rock scissors paper project/ → random, how to make
+
+        2 hours
+	
+
+Apr 12  Break
+	fatigue , does not have motivation
+        → its affecting Apr 10 sleepless one.
+	     Apr 11 → under sleepless, you did
+
+	running 10min
+	
+Apr 13
+	9:00-9:30
+	checking 02-April and write for past 3 days while analyzing.
+
+	9:30-10:30
+	rock scissors paper project/ make New one for only console(html,js,fucntion,git comment)
+
+	12:00-2:00pm
+	rock scissors paper project/ 2 foundation logic for game
+
+	@4:00 - 4:40 
+	gym(arm and runinng) and cold shower
+	
+	4:40 - 5:40 or 6:40...
+
+	7:10-8:40 ?
+	rock scissors paper project
+
+	around 0:30 over sleep
+
+Apr 14  woke up 10:00 (I feel fatigue) 
 
 	
-	
 
+Apr 15 	2 hours two set plus English 
+	how to work as fleerance
+	25min 20min walking
 
+Apr 16 Woke up 4:00
+ 	DOM object meaning in DOM
+	1 hour ,
+	English
+
+	10:00-11:47
+	DOM object , append, querySelector
+		
 
 	
 
