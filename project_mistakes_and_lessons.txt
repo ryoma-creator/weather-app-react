@@ -1,0 +1,117 @@
+分かりました、もっとシンプルに説明します。
+
+`if(playRound.includes("WIN"))`とした場合、JavaScriptは次のように処理を行います:
+
+1. `playRound`関数を呼び出す
+2. `includes("WIN")`を実行しようとする
+
+ここで問題があります。`includes`はあくまで**文字列**に対するメソッドです。しかし、`playRound`は**関数**なので、そのままでは`includes`を実行できません。
+
+つまり、JavaScriptは`playRound`関数を文字列として認識できないのです。
+
+そこで、一度`playRound`関数の**戻り値**を変数に入れる必要があります。これにより、関数の実行結果である**文字列**を取り出せるようになります。
+
+```javascript
+const result = playRound(playerSelection, computerSelection);
+```
+
+ここで`result`には、`playRound`関数から返された**文字列**が入ります。
+
+そして、この`result`変数に対して`includes`メソッドを呼び出せば、文字列に対する操作ができるようになります。
+
+```javascript
+if (result.includes("WIN")) {
+  // 勝ちの処理
+}
+```
+
+要するに、`playRound.includes("WIN")`とは書けず、一度`playRound`関数の戻り値を変数に入れる必要があるのです。なぜなら、`includes`は**文字列**に対するメソッドだからです。
+
+関数とその戻り値の違い、文字列に対するメソッドの使い方を理解することが重要です。関数の戻り値は別の変数で受け取る必要があります。
+
+
+--
+
+
+`let`と`const`の違いについて説明します。
+
+- `let`は**変数**を宣言するためのキーワードです。その変数の値は後から変更することができます。
+- `const`は**定数**を宣言するためのキーワードです。一度値を設定したら、その値を変更することはできません。
+
+次に、コードの部分について説明します。
+
+```javascript
+playerScore=0; 
+computerScore=0;
+for (let i = 0; i < 5; i++) {
+  playerSelection = prompt("What's your choice?");
+  computerSelection = getComputerChoice().toLowerCase();
+  playRound(playerSelection,computerSelection); //"You cannot apply ttってところで、変数に入れた方がいいのあります。let　とか const とか
+}
+```
+
+ここで問題になっている部分は、`playRound(playerSelection, computerSelection)`の戻り値を受け取っていない点です。`playRound`関数は文字列を返すので、その戻り値を変数に代入する必要があります。
+
+修正例:
+
+```javascript
+let playerScore = 0; // letを使って変数を宣言
+let computerScore = 0;
+for (let i = 0; i < 5; i++) {
+  const playerSelection = prompt("What's your choice?").toLowerCase(); // constを使ってプレイヤーの入力を受け取る
+  const computerSelection = getComputerChoice().toLowerCase(); // constを使ってコンピューターの手を取得
+  const result = playRound(playerSelection, computerSelection); // playRoundの戻り値を変数に代入
+  console.log(result); // 結果を出力
+
+  if (result.includes("WIN")) {
+    playerScore++; // playerScoreをインクリメント
+  } else if (result.includes("LOSE")) {
+    computerScore++; // computerScoreをインクリメント
+  }
+}
+```
+
+ここでは、`let`を使ってスコアの変数を宣言し、`const`を使ってプレイヤーの入力とコンピューターの手を受け取っています。さらに、`playRound`の戻り値を`result`という変数に代入して、その値を使ってスコアを更新しています。
+
+このように、`let`と`const`を適切に使い分けることで、変数と定数を明確に区別できます。また、関数の戻り値は必ず変数に代入する必要があることを覚えておいてください。
+
+--
+
+でも定数っていう一度決めたら、変えられないやつであれば、
+
+５回ジャンケンをループで繰り返したときに、１度目はいいけど、
+
+２回目以降は、値を変えられなくなっちゃうんじゃないの？１回目のループで、値を決めているんだから。
+
+--
+
+非常に良い質問です。確かに`const`で宣言した変数は値を変更できないため、問題があるように見えます。しかし、実際にはループの度に新しい値が代入されています。
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  const playerSelection = prompt("What's your choice?").toLowerCase();
+  const computerSelection = getComputerChoice().toLowerCase();
+  // ...
+}
+```
+
+ここで`const playerSelection`と`const computerSelection`は、ループの**各反復で新しく宣言**されています。つまり、ループが回る度に新しい`playerSelection`と`computerSelection`の値が生成されます。
+
+前の反復で宣言された`playerSelection`や`computerSelection`とは別物になるので、値の再代入ができます。`const`でも構いません。
+
+一方、`let`を使った場合はどうでしょうか?
+
+```javascript
+let playerSelection, computerSelection;
+for (let i = 0; i < 5; i++) {
+  playerSelection = prompt("What's your choice?").toLowerCase();
+  computerSelection = getComputerChoice().toLowerCase();
+  // ...
+}
+```
+
+この場合、`playerSelection`と`computerSelection`は**ループの外側で一度だけ宣言**されます。そのため、ループの各反復で値を上書きしていくことになります。
+
+このように、`const`と`let`を使う場合で、変数のスコープ(有効範囲)が異なります。`const`の方がスコープが狭く、ブロック(`{}`)の中でのみ有効です。これが値の再代入ができる理由です。
+
+要するに、`const`でもループ内であれば新しい値を代入できるため、この使い方で問題ありません。ただし、スコープの違いを理解することが重要です。
