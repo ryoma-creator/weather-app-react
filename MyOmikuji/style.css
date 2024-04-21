@@ -1,0 +1,35 @@
+main {
+    width: 240px;
+    margin: 32px auto;
+}
+
+section {
+    border: 4px double red;
+    text-align: center;
+    color: red;
+}
+
+h1{
+    margin: 0;
+    border-bottom: 2px solid red;
+    font-weight: normal;
+    padding: 8px 0;
+}
+
+p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 24px 0;
+}
+
+button{
+    all: unset;
+    margin-top: 16px;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 0;
+}
