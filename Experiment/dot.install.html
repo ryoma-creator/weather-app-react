@@ -6,10 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let n = prompt("give me a number");
-        console.log(Number(n) + 10);
+    <button>Click me</button>
 
+    <script>
+        document.querySelector("button").addEventListener("click",()=>{
+            document.createElement("p");
+            document.querySelector("p").appendChild("body");
+            document.querySelector("p").style.color("green");
+            
+        })
     </script>
 </body>
 </html>
