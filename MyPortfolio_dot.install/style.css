@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-  background-color: pink;
+  background-color: white;
   margin: 0;
 }
 
@@ -60,17 +60,17 @@ main .main_text{
 }
 
 footer{
+  border-top:1px solid #ccc;
   text-align: center;
   background-color: #fff;
   padding: 64px 0;
-  width: 400px;
   margin:auto;
   border-style: solid;
 }
 
-footer p{
-  color:#999;
-  font-size: 16px;
+footer small{
+  color:#aaa;
+  font-size: 14px;
   line-height: 1.8;
   border-style: solid black 5px ;
 }
@@ -78,5 +78,13 @@ footer p{
 footer img{
   width: 24px;
   height: 24px;
-  margin-top:8px;
+}
+
+footer .footer-image address {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+footer a:hover{
+  opacity:0.7;
 }

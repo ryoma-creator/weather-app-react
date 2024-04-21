@@ -10,11 +10,12 @@
 
     <script>
         document.querySelector("button").addEventListener("click",()=>{
-            document.createElement("p");
-            document.querySelector("p").appendChild("body");
-            document.querySelector("p").style.color("green");
-            
-        })
+            const p = document.createElement("p");
+            p.textContent = "aaa";
+            document.body.appendChild(p);
+
+        });
+        
     </script>
 </body>
 </html>
