@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .greentext{
+            color:green
+        }
+        .pinkbg{
+            background-color: pink;
+        }
+        .redborder{
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
-    <button>Click me</button>
+    <p class="greentext">Hello</p>
+    <button>OK</button>
 
-    <script>
-        document.querySelector("button").addEventListener("click",()=>{
-            const p = document.createElement("p");
-            p.textContent = "aaa";
-            document.body.appendChild(p);
-
-        });
+<script>
+    document.querySelector("button").addEventListener("click",()=>{
+        const p = document.querySelector("p");
+        p.classList.add("pinkbg","redborder");
+        p.classList.remove("greentext");
         
-    </script>
+
+    });
+</script>
 </body>
 </html>
