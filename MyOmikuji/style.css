@@ -39,3 +39,9 @@ button{
 button:hover{
     opacity: .8;
 }
+
+button:active{
+    color:aqua;
+    box-shadow: 0 1px #7a0000;
+    transform: translateY(3px);
+}
