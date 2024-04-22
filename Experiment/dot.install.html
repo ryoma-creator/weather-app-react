@@ -6,15 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <button>
-        Button
-    </button>
-    
+    <button>OK</button>
+    <p>Hello</p>
+
     <script>
         const btn = document.querySelector("button");
+        const p = document.querySelector("p");
 
         btn.addEventListener("click",()=>{
-            console.log("clicked");
+            p.textContent = p.textContent;
         })
     </script>
 </body>
