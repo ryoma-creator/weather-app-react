@@ -7,17 +7,23 @@
 </head>
 <body>
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
     </ul>
     <button>ok</button>
     <script>
-        const ul = document.querySelectorAll("ul");
-        const btn = document.querySelectorAll("button");
-        btn.event
-        ("click",()=>{
-            
+        const ul = document.querySelectorAll("li");
+        const btn = document.querySelector("button");
+        btn.addEventListener("click",()=>{
+            ul.forEach((n)=>{
+                n.textContent = "change";
+                
+            });
+            ul.forEach((n)=>{
+                n.style.color = "green";
+                
+            });
         });
     </script>
 </body>
