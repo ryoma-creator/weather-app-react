@@ -4,26 +4,27 @@
   <meta charset="UTF-8">
   <title>Practice</title>
   <style>
-    button {
-      padding: 8px 16px;
-      font-size: 16px;
-    }
-    p {
-      font-size: 20px;
-      font-weight: bold;
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      border: 2px solid black;
     }
   </style>
 </head>
 <body>
   <button>Click me</button>
-  <p>Initial text</p>
+  <div></div>
   <script>
     const btn = document.querySelector('button');
-    const p = document.querySelector('p');
-    
+    const div = document.querySelector('div');
+
     btn.addEventListener('click',()=>{
-    p.textContent = 'Hell,World!';
+        div.classList.toggle('box');
+
     });
+   
+
   </script>
 </body>
 </html>
