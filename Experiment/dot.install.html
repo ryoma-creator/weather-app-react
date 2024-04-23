@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Practice</title>
+  <style>
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <button>Click Me</button>
-    <script>
-        const btn = document.querySelector('button');
-        btn.addEventListener('click',()=>{
-            alert('Hello');
-        });
-    </script>
+  <button>Click me</button>
+  <p>Initial text</p>
+  <script>
+    const btn = document.querySelector('btn');
+    const p = document.querySelector('p');
     
+    btn.addEventListener('click',()=>{
+    p.textContent = 'Hell,World!';
+    });
+  </script>
 </body>
 </html>
