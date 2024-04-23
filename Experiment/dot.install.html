@@ -2,29 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 1</title>
   <style>
-    .box {
-      width: 200px;
-      height: 200px;
-      background-color: lightblue;
-      border: 2px solid black;
+    .pink-bg {
+      background-color: pink;
     }
   </style>
 </head>
 <body>
-  <button>Click me</button>
-  <div></div>
+  <p>Click me to toggle background color</p>
+  <button>Click Me</button>
+
   <script>
     const btn = document.querySelector('button');
-    const div = document.querySelector('div');
+    const p = document.querySelector('p');
 
     btn.addEventListener('click',()=>{
-        div.classList.toggle('box');
-
+        p.classList.toggle('pink-bg');
     });
-   
-
   </script>
 </body>
 </html>
