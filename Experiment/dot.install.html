@@ -18,7 +18,7 @@
     const btn = document.querySelector('button');
     btn.addEventListener('click',()=>{
         document.getElementById('second').textContent = 'changed';
-        document.querySelectorAll("class.target").forEach(target=>{
+        document.querySelectorAll(".target").forEach(target=>{
             target.textContent = "changed";
         });
     });
