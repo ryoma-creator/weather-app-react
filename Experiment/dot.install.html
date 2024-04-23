@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Problem 1</title>
-  <style>
-    .pink-bg {
-      background-color: pink;
-    }
-  </style>
+  <title>Practice 1</title>
 </head>
 <body>
-  <p>Click me to toggle background color</p>
-  <button>Click Me</button>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Orange</li>
+  </ul>
+  <button>Capitalize</button>
 
   <script>
     const btn = document.querySelector('button');
-    const p = document.querySelector('p');
+    const liAll = document.querySelectorAll('li');
 
     btn.addEventListener('click',()=>{
-        p.classList.toggle('pink-bg');
+        liAll.forEach(all =>{
+            document.querySelector('li').textContent.toUpperCase(all);
+        });
     });
   </script>
 </body>
