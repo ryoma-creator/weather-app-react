@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice 1</title>
+  <title>Practice Task</title>
 </head>
 <body>
   <ul>
-    <li>Apple</li>
-    <li>Banana</li>
-    <li>Orange</li>
+    <li class="target">Taro</li>
+    <li id="second">Jiro</li>
+    <li class="target">Saburo</li>
   </ul>
-  <button>Capitalize</button>
+  <button>OK</button>
 
   <script>
     const btn = document.querySelector('button');
-    const items = document.querySelectorAll('li');
-
     btn.addEventListener('click',()=>{
-        items.forEach(item =>{
-            item.textContent = item.textContent.toUpperCase();
-        });
+        document.getElementById('second').textContent = 'changed';
+        
     });
   </script>
 </body>
