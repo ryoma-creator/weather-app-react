@@ -15,11 +15,11 @@
 
   <script>
     const btn = document.querySelector('button');
-    const liAll = document.querySelectorAll('li');
+    const items = document.querySelectorAll('li');
 
     btn.addEventListener('click',()=>{
-        liAll.forEach(all =>{
-            document.querySelector('li').textContent.toUpperCase(all);
+        items.forEach(item =>{
+            item.textContent = item.textContent.toUpperCase();
         });
     });
   </script>
