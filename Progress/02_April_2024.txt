@@ -136,9 +136,15 @@ Apr 21 10:00??-15:00
 Apr 22 gym 15min
 	
 Apr 23 12:00
+	1hour
 	Practice DOM by dot.install while making code by myown
-		
+	#01-07 with AI question till you can write code perfectly.
 
-	
+	14:30 15min
+	running
+
+
+
+
 
 
