@@ -1,0 +1,26 @@
+body {
+    font-size: 14px;
+
+}
+
+.container{
+    margin: 30px auto;
+    width: 500px;
+
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li a{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 8px 0;
+    color: #333;
+
+}

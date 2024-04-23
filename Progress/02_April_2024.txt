@@ -127,6 +127,16 @@ Apr 16 Woke up 4:00
 
 	10:00-11:47
 	DOM object , append, querySelector
+
+
+Apr 20 10:00 - 9:00pm
+
+Apr 21 10:00??-15:00
+
+Apr 22 gym 15min
+	
+Apr 23 12:00
+	Practice DOM by dot.install while making code by myown
 		
 
 	
