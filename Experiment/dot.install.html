@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice Task</title>
+  <title>Document</title>
 </head>
 <body>
-  <ul>
-    <li class="target">Taro</li>
-    <li id="second">Jiro</li>
-    <li class="target">Saburo</li>
-  </ul>
-  <button>OK</button>
+    <button>a</button>
 
-  <script>
-    const btn = document.querySelector('button');
-    btn.addEventListener('click',()=>{
-        document.getElementById('second').textContent = 'changed';
-        document.querySelectorAll(".target").forEach(target=>{
-            target.textContent = "changed";
-        });
-    });
-  </script>
+    <script>
+      const btn = document.querySelector('button');
+      btn.addEventListener('click',()=>{
+        console.log('Clicked');
+      });
+    </script>
 </body>
 </html>
