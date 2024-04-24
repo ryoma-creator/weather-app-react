@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My JavaScript</title>
 </head>
   <style>
     .pink-bg{
@@ -25,9 +25,7 @@
       const p = document.querySelector('p');
       
       btn.addEventListener('click',()=>{
-      p.classList.add('pink-bg','red-border');
-      p.classList.remove('green-color');
-      
+      p.classList.toggle('pink-bg');      
       });
     </script>
 </body>
