@@ -6,12 +6,14 @@
   <title>Document</title>
 </head>
 <body>
+    <p>Hello</p>
     <button>a</button>
 
     <script>
       const btn = document.querySelector('button');
+      const p = document.querySelector('p');
       btn.addEventListener('click',()=>{
-        console.log('Clicked');
+      p.textContent = btn.textContent;
       });
     </script>
 </body>
