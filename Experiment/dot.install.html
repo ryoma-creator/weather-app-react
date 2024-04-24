@@ -17,16 +17,24 @@
     }
   </style>
 <body>
-    <p class = "green-color" >Hello</p>
+    <ul>
+      <li>Taro</li>
+      <li>Jiro</li>
+      <li>Saburo</li>
+    </ul>
     <button>OK</button>
 
     <script>
       const btn = document.querySelector('button');
       const p = document.querySelector('p');
-      
+      const liAll = document.querySelectorAll('li');
+
       btn.addEventListener('click',()=>{
-      p.classList.toggle('pink-bg');      
-      });
+        liAll.forEach(li =>{
+          li.textContent = 'Changed'
+        });
+    });
+     
     </script>
 </body>
 </html>
