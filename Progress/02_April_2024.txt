@@ -160,8 +160,8 @@ Apr 24
 
 	10:20
 	DOM .install
-	# 234 pass
-	# for Each ❌
+	# 2345 pass
+	# 6 or Each ❌
 
 
 

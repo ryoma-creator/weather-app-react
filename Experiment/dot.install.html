@@ -18,9 +18,9 @@
   </style>
 <body>
     <ul>
-      <li>Taro</li>
-      <li>Jiro</li>
-      <li>Saburo</li>
+      <li class="target">Taro</li>
+      <li id="second">Jiro</li>
+      <li class="target">Saburo</li>
     </ul>
     <button>OK</button>
 
@@ -30,9 +30,7 @@
       const liAll = document.querySelectorAll('li');
 
       btn.addEventListener('click',()=>{
-        liAll.forEach(li =>{
-          li.textContent = 'Changed'
-        });
+        document.getElementById('second').textContent = 'Changed!';
     });
      
     </script>
