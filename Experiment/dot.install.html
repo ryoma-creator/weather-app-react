@@ -29,9 +29,12 @@
       const p = document.querySelector('p');
       const liAll = document.querySelectorAll('li');
       const newli = document.createElement('li');
+      const ul = document.querySelector('ul');
 
       btn.addEventListener('click',()=>{
         newli.textContent = 'Hanako';
+        ul.appendChild(newli);
+      });
      
     </script>
 </body>
