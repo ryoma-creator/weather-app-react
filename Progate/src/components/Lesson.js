@@ -6,8 +6,8 @@ render(){
     return(
       <div className='lesson-card'>
           <div className='lesson-item'>
-            <p></p>
-            <img />
+            <p this.props.name></p>
+            <img src=this.props.image/>
           </div>
         </div>
         );
