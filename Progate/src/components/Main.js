@@ -32,14 +32,15 @@ class Main extends React.Component {
           <div className='lesson-container'>
             <h3 className='section-title'>Lessons</h3>
             {/* Use the map method for lessonList */}
-            {lessonList.map((lessonItem) => (
+            {lessonList.map((lessonItem) => {
           
+          return(
            <Lesson 
              name={lessonItem.name} 
              image={lessonItem.image} 
            />
-           
-            ))}
+           )
+            })}
             
           </div>
         </div>
