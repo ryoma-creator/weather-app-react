@@ -176,6 +176,19 @@ Apr 25
 	search and React
 	10:40-12:00 
 
+Apr 26
+
+Apr 27 React 1
+Apr 28 React 2
+
+Apr 29
+
+	11:15-1:43 2hours half
+	review progate React 1 and 2 (until props)
+
+
+
+
 
 	
 

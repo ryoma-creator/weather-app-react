@@ -50,6 +50,10 @@ h1{
   line-height: 0;
 }
 
+.logo-pc{
+  display: none;
+}
+
 /* main hero area */
 .hero{
   background-color: lightskyblue;
@@ -60,7 +64,7 @@ h1{
 }
 
 .hero div{
-  padding: 64px 0;
+  padding: 32px 0;
 }
 
 .hero div a{
@@ -106,3 +110,30 @@ footer{
 small{
   font-size: 14px;
 }
+
+/* Large Screen (if width is over 600px) */
+@media (min-width: 600px) {
+  /* header */
+  .logo-sp {
+    display: none;
+  }
+  .logo-pc{
+    display: inline;
+  }
+
+  /* main */
+  .hero{
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero div{
+    flex: 1;
+  }
+
+  .hero div img{
+    margin-top: 0;
+ 
+  }
+}
+
