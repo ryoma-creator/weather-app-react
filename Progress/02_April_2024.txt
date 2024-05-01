@@ -181,12 +181,25 @@ Apr 26
 Apr 27 React 1
 Apr 28 React 2
 
-Apr 29
+Apr 29	React
 
-	11:15-1:43 2hours half
+	11:15-1:43 2hours half + night time , try to memorize by flash card
 	review progate React 1 and 2 (until props)
+	child instance and parent and so on... and why do they need it for and what's role..
+	so many question one by one
 
 
+Apr 30  React 
+	3times + night time , try to memorize by flash card
+	progate
+	what's the rendering meaning why need and so on.
+	one by one, still I have question and struggle to catch image what's react want to do.
+
+May 1  
+	3 times , sleepless due to ichy cough on midnight 1:50-7:00am...
+	React 4 
+	what's the constructor and why and so on.
+	
 
 
 

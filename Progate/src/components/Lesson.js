@@ -8,6 +8,9 @@ class Lesson extends React.Component {
           <p>{this.props.name}</p>
           <img src={this.props.image} />
         </div>
+        {/* Prepare the modal */}
+        
+        
       </div>
     );
   }
