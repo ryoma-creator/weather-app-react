@@ -196,23 +196,45 @@ Apr 30  React
 	one by one, still I have question and struggle to catch image what's react want to do.
 
 May 1  
+	gym walking 10min
 	3 times , sleepless due to ichy cough on midnight 1:50-7:00am...
 	React 4 
 	what's the constructor and why and so on.
+	Midnight memorize by flash card js,css, html each of over 15
+
+May 2   
+	11:00 start
+	gym walking + 8.3speed and 1  5min + training / best condition patern
+	
+	React Noticed! React has <App /> Hierarchical structure and call like a staircase
+	
+	Review Function
+	gym walking + lift up double 10kg 10 3set , 5kg 10 3set with diffrent postion
+
+ 
+May 5 React (noticed js,return,jsx - function or {key:値} pattern)
+
+
 	
 
 
 
+May 10	
+
+
+
+May 11 JS function, Method, class/instance -- Review
+	React Progate 1, 2 , 3 
+
+
+May 12	Running 10min
+	React progate 2, 3, 4 
+	JS function, Method, class/instance -- Review
 	
 
-
-
-
-
-
-
-
-
+May 13 JS function,  class/instance Review
+	
+	
 	
 
 
