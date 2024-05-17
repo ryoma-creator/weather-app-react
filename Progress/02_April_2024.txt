@@ -233,7 +233,18 @@ May 12	Running 10min
 	
 
 May 13 JS function,  class/instance Review
-	
+
+
+
+May 15 React  
+		Try to make until end  , dot install (first time only)
+
+May 16 React To do list half
+		Training 
+
+May 17 fetch Ai
+		React Try to make it as one by one parts
+		and study for to May 16 to do list which I was not sure 
 	
 	
 
