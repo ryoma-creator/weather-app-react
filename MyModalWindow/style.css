@@ -1,0 +1,21 @@
+body {
+    /* flexを見やすいようにborderを設置 */
+    border: 8px solid blue;
+
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#open, #close {
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 0;
+    margin:16px auto 0;
+    text-align: center;
+
+}
