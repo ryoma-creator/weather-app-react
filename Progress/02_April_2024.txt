@@ -224,27 +224,34 @@ May 10
 
 
 May 11 JS function, Method, class/instance -- Review
-	React Progate 1, 2 , 3 
+	React Progate 1, 2 , 3 （All by Class component）
+	(Understand and notice , I need to learn and pile up basics to do React)
 
 
 May 12	Running 10min
-	React progate 2, 3, 4 
+	React progate 2, 3, 4 （All by Class component）
 	JS function, Method, class/instance -- Review
+	Progate4(input.value.target)
 	
 
 May 13 JS function,  class/instance Review
 
-
+May 14 (Forgot what I did)
+ 
 
 May 15 React  
 		Try to make until end  , dot install (first time only)
 
 May 16 React To do list half
+		useState(hook)- learn first time function style component
 		Training 
 
 May 17 fetch Ai
 		React Try to make it as one by one parts
 		and study for to May 16 to do list which I was not sure 
+		(parent and child component role difference)
+		(conditional rendering)-(basic conditional !,&&,? :)
+
 	
 	
 
