@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Greeting from './Greeting.jsx'
-import {MyName} from './Example.jsx'
+import Bio from './Example.jsx'
 import './index.css'
+import TodoList from './TestComponent.jsx'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Greeting />
-    <MyName />
-  </React.StrictMode>
+    <Bio/>
+    <TodoList />
+  </React.StrictMode>,
 );
