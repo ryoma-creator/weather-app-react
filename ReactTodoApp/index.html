@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Todos</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="root">
+  </div>
+
+  <script type="text/babel">
+    'use strict';
+
+    {
+      const Todo = (props) => {
+        const handleDeleteClick = () => {
+          props.onDeleteClick(props.todo.id);
+        };
+
+        return (
+          <li>
+            <label>
+              <input type="checkbox" checked={props.todo.isCompleted} />
+              <span>{props.todo.title}</span>
+            </label>
+            <button onClick={handleDeleteClick}>Del</button>
+          </li>
+        );
+      };
+
+      // ⇧関数エリア
+
+
+      // ⇩値を関数へ渡して、関数エリアのjSXを表示するエリア
+      const App = () => {
+        const [todos, setTodos] = React.useState([
+          {id: 0, title: 'aaa', isCompleted: false},
+          {id: 1, title: 'bbb', isCompleted: true},
+          {id: 2, title: 'ccc', isCompleted: false},
+        ]);
+
+        const handleTodoCheckboxChange = (id) => {
+          const newTodos = todos.map((todo) => {
+            return {
+              id: todo.id,
+              title: todo.title,
+              isCompleted: todo.id === id ? !todo.isCompleted : todo.isCompleted,
+            };
+          });
+          setTodos(newTodos);
+        };
+
+        const handleTodoDeleteClick = (id) => {
+          if (!confirm('Sure?')) {
+            return;
+          }
+          const newTodos = todos.filter((todo) => {
+            return todo.id !== id;
+          });
+          setTodos(newTodos);
+        };
+
+        // ↓値を関数へ渡すエリア　
+        const todoItems = todos.map((todo) => {
+          return (
+            <Todo 
+              key={todo.id}
+              todo={todo}
+              onDeleteClick={handleTodoDeleteClick}
+            />
+          );
+        });
+
+        return (
+          <>
+            <h1>
+              Todos
+              <button id="purge">Purge</button>
+            </h1>
+            <ul id="todos">
+              {todoItems}
+            </ul>
+            <form id="add-form">
+              <input type="text" />
+              <button>Add</button>
+            </form>
+          </>
+        );
+      };
+
+      const root = ReactDOM.createRoot(document.querySelector('#root'));
+      root.render(
+        <App />
+      );
+    }
+  </script>
+</body>
+</html>
