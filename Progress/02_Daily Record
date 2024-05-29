@@ -427,12 +427,25 @@ May 27 React - Odin Project [2,4,5]
                
 			 Understanding "Destructuring assignment" （3hours or more）
 
-May 28 React  - Official [Passing Props to a Component]
-					understanding 
+May 28 React  - Official [Passing Props to a Component] (2hours)
+					understanding "Destructuring assignment"
 						-Why can an <img /> tag alone render an image?
 						-How is the expression src={getImageUrl(person)} evaluated and valid?
 						-How can the getImageUrl function, imported from a separate file, be referenced within the Avatar component?
 						-How can the person object, defined within the Profile component, be referenced within the Avatar component?
 						-What is the role of the default value 's' for the second argument size in the getImageUrl function?
 						-How does setting a default value serve as a safeguard when an optional property is not provided?
+
+						Compare with last day "Destructuring assignment"
+
+May 29 React  - Official [Passing Props to a Component]
+					Review
+					Spread syntax 
+					Children
+	   React  - Official [Conditional Rendering]		
+	   				else return
+					understanding why you use if,?:,&&
+					<>()<>
+					challenges 1,2,
+
 				
