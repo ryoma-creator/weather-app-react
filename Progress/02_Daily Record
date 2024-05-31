@@ -454,7 +454,7 @@ May 29 React  - Official [Passing Props to a Component]
 					 *React Official Answers were wrong.
 	   Planning - Study and Portfolio		
 
-May 27  React - Odin Project [7]
+May 30  React - Odin Project [7]
 					Keys in React
 					uuid , increment id
 					understanding good and bad Key
@@ -463,8 +463,32 @@ May 27  React - Odin Project [7]
 					props - Default Setting review
 					props - function
 					*want to review again these parts
-
 		
+		React - Odin Project [9] - [Introduction To State]
+					Read
+					decipher BackGround Switch Component
 
+May 30  React - Odin Project [9] - [Introduction To State]
+					Read
+					decipher BackGround Switch Component
 
+		React  - Official [State: A Component's Memory]
+					Understanding to retain Data by hooks
+					Understanding flow of React Code
+					return 0 can be index[0]
+					disable property
+					next and prev error
+					position of hooks
+					index and state 
+					review set and state are function
+					import { useState } from 'react'; to use
+				
+					challenge [1,2,3,] 	
+					- decipher each Components Error
+					[1]gallery
+					[2]form inputs
+					[3]submit message
+					[4]Remove unnecessary state 
+
+		React  - Official [Render and Commit]
 				
