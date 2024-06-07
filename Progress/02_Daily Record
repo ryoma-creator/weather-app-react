@@ -492,3 +492,48 @@ May 30  React - Odin Project [9] - [Introduction To State]
 
 		React  - Official [Render and Commit]
 				
+
+Jun 1
+Jun 2
+Jun 3  Travel Totally Refresh
+Jun 4  Coming back
+Jun 5  Light Review 
+
+Jun 6   React     Review 
+					Describing the UI　- ALL
+						Understanding Your UI as a Tree
+						Conditional Rendering
+					Adding Interactivity 
+						Responding to Events 
+						⇨(Until "Event propagation" )
+
+
+				  custom button
+				  children
+				  Understanding <> and {} difference in JSX
+				  Understanding <Button><Button/> - parents and child
+
+		React - Odin Project [10] - [More On State]
+		React  - Official [State as a Snapshot]		　
+		React  - Official [Choosing the State Structure]
+					- Group related state
+					-
+
+Jun 7   React     Review 
+					Describing the UI　
+					✔️	1. First React component
+					✔️	2. Creating multi-component files
+					✔️	3. Adding markup with JSX
+					✔️	4. Using JavaScript in JSX
+					✔️  5. Configuring components with props
+						 - ✔️✔️✔️ (1hour) { children } 
+					✔️	6. Conditional rendering of components
+						7. Rendering multiple components
+						8. Writing pure components
+						9. Understanding UI as a tree
+					
+
+
+				  
+
+
