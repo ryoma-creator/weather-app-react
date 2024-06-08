@@ -612,8 +612,13 @@ Jun 8	Gym   	  ✔️ Condition
 						{loading with Async}
 						 - ✔️ (!)true,false ⇨ variable = same ,but just only one code ! ⇨ avoid confusion or mistakes
 
-						3.Avoid redundant state
-						4.DRY State
+					✔️	3.Avoid redundant state {form label}
+					✔️　4−1.DRY State(Avoid duplication in state) (two codes)
+
+			Food      ✔️ Condition (Before Study) (4times)
+			Gym   	  ✔️ Condition (4times)
+
+					✔️✔️　4−2.DRY State(Avoid duplication in state) (two codes){select bar}
 						5.Flat Over Nested				  
 
 	Result 
