@@ -523,11 +523,11 @@ Jun 7	Gym   	  ✔️ Condition
 
 	    React     Review
 					Describing the UI　[second time]
-					✔️	1. First React component
-					✔️	2. Creating multi-component files
-					✔️	3. Adding markup with JSX
+					✔️	1. First React component 
+					✔️	2. Creating multi-component files 
+					✔️	3. Adding markup with JSX {profile}
 					✔️	4. Using JavaScript in JSX
-					✔️  5. Configuring components with props
+					✔️  5. Configuring components with props {to do list}
 						 - ✔️✔️✔️ Understanding { children }  (1hour)
 					✔️	6. Conditional rendering of components
 					✔️	7. Rendering multiple components
@@ -541,14 +541,55 @@ Jun 7	Gym   	  ✔️ Condition
 					Adding Interactivity　[second time]
 					✔️	1. Handling events
 						 - ✔️ Understanding { children } ⇨ Use codesanbox with Claude sample image to figure out
-						2. Using state to remember
-						　- Understanding "index < element.length -1" 
+					✔️ 	2. Using state to remember {image gallery}
+					✔️ 	　- ✔️ Understanding "index < element.length -1" 
+						     Try to make original "children"
 						3. UI update phases
-						4. State update delay
+					✔️	4. State update delay {form}
+					✔️	5. Queueing state updates
+						 - ✔️ "setScore(s => s + 1)"
+						6. Updating state objects　- Not yet in Odin project
+						7. Updating state arrays   -  Not yet in Odin project
+
+				  Try React by VS code
+
+		React  - Official [Choosing the State Structure]		　
+					✔️✔️✔️  State Consolidation {pont event}
+						 - ✔️✔️✔️ CSS(onPointerMove, client ,e.pageX,position-absolute-relative,transform,vw,vh)
+						 
+						Contradiction Prevention
+						Compute, Don't Store
+						DRY State
+						Flat Over Nested				  
+
+
+Jun 7	Gym   	  ✔️ Condition
+
+	    React     Review
+					Describing the UI　[second time]
+					✔️	1. First React component 
+					✔️	2. Creating multi-component files 
+					✔️	3. Adding markup with JSX {profile}
+						- (new!) always 2 ways for component - Data and function
+					✔️	4. Using JavaScript in JSX
+					✔️  5. Configuring components with props {to do list}
+						 - ✔️✔️✔️ Understanding { children }  (1hour)
+						6. Conditional rendering of components
+						7. Rendering multiple components
+						 - (new!) You can import and use functions from separate files just as if they were written in the same file.
+						8. Writing pure components
+						9. Understanding UI as a tree
+
+	    React     Review
+					Adding Interactivity　[second time]
+					✔️	1. Handling events
+						　- (new!) is inline style better ? ⇨ NO！
+					✔️	2. Using state to remember {image gallery}
+						  - (new!) change = 2 ways - state and Conditional　⇨ combine = switch on off
+						3. UI update phases
+
+						4. State update delay {form}
 						5. Queueing state updates
-						6. Updating state objects
-						7. Updating state arrays
-
-				  
-
-
+						 - ✔️ "setScore(s => s + 1)"
+						6. Updating state objects　- Not yet in Odin project
+						7. Updating state arrays   -  Not yet in Odin project
