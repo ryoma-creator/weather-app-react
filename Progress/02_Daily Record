@@ -563,7 +563,7 @@ Jun 7	Gym   	  ✔️ Condition
 						Flat Over Nested				  
 
 
-Jun 7	Gym   	  ✔️ Condition
+Jun 8	Gym   	  ✔️ Condition
 
 	    React     Review
 					Describing the UI　[second time]
@@ -579,7 +579,7 @@ Jun 7	Gym   	  ✔️ Condition
 						 - (new!) You can import and use functions from separate files just as if they were written in the same file.
 						8. Writing pure components
 						9. Understanding UI as a tree
-
+	
 	    React     Review
 					Adding Interactivity　[second time]
 					✔️	1. Handling events
@@ -588,8 +588,38 @@ Jun 7	Gym   	  ✔️ Condition
 						  - (new!) change = 2 ways - state and Conditional　⇨ combine = switch on off
 						3. UI update phases
 
-						4. State update delay {form}
-						5. Queueing state updates
-						 - ✔️ "setScore(s => s + 1)"
+			Food      ✔️ Condition (Before Study)
+			Gym   	  ✔️ Condition
+
+					✔️	4. State update delay {submit form}
+						-(new!)handleSubmit on the form 
+					✔️	5. Queueing state updates
+	
 						6. Updating state objects　- Not yet in Odin project
 						7. Updating state arrays   -  Not yet in Odin project
+
+		React  - Official [Choosing the State Structure]		　
+					✔️	1.State Consolidation {pointer}
+						 - ✔️ transform: translate(),position: relative absolute
+					✔️✔️  2-1.Contradiction Prevention (two codes)
+						{loading with Async}
+						 - ✔️✔️ sync, await , Promise , resolve
+
+			Food      ✔️ Condition (Before Study)
+			Gym   	  ✔️ Condition
+
+					✔️✔️ 2-2.Contradiction Prevention (two codes)
+						{loading with Async}
+						 - ✔️ (!)true,false ⇨ variable = same ,but just only one code ! ⇨ avoid confusion or mistakes
+
+						3.Avoid redundant state
+						4.DRY State
+						5.Flat Over Nested				  
+
+	Result 
+	Total Component 12
+	What I was not sure but You could figure out today?
+		- (new!) always 2 ways for component - Data and function
+		- (new!) You can import and use functions from separate files just as if they were written in the same file.　It means, how you call ways are also same. ⇨ {} 
+		- (new!) is inline style better ? ⇨ NO！
+		- (new!) change = 2 ways - state and Conditional　⇨ combine = switch on off
