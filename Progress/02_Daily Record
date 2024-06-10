@@ -728,16 +728,63 @@ Jun 8
 								- Specific event handlers
 								- State-dependent attributes (disabled, active, etc.)
 
-		Food	  ✔️ Condition
+		Food	    Condition ⇨ only breed ⇨ cant no concentrate and memory is not good.
 		Gym   	  ✔️ Condition 
 
-				   ✔️	2. Using state to remember {image gallery}
+				    ✔️	2. Using state to remember {image gallery}
 							- review index[x]
-				  		3. UI update phases
-						4. State update delay {submit form-drop list}
-						- ✔️ onChange={e => setTo(e.target.value)}>
-						- ✔️S elect
-						5. Queueing state updates
+				    ✔️	3. UI update phases
+					✔️	4. State update delay {submit form-drop list}
+					✔️	5. Queueing state updates
 	
 						6. Updating state objects　- Not yet in Odin project
 						7. Updating state arrays   -  Not yet in Odin project
+
+		React  - Official [Choosing the State Structure]		　
+					 	1.State Consolidation {pointer}
+						 - { x: 0, y: 0 } ⇨ { key1: value1, key2: value2 }
+						 - ✔️ transform: translate(),position: relative absolute
+	
+			Food      ✔️ Condition (Before Study)
+			Gym   	  　 Condition
+			Sup
+
+						 2-1.Contradiction Prevention (two codes)
+						 	{Textarea ,loading with Async}
+						 - ✔️ if (isSent) { return <h1>Thanks for feedback!</h1> }⇨ if not, nothing return ⇨
+						it means nothing is displayed 
+
+
+
+
+					 2-2.Contradiction Prevention (two codes)
+						{loading with Async}
+						 - ✔️ (!)true,false ⇨ variable = same ,but just only one code ! ⇨ avoid confusion or mistakes
+
+						3.Avoid redundant state {form label}
+					 　4−1.DRY State(Avoid duplication in state) (three codes)
+					 	- (!) two ways to duplicate ⇨
+						< /> or map & const List ⇨ times call
+
+					 　4−2.DRY State(Avoid duplication in state) (three codes){select bar ＆ spread}
+						-  if (item.id === id)
+						-  { ...item, title: e.target.value }
+						-  map ⇨ else {return item;}
+
+					✔️✔️✔️   5-1 Avoid deeply nested state {Object and List combination - "Recursive Object Structure" }
+					   	- ✔️ review object and list　- Differences in Usage
+						⇨ [{ name: "りんご" }, { name: "バナナ" }] 
+						⇨ { 場所: "公園", 食べ物: ["おにぎり", "サンドイッチ"] }
+						- **To group similar items:** Use a list of objects.
+						- **To gather various pieces of information about one large item:** Use an object with lists inside.
+						- map ⇨ ⭕️ list, ❌ 
+						- "Recursive Object Structure" - list and object
+
+			Food      ✔️ Condition (Before Study)
+			Gym   	  　 Condition
+
+						5-1 Avoid deeply nested state {Object and List combination - "Recursive Object and function Structure" }
+						 - object list ⇨ variable.key.map
+						 - ✔️✔️✔️ recursive function
+						 - key.length > 0 && ⇨ if there is element, display jsx
+						 - understanding list id and ol confusion, + unnecessary id on list
