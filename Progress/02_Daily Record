@@ -563,7 +563,10 @@ Jun 7	Gym   	  ✔️ Condition
 						Flat Over Nested				  
 
 
-Jun 8	Gym   	  ✔️ Condition
+Jun 8	
+		Food	  ✔️ Condition
+		Gym   	  ✔️ Condition
+		Sup		  ✔️ Condition
 
 	    React     Review
 					Describing the UI　[second time]
@@ -613,18 +616,128 @@ Jun 8	Gym   	  ✔️ Condition
 						 - ✔️ (!)true,false ⇨ variable = same ,but just only one code ! ⇨ avoid confusion or mistakes
 
 					✔️	3.Avoid redundant state {form label}
-					✔️　4−1.DRY State(Avoid duplication in state) (two codes)
+					✔️　4−1.DRY State(Avoid duplication in state) (three codes)
 
 			Food      ✔️ Condition (Before Study) (4times)
 			Gym   	  ✔️ Condition (4times)
 
-					✔️✔️　4−2.DRY State(Avoid duplication in state) (two codes){select bar}
+					✔️✔️　4−2.DRY State(Avoid duplication in state) (three codes){select bar ＆ spread}
+						- ✔️ if (item.id === id)
+						- ✔️ { ...item, title: e.target.value }
+						- ✔️ map ⇨ else {return item;}
+					　  4−3.DRY State(Avoid duplication in state) (three codes){select bar ＆ spread}	
 						5.Flat Over Nested				  
 
 	Result 
-	Total Component 12
+	Total Component 15
+	      Gym        4 
 	What I was not sure but You could figure out today?
 		- (new!) always 2 ways for component - Data and function
 		- (new!) You can import and use functions from separate files just as if they were written in the same file.　It means, how you call ways are also same. ⇨ {} 
 		- (new!) is inline style better ? ⇨ NO！
 		- (new!) change = 2 ways - state and Conditional　⇨ combine = switch on off
+
+
+
+
+		Jun 9	
+		Food	  ✔️ Condition
+		Gym   	  ✔️ Condition
+		Sup		  ✔️ Condition
+
+	    React     Review
+					Describing the UI　[second time]
+					✔️	1. First React component 
+					✔️	2. Creating multi-component files 
+					✔️	3. Adding markup with JSX {profile}
+					✔️	4. Using JavaScript in JSX
+					✔️  5. Configuring components with props {to do list}
+					✔️	6. Conditional rendering of components
+					✔️	7. Rendering multiple components
+	
+						8. Writing pure components
+						9. Understanding UI as a tree
+	
+	    React     Review
+					Adding Interactivity　[second time]
+					✔️	1. Handling events
+					✔️	2. Using state to remember {image gallery}
+						3. UI update phases
+					✔️	4. State update delay {submit form-drop list}
+						- ✔️ onChange={e => setTo(e.target.value)}>
+						- ✔️S elect
+					✔️	5. Queueing state updates
+	
+						6. Updating state objects　- Not yet in Odin project
+						7. Updating state arrays   -  Not yet in Odin project
+
+		React  - Official [Choosing the State Structure]		　
+					✔️ 	1.State Consolidation {pointer}
+						 - ✔️ transform: translate(),position: relative absolute
+					✔️	 2-1.Contradiction Prevention (two codes)
+						 	{Textarea ,loading with Async}
+						 - ✔️ if (isSent) { return <h1>Thanks for feedback!</h1> }⇨ if not, nothing return ⇨
+						it means nothing is displayed 
+
+
+			Food      ✔️ Condition (Before Study)
+			Gym   	  ✔️ Condition
+
+					✔️ 2-2.Contradiction Prevention (two codes)
+						{loading with Async}
+						 - ✔️ (!)true,false ⇨ variable = same ,but just only one code ! ⇨ avoid confusion or mistakes
+
+					✔️	3.Avoid redundant state {form label}
+					✔️ 　4−1.DRY State(Avoid duplication in state) (three codes)
+					 	- (!) two ways to duplicate ⇨
+						< /> or map & const List ⇨ times call
+
+					 　4−2.DRY State(Avoid duplication in state) (three codes){select bar ＆ spread}
+						- ✔️ if (item.id === id)
+						- ✔️ { ...item, title: e.target.value }
+						- ✔️ map ⇨ else {return item;}
+
+
+		Jun 10	
+		Food	  ✔️ Condition
+		Gym   	    Condition ⇨ close
+		Sup		  ✔️ Condition
+		Sleep	  ✔️ Condition
+
+	    React     Review
+					Describing the UI　[second time]
+					✔️	1. First React component 
+					✔️	2. Creating multi-component files 
+					✔️	3. Adding markup with JSX {profile}
+					✔️	4. Using JavaScript in JSX
+					   5. Passing props to a component {basic To do}
+						 - (!)Understanding Data Flow in React:
+						  As long as Parent data, you can pass Props down to other every children.
+					✔️	6. Conditional rendering of components
+					✔️	7. Rendering multiple components
+	
+						8. Writing pure components
+						9. Understanding UI as a tree
+
+	    React     Review
+					Adding Interactivity　[4 times?]
+					✔️✔️	1. Handling events　{Child} 
+							- ✔️✔️(!)
+								Allowable changes (passed as props or children):
+								- Text or content
+								- Specific event handlers
+								- State-dependent attributes (disabled, active, etc.)
+
+		Food	  ✔️ Condition
+		Gym   	  ✔️ Condition 
+
+				   ✔️	2. Using state to remember {image gallery}
+							- review index[x]
+				  		3. UI update phases
+						4. State update delay {submit form-drop list}
+						- ✔️ onChange={e => setTo(e.target.value)}>
+						- ✔️S elect
+						5. Queueing state updates
+	
+						6. Updating state objects　- Not yet in Odin project
+						7. Updating state arrays   -  Not yet in Odin project
