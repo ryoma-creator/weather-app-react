@@ -786,5 +786,10 @@ Jun 8
 						5-1 Avoid deeply nested state {Object and List combination - "Recursive Object and function Structure" }
 						 - object list ⇨ variable.key.map
 						 - ✔️✔️✔️ recursive function
-						 - key.length > 0 && ⇨ if there is element, display jsx
+						 - key.length > 0 && ⇨ if there is element, display jsx (short-circuit evaluation)
+						 	(!)⇨ make copy by another way not just only map method.
 						 - understanding list id and ol confusion, + unnecessary id on list
+						 - ul , li ⇨ recursive function ⇨ reverse! Understanding the Inverted Structure
+						 - All Duplication Methods in React
+						 - why map ＆ key.length > 0 &&, both Duplication methonds need ?
+						
