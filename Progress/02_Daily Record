@@ -935,3 +935,52 @@ Jun 8
 							✔️	 Dynamic Object Key Access 
 						 ✔️	✔️ ✔️  Recursive Data Access 
 							(!) object and list → How to access and how many ways 
+							(!) Try to make it easy and simple and parts by Ai and generate them if you stucks
+
+
+May 12  ❌ due to lack of sleep and slept on 4 am
+
+May 13      Food         ✔️Condition
+            Gym       　 ✔️Condition
+			Sup		     ✔️Condition
+			Sleep          ✔️Condition
+
+		TOEIC → Warm up for English
+
+		        React  - Official [Choosing the State Structure]        　
+
+                ✔️    2-2.Contradiction Prevention 
+                        {loading with Async - Order State App}
+                         -  (!)true,false ⇨ variable = same ,but just only one code ! ⇨ avoid confusion or mistakes
+
+                ✔️     3.Avoid redundant state {form label}
+						 - useState(" ")→ onChange→ e.target.value
+
+                     　4−1.DRY State(Avoid duplication in state) 
+					 	{menu,tab change, e-commerce add function app}
+						 - why need two useState even you dont use?
+						　　→ in the future, u might add....
+
+            Food      ✔️ Condition (Before Study)
+            Gym       ✔️  Condition
+			Sup		  ✔️ Condition
+
+						    - The reason why you need to put on List to useState?⇩
+						⭐️	→ (!) List etc info... you should put on useState once before use to prevent not to change for other components. use it within that components. do not change mother data.
+						→ so this is manner.
+						All Data list , object should be added by useState before you use.
+						⭐️	- (!)useState(List[index]) → map→ change  each index → template pattern
+
+                     　4−2.DRY State(Avoid duplication in state) (three codes){select bar ＆ spread}
+                        -  if (item.id === id)
+                        -  { ...item, title: e.target.value }
+                        -  map ⇨ else {return item;}
+
+                         5-1 Avoid deeply nested state {Object and List combination - "Recursive Object Structure" }
+                        -   review object and list　- Differences in Usage
+                        ⇨ [{ name: "りんご" }, { name: "バナナ" }] 
+                        ⇨ { 場所: "公園", 食べ物: ["おにぎり", "サンドイッチ"] }
+                        - **To group similar items:** Use a list of objects.
+                        - **To gather various pieces of information about one large item:** Use an object with lists inside.
+                        - map ⇨ ⭕️ list, ❌ 
+                        - "Recursive Object Structure" - list and object				
