@@ -13,14 +13,14 @@ function Person() {
 
       <label>
         <input
-          type="test"
+          type="text"
           placeholder='Please Type your First Name'
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
         />
 
         <input
-          type="test"
+          type="text"
           placeholder='Please Type your Last Name'
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
