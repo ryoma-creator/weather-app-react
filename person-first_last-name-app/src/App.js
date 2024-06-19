@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 function Person() {
-  const [firstName, setfirtstName] = useState('');
+  const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const fullName = firstName + lastName;
+  const fullName = `${firstName} ${lastName}`;
 
 
 
@@ -13,19 +13,18 @@ function Person() {
 
       <label>
         <input
-          className='firstName'
+          type="test"
+          placeholder='Please Type your First Name'
           value={firstName}
-          onInput={(e) => firtstName{e.target.value}}
-        >
-          first name
-        </input>
+          onChange={(e) => setFirstName(e.target.value)}
+        />
 
         <input
-          className='lastName'
+          type="test"
+          placeholder='Please Type your Last Name'
           value={lastName}
-        >
-          last name
-        </input>
+          onChange={(e) => setLastName(e.target.value)}
+        />
 
       </label>
       
