@@ -970,6 +970,9 @@ May 13      Food         ✔️Condition
 						→ so this is manner.
 						All Data list , object should be added by useState before you use.
 						⭐️	- (!)useState(List[index]) → map→ change  each index → template pattern
+						- Memory become heavy ⇨ not effective
+					 	 so do not include unnecessary list,object data. pick up and extract only data what you need from .
+						　ex→ ❌ all object[0] ⭕️ object[0].id etc..
 
                      　4−2.DRY State(Avoid duplication in state) (three codes){select bar ＆ spread}
                         -  if (item.id === id)
@@ -984,3 +987,53 @@ May 13      Food         ✔️Condition
                         - **To gather various pieces of information about one large item:** Use an object with lists inside.
                         - map ⇨ ⭕️ list, ❌ 
                         - "Recursive Object Structure" - list and object				
+
+
+
+June 17           Tutorial: Tic-Tac-Toe
+
+						Declaring a winner 
+						 - null or others === false or True
+						 - && and null combination
+						 - basic loop
+						 - Index Access with Variable
+						 - distinguishing method for 
+						 logical AND(&&) VS conditional rendering with React(&&)
+						 - a === b & a === c
+						   a === b === c
+						
+						Break
+						 - ||
+						 - ternary operator (xIsNext ? "X" : "O")
+
+
+June 18				Food
+					Gym
+					Sup
+						[Sharing State Between Components]
+
+						Understanding State Lifting { Accordion-FAQ page }
+							- children
+							- Making new dir by React 
+							- Passing useState by props from parents to children - how ? - put in Variable
+							- UseState - Children ⇨ each / Parents ⇨ all
+					Food
+					Gym
+							- variable - on ,off 
+							- null - default = false
+							- filter + List + !index = close
+							- props from parents ⇨ each controlled
+							- Challenge 1
+
+					Food    
+							- Challenge 2 {Search bar}
+							- query
+							- Method
+								- split
+								- some
+								- startsWith
+								- toLowerCase
+
+
+
+						
