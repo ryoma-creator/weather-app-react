@@ -1034,6 +1034,25 @@ June 18				Food
 								- startsWith
 								- toLowerCase
 
+Jun 19
+					Food
+					Gym
 
+			Odin Project[More On State]	
+						Assignment[FirstName LastName]
+							 - 	Notice , still not enough for making by myself even if you can reads code.
+			Odin Project[Project: CV Application]
+			                 - understanding demand on manual
+							 - find design image
+							 - decide how to make component
+							 - make structure of directly
+							 - make first component
 
+Jun 20      Odin Project[Project: CV Application]
+							 - br on JSX for multiple things
+							 　- \n , 
+							 - split + map
+							 - {index > 0 && ' '} ⇨ except for first index number
+							 - {index !== items.length - 1 && <br />}
+							    ⇨ except for last element of list
 						
