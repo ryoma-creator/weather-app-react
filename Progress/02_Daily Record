@@ -1055,4 +1055,8 @@ Jun 20      Odin Project[Project: CV Application]
 							 - {index > 0 && ' '} ⇨ except for first index number
 							 - {index !== items.length - 1 && <br />}
 							    ⇨ except for last element of list
-						
+						　　　- map((num, index) ⇨ 
+						       first one = element , second one = index
+							 - split("") ⇨ every single alphabet
+							   split(" ") ⇨ every space
+							 - <React.Fragment> ⇨ instead of div
