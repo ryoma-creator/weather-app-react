@@ -28,9 +28,9 @@ const CategoryItem = ({ item }) => {
             <span className="category-number">{id}</span>
             <span className="category-title">
                 {words.map((word, index) => (
-                    <span key={index} className="category-word">
+                    <div key={index} className="category-word">
                         {word}
-                    </span>
+                    </div>
                 ))}
             </span>
         </li>
