@@ -30,7 +30,6 @@ const CategoryItem = ({ item }) => {
                 {words.map((word, index) => (
                     <span key={index} className="category-word">
                         {word}
-                        {index !== words.length - 1 && <br />}
                     </span>
                 ))}
             </span>
