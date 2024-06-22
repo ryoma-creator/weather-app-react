@@ -17,22 +17,21 @@ const ProfileList = [{
 
 function inputPlaceholders(ProfileList) {
     return ProfileList.map((item,index) => (
-     <input key={item.id} placeholder={item.placeholder}/>
+     <input className='input' key={item.id} placeholder={item.placeholder}/>
     ));
 }
 function ProfileForm() {
     return (
         <>
-            <form>
+            <form className="form">
                 <div className="Profile">
-                    <h2>Profile Information</h2>
                     <p>Please Add your Profile details</p>
                 </div>
                 {inputPlaceholders(ProfileList)}
                 
-                
-                Profile Image
-                <input type="file" />
+                <label htmlFor="profileImage">Profile Image
+                    <input id="profileImage" type="file"/>
+                </label>
                
                 
             </form>

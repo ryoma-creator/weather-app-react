@@ -1060,3 +1060,29 @@ Jun 20      Odin Project[Project: CV Application]
 							 - split("") ⇨ every single alphabet
 							   split(" ") ⇨ every space
 							 - <React.Fragment> ⇨ instead of div
+
+Jun 21 　　　Odin Project[Project: CV Application]
+							 - Try to fix position and code for jsx and css for category - Many things... hover,block....etc
+							 - TOO MANY THINGS (I cant not recall details,
+							 but I noticed and learnt when I tried to write and make on VS code ,css,jsx,components )
+							 - noticed I need to recall css since I focus on React and Js for over 1month half.
+							 - noticed I can imagine how to make component and
+							 make it shorter by React now.
+			Gym              - twice  
+							 - directory and pass issues ⇨ understand
+							 - const vs function 
+							   -  review difference of definition 
+							   const add = (a, b) => a + b;
+							   function add(a, b) {  return a + b;}
+							✔️✔️✔️ - "only function can be reusable"
+							 - key
+							   -  make id or index ⇨ id by object
+
+							 - Review 
+			 React Official  - [Describing the UI]
+			                    - get image for List + object and how to call
+							 - [Adding Interactivity]
+							    - get Idea setState[0] + 1 ,page change ⇨ 
+								instead of list　⇨ component file ⇨ possible by switch + rendering
+							
+							✔️✔️✔️- Noticed ⇨ write code by myself ⇨ review by reading ⇨ I can notice more how to write and get Idea. Make code by　myself + review　⇨ Best Practice
