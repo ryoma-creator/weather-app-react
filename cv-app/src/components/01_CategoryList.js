@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/01_CategoryList.css'
+import { ProfileList } from '../data/sectionData.js';
 
 const categorysData = [
     {id: 1, title: 'Profile Section'},
