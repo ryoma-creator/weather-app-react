@@ -23,24 +23,37 @@ export const categorysData = [
 //     placeholder: 'Address'}]
 
 export const sectionData = {
-  profile: [
-    { id: 0, placeholder: 'First Name' },
-    { id: 1, placeholder: 'Last Name' },
-    { id: 2, placeholder: 'Phone Number' },
-    { id: 3, placeholder: 'Address' }
-  ],
-  education: [
-    { id: 0, placeholder: 'School Name' },
-    { id: 1, placeholder: 'Degree' },
-    { id: 2, placeholder: 'Field of Study' },
-    { id: 3, placeholder: 'Graduation Year' }
-  ], 
-  skills: [
-    { id: 0, placeholder: 'Skill'} 
-  ],
-  miniProject: [
-    { id: 0, placeholder: 'Project Name' },
-    { id: 1, placeholder: 'Tech Stack' },
-    { id: 2, placeholder: 'Description' },
-  ],
-};
+    profile: {
+      title: 'Please Add your Profile details',
+      fields: [
+        { id: 0, placeholder: 'First Name' },
+        { id: 1, placeholder: 'Last Name' },
+        { id: 2, placeholder: 'Phone Number' },
+        { id: 3, placeholder: 'Address' }
+      ]
+    },
+    education: {
+      title: 'Please Add your Education details',
+      fields: [
+        { id: 0, placeholder: 'School Name' },
+        { id: 1, placeholder: 'Degree' },
+        { id: 2, placeholder: 'Field of Study' },
+        { id: 3, placeholder: 'Graduation Year' }
+      ]
+    },
+    skills: {
+      title: 'Please Add your Skills',
+      fields: [
+        { id: 0, placeholder: 'Skill'} 
+      ]
+    },
+    miniProject: {
+      title: 'Please Add your Mini Project details',
+      fields: [
+        { id: 0, placeholder: 'Project Name' },
+        { id: 1, placeholder: 'Tech Stack' },
+        { id: 2, placeholder: 'Description' },
+      ]
+    },
+  };
+  

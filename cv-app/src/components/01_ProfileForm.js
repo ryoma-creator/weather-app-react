@@ -31,10 +31,10 @@ function ProfileForm() {
         <>
             <form className="form">
                 <div className="Profile">
-                    <p>Please Add your Profile details</p>
+                    <p>{sectionData.profile.title}</p>
                 </div>
                 
-                {InputField(sectionData)}
+                <InputField sectionData={sectionData}/>
                 
                 <div className="label-container">
                     <label htmlFor="profile-image" className="label-text">Profile Image</label>
