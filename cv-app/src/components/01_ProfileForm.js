@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/01_ProfileForm.css';
-import { ProfileList } from '../data/sectionData.js';
+import { sectionData } from '../data/sectionData.js';
+import { InputField } from '../components/InputFields.js';
 
 // const ProfileList = [{
 //     id: 0,
@@ -16,14 +17,15 @@ import { ProfileList } from '../data/sectionData.js';
 //     placeholder: 'Address'}
 // ]
 
-function inputPlaceholders(ProfileList) {
-    return ProfileList.map((item,index) => (
-     <input 
-        className='input' 
-        key={item.id} 
-        placeholder={item.placeholder}/>
-    ));
-}
+// function inputPlaceholders(sectionData) {
+//     return sectionData.profile.map((item,index) => (
+//      <input 
+//         className='input' 
+//         key={item.id} 
+//         placeholder={item.placeholder}/>
+//     ));
+// }
+
 function ProfileForm() {
     return (
         <>
@@ -32,7 +34,7 @@ function ProfileForm() {
                     <p>Please Add your Profile details</p>
                 </div>
                 
-                {inputPlaceholders(ProfileList)}
+                {InputField(sectionData)}
                 
                 <div className="label-container">
                     <label htmlFor="profile-image" className="label-text">Profile Image</label>
