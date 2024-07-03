@@ -1094,4 +1094,69 @@ Jun 23        food, sup
 							- know where to put on data into directory 
 							- How to import from component ⇨ need component name
 							- 
-							
+
+Jun 24 - 29  ❌🤢       Food Poison / Sick high fever
+
+Jun 30        Restart        Try to Visualizing React Concepts with Everyday Examples
+							- List Object
+							- Conditional Rendering
+							- EventListener 
+							- useState
+							　Understanding the process of creating something dynamic
+
+
+Jun 1 						 Restart "CV App" development
+							 - Review and Analyze and understanding
+
+Jun 2 						 - Visualize CV App and another COLORS App flow by Figjam 
+							   to analyze and understanding WHY (while visualizing)
+
+								1. **props vs import/export**
+								- Passing data from parent to child through props is similar to export and import.
+								- Export/import removes file boundaries, making components feel like they are in the same file.
+
+								2. **Dynamic switching method**
+								- Question on how to use `useState` to change data when wrapping data in an Object instead of a List.
+
+								3. **Differences between List and Object**
+								- List: An image of moving index numbers (moving the current state with index + 1).
+								- Object: Managing data with keys (clarification needed).
+
+								4. **Placement of useState and onClick buttons**
+								- Interested in the compact color change method of OdinProject.
+								- Consultation on whether to use conditional rendering.
+
+								5. **File splitting of components**
+								- Question on how far to split components into files.
+
+								6. **Placement of event handlers**
+								- Ranking of the most commonly used approaches.
+
+								7. **Handling data written in Object instead of List**
+								- Question on how to handle data when `map` cannot be used with Object.
+
+								8. **Handling Objects**
+								- Question about the management methods of Objects.
+
+								9. **Data linking between files**
+								- Method to change data between `Category.js` and `ProfileForm.js`.
+								- How to cross file boundaries using export/import.
+
+								10. **Behavior of click events**
+									- Method to correspond to the array index with a click event.
+									- Managing multiple lists titled with object keys (e.g., profile, education).
+
+								11. **Linking stateholder and list in separate files**
+									- Method to link the data of `Category` and `Input` respectively.
+
+								12. **Considering component and file structure using FigJam**
+									- Creating flowcharts and diagrams with FigJam to visualize component structure and data flow.
+									- Planning component interactions and partitioning methods.
+
+								13. **Dividing Odin Project's Colors mini-app into components**
+									- Considering the method of dividing the Colors mini-app into components.
+									- Identifying the optimal partitioning method and integrating it as a dynamic function into the CV app.
+									- Advancing considerations while creating flowcharts with FigJam.
+
+
+Jun 3						

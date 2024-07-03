@@ -9,19 +9,6 @@ export const categorysData = [
 ];
 
 
-// export const ProfileList = [{
-//     id: 0,
-//     placeholder: 'First Name'
-// },{
-//     id: 1,
-//     placeholder: 'Last Name'
-// },{
-//     id: 2,
-//     placeholder: 'Phone Number'
-// },{
-//     id: 3,
-//     placeholder: 'Address'}]
-
 export const sectionData = {
     profile: {
       title: 'Please Add your Profile details',
