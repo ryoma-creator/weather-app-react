@@ -1,6 +1,6 @@
 
 
-export const categorysData = [
+export const categoriesData = [
     {id: 1, title: 'Profile Section'},
     {id: 2, title: 'Education Section'},
     {id: 3, title: 'Skills Sector'},

@@ -1,19 +1,13 @@
 import React from "react";
 import '../styles/01_CategoryList.css'
-import { categorysData } from '../data/sectionData.js';
+import { categoriesData } from '../data/sectionData.js';
 
-// const categorysData = [
-//     {id: 1, title: 'Profile Section'},
-//     {id: 2, title: 'Education Section'},
-//     {id: 3, title: 'Skills Sector'},
-//     {id: 4, title: 'Mini Project'},
-//     {id: 5, title: 'Social'},
-// ];
+
 
 const CategoryList = () => {
     return (
         <ul className="category-list">
-            {categorysData.map((item, index) => (
+            {categoriesData.map((item, index) => (
                 <CategoryItem key={index} item={item} />
             ))}
         </ul>
