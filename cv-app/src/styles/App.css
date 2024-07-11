@@ -1,11 +1,13 @@
 * {
-  background-color: black;
+  background-color: #283645;
   color: white;
   font-family: Arial, sans-serif;
   max-width: 500px;
 }
 
+
 h1 {
+    background-color: #283645;
   text-align: center;
   width: 500px;
 }

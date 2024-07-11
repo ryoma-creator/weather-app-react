@@ -34,7 +34,7 @@ export const sectionData = {
         { id: 0, placeholder: 'Skill'} 
       ]
     },
-    miniProject: {
+    mini: {
       title: 'Please Add your Mini Project details',
       fields: [
         { id: 0, placeholder: 'Project Name' },
@@ -42,5 +42,11 @@ export const sectionData = {
         { id: 2, placeholder: 'Description' },
       ]
     },
+    social: {
+      title: 'Please Add your Social Links*',
+      fields: [
+        { id: 0, placeholder: 'Social Links'} 
+      ]
+    }
   };
   

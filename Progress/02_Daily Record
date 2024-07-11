@@ -1164,16 +1164,58 @@ Jul 4 	　sleepless due to cough
 			I could not record well
 			but I was making image and leaning jul 3,4
 			(what I can briefly remember by review on jul 8, was below)
-			・making flow chart with picture on figjam
+			・illustrating flow chart with picture on figjam
+
+			  https://www.figma.com/board/jp9V10HZGPdw3jwcAG966W/Untitled?node-id=0-1&t=WjPXTgcPqx8u5bvC-0
+
 			・consider how to apply dynamic flow image to my cv.
 			・How to make useState for "Object" data
+				・understanding 2 ways to access for object data
+				  ・useState('apple') ⇨ ' ' meaning 
 
 
 
-Jul 5,6,7,8 		Private one      Immigration Problem
-									(PH Government is collapsed and asked huge money...)
+Jul 5,6,7,8 	💥💥😡	Private one     Immigration Problem !!!
+									(PH Government is collapsed and asked huge money and get mental break, needed to search ask a lot and spend time for it.)
 
 Jul 8     sleepless due to cough
-		
+           
+		   booking hotel and so on for immigration problem
+		   cv app
+		   ⏰・review to recall what I was doing and image for it again.
+		   	 
+
+Jul 9  　　sleepless due to cough
+
+			Sleep		Condition
+            Food      ✔️ Condition (Before Study)
+            Gym       ✔️ Condition
+			Sup		  ✔️ Condition
+			Nap         Condition (from the halfway point)
+			
+			condition management
+			・review for condition management from my memo by experience
+			cv app
+		    ・review to recall what I was doing and image for it again.
+			・Knowing useState [Frequently used ranking and pattern]
+		　　  ・useState ⇨  object vs List ⇨「Which one is used more often?
+
+Jul 10     sleepless due to cough ⇨ 10 or 11 am wake up
+			air conditioner cleaning　⇨ ✔️
+			filter	cleaning		 ⇨ ✔️
+			humidifier       ⇨ ✔️
+			humidifier cleaning ⇨ ✔️
 
 
+			Sleep		Condition
+            Food      ✔️ Condition (Before Study)
+            Gym       ✔️ Condition
+			Sup		  ✔️ Condition
+			Nap         Condition (from the halfway point)
+
+
+
+			find
+			include
+			toLowerCase
+			split
