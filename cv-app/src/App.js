@@ -17,15 +17,17 @@ function App() {
 
   return (
     <>
-    <h1>RESUME GENERATOR</h1>
-    <CategoryList 
-      categoriesData={categoriesData}
-      onSelectCategory={handleCategorySelect}
-      categoryState={categoryState}
-    />
-    <ProfileForm
-      sectionDataKey={sectionData[categoryState]}
-    />
+      <div className='container'>
+        <h1>RESUME GENERATOR</h1>
+        <CategoryList 
+          categoriesData={categoriesData}
+          onSelectCategory={handleCategorySelect}
+          categoryState={categoryState}
+        />
+        <ProfileForm
+          sectionDataKey={sectionData[categoryState]}
+        />
+      </div>
     </>
   );
 }

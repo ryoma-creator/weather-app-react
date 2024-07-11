@@ -1,57 +1,78 @@
 .category-list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch; /* 高さを揃える */
     padding: 0;
     margin: 0;
     list-style-type: none;
-}
-
-.category-item {
+  }
+  
+  .category-item {
     display: flex;
     align-items: center;
     flex: 1;
+    padding: 10px; /* パディングを追加 */
     margin-right: 10px;
-}
- 
-
-.category-item .category-number,
-.category-item .category-title,
-.category-item .category-word {
-    transition: background-color 0.5s, color 0.5s;
-   
-}; 
-
-.category-item:hover .category-number,
-.category-item:hover .category-title,
-.category-item:hover .category-word {
-    background-color: aliceblue;
-    color: black; 
-}
-
-.category-number {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px; /* 角を丸くする */
+  }
+  
+  .category-item:hover {
+    background-color: #354D65;
+    color: #007bff;
+  }
+  
+  .selected {
+    background-color: #354D65;
+    color: #fff;
     
+  }
+  
+  .category-number {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #0077b6;
+    background-color: #354D65;
     color: white;
     margin-right: 16px;
     flex-shrink: 0;
-    
-}
-
-.category-title {
-    text-align: center;
+  }
+  
+  .category-title {
     display: flex;
     flex-direction: column;
     font-size: 16px;
-}
-
-.category-word {
+    background-color: #354D65;
+  }
+  
+  .category-word {
     white-space: nowrap;
-    
-}
+  }
+  
+  /* ホバー時のスタイルを統一 */
+  .category-item:hover .category-number {
+    background-color: #354D65;
+  }
+  
+  .category-item:hover .category-title,
+  .category-item:hover .category-word {
+    color: inherit; /* category-item の色を継承 */
+    background-color: inherit;
+  }
+  
+  /* 選択された項目のスタイル */
+  .category-item.selected,
+  .category-item.selected:hover {
+    background-color: #007bff ;
+    color: #fff;
+  }
+  
+  .category-item.selected .category-number,
+  .category-item.selected:hover .category-number {
+    background-color: #fff;
+    color: #007bff;
+  }

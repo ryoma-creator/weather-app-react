@@ -26,6 +26,7 @@ const CategoryItem = ({ item, onSelect, categoryState }) => {
     return (
         <li 
             className={`category-item ${categoryState === item.title.toLowerCase().split(' ')[0] ? 'selected' : ''}`}
+            // <li class="category-item selected">...</li>
             onClick={() => onSelect(id)}　//categoriesData id
         >
 

@@ -1,13 +1,21 @@
 * {
-  background-color: #283645;
-  color: white;
+  background-color: white;
+  color: #283645;
   font-family: Arial, sans-serif;
-  max-width: 500px;
+  input:not(:placeholder-shown) {
+    background-color: #e6f2ff;
 }
 
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 h1 {
-    background-color: #283645;
+  background-color: white;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  width: 500px;
 }
