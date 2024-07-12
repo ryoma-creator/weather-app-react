@@ -19,11 +19,12 @@ function ProfileForm({ sectionDataKey }) {
                 
                 <InputField keyFields={sectionDataKey.fields}/>
                 
-                {/* <div className="label-container">
+                {sectionDataKey.title.toLowerCase().includes('profile') && (
+                <div className="label-container">
                     <label htmlFor="profile-image" className="label-text">Profile Image</label>
                     <input id="profile-image" type="file"　className="profile-input"/>
-                </div> */}
-               
+                </div> 
+                )}
                 
             </form>
         </>

@@ -56,11 +56,14 @@ input[type="file"] {
     margin-top: 0;
     
   }
+  
 
 @media (max-width: 600px) {
     .form{
         width: 90%;
     }
 }
+
+
 
 /* Undergoing, need to fix Profile Image position from inside input file to outside */
