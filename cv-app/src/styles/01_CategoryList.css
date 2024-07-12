@@ -5,12 +5,16 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    width: 100%;
   }
   
   .category-item {
     display: flex;
     align-items: center;
-    flex: 1;
+
+    flex: 1 1 0;
+    max-width: calc(20% - 10px);
+
     padding: 10px; /* パディングを追加 */
     margin-right: 10px;
     cursor: pointer;
@@ -76,3 +80,9 @@
     background-color: #fff;
     color: #007bff;
   }
+
+  .category-item.selected,
+.category-item.selected * {
+  background-color: #007bff;
+  color: #fff;
+}
