@@ -3,9 +3,10 @@
 export const categoriesData = [
     {id: 1, title: 'Profile Section'},
     {id: 2, title: 'Education Section'},
-    {id: 3, title: 'Skills Sector'},
-    {id: 4, title: 'Mini Project'},
-    {id: 5, title: 'Social'},
+    {id: 3, title: 'Work Experience'},
+    {id: 4, title: 'Skills Sector'},
+    {id: 5, title: 'Mini Project'},
+    {id: 6, title: 'Social'},
 ];
 
 
@@ -15,7 +16,7 @@ export const sectionData = {
     fields: [
       { id: 0, placeholder: 'First Name', type: 'text' },
       { id: 1, placeholder: 'Last Name', type: 'text' },
-      { id: 2, placeholder: 'Phone Number', type: 'tel' },
+      { id: 2, placeholder: 'Phone Number', type: 'tel', pattern: '[0-9]{3}-[0-9]{4}-[0-9]{4}'},
       { id: 3, placeholder: 'Address', type: 'text' }
     ]
   },
@@ -25,7 +26,17 @@ export const sectionData = {
       { id: 0, placeholder: 'School Name', type: 'text' },
       { id: 1, placeholder: 'Degree', type: 'text' },
       { id: 2, placeholder: 'Field of Study', type: 'text' },
-      { id: 3, placeholder: 'Graduation Year', type: 'number' } // または 'date'
+      { id: 3, placeholder: 'Graduation Year', type: 'number',  min: "1980", max: "2030" } // または 'date'
+    ]
+  },
+  work: {
+    title: 'Please Add your Work Experience',
+    fields: [
+      { id: 0, placeholder: 'Company Name', type: 'text' },
+      { id: 1, placeholder: 'Position', type: 'text' },
+      { id: 2, placeholder: 'Start Date', type: 'date' },
+      { id: 3, placeholder: 'End Date', type: 'date' },
+      { id: 4, placeholder: 'Responsibilities', type: 'textarea' }
     ]
   },
   skills: {

@@ -9,6 +9,9 @@ export function InputField({ keyFields }) {
         key={item.id} 
         placeholder={item.placeholder}
         type={item.type}
+        pattern={item.pattern}
+        min={item.min}
+        max={item.max}        
         />
     ));
 }

@@ -1219,3 +1219,64 @@ Jul 10     sleepless due to cough ⇨ 10 or 11 am wake up
 			include
 			toLowerCase
 			split
+			setSelectedCategory(category.title.toLowerCase().split(' ')[0]);⇨ [0] 
+
+Jul 11
+
+Jul 12     I could sleep without any trouble
+			since jun 24 - jul 11 ❌
+
+			wake up 7:50
+			8:20 start
+
+			### Development of a Resume Application
+
+			#### Understanding the Component-Based Structure with React
+			- Trying to understand the roles of `App.js`, `CategoryList.js`, `ProfileForm.js`, and `InputFields.js`.
+
+			#### State Management and Data Flow
+			- Learning how to use the `useState` hook.
+			- Trying to understand how to pass data through props.
+			- Implementing state management for category selection.
+
+			#### CSS Styling
+			- Learning how to use Flexbox.
+			- Implementing responsive design with media queries.
+			- Trying to understand the usage and meaning of the `calc()` function.
+
+			#### Improving Form Inputs
+			- Considering the selection of appropriate `input` types.
+			- Learning how to add the `pattern` attribute.
+			- Trying to understand the implementation of file input (profile image).
+
+			#### Data Structure
+			- Trying to understand the structure and usage of `categoriesData` and `sectionData`.
+
+			#### Unimplemented Features (Understanding and Planning Phase)
+			- Adding a practical experience section.
+			- Implementing edit and submit functions.
+			- Implementing data display after submission.
+			- Using the input mask library (`react-input-mask`).
+			- Introducing React DatePicker.
+			- Persisting data using local storage.
+
+			#### Areas with Insufficient Understanding
+			- Usage of `Array.from()` and `map()`.
+			- Appropriate usage and management of the `useState` hook.
+			- Meaning and usage of the `accept` attribute.
+			- Role and implementation of the `onSave` function.
+
+			#### Considerations
+			- Whether to integrate a backend using SQL.
+			- Appropriate usage of libraries.
+			- Visually improving the application with background videos.
+
+			#### Questions
+			- Specific implementation methods for data saving and editing features.
+			- Implementation methods for the final resume display feature.
+			- Designing reusable components and practicing repetitive implementation.
+
+			#### Learning Direction
+			- Need to deepen understanding of basic React concepts and state management.
+			- Learning detailed control methods in CSS.
+			- Studying best practices for form processing and data management.

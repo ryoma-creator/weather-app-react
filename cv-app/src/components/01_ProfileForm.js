@@ -3,6 +3,8 @@ import '../styles/01_ProfileForm.css';
 // import { sectionData } from '../data/sectionData.js';
 import { InputField } from '../components/InputFields.js';
 
+import Button from '@mui/material/Button';
+
 
 function ProfileForm({ sectionDataKey }) {
         // sectionDataKey が存在しない場合のエラーハンドリング
@@ -11,6 +13,7 @@ function ProfileForm({ sectionDataKey }) {
         }
     return (
         <>
+        
             <form className="form">
                 <div className="Profile">
                     {/* <p>{sectionData.profile.title}</p> */}
@@ -22,7 +25,7 @@ function ProfileForm({ sectionDataKey }) {
                 {sectionDataKey.title.toLowerCase().includes('profile') && (
                 <div className="label-container">
                     <label htmlFor="profile-image" className="label-text">Profile Image</label>
-                    <input id="profile-image" type="file"　className="profile-input"/>
+                    <input id="profile-image" type="file"　className="profile-input"　accept="image/*"　/>
                 </div> 
                 )}
                 

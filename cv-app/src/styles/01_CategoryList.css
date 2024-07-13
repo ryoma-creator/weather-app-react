@@ -15,12 +15,13 @@
     flex: 1 1 0;
     max-width: calc(20% - 10px);
 
-    padding: 10px; /* パディングを追加 */
+    padding: 10px; 
     margin-right: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    border-radius: 5px; /* 角を丸くする */
+    border-radius: 5px; 
   }
+
   
   .category-item:hover {
     background-color: #354D65;
@@ -81,8 +82,31 @@
     color: #007bff;
   }
 
-  .category-item.selected,
+.category-item.selected,
 .category-item.selected * {
   background-color: #007bff;
   color: #fff;
 }
+
+@media (max-width: 600px) {
+    .category-title {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        background-color: #354D65;
+      }
+
+      .category-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        font-size: 12px;
+        border-radius: 50%;
+        background-color: #354D65;
+        color: white;
+        margin-right: 8px;
+        flex-shrink: 0;
+      }      
+  }
