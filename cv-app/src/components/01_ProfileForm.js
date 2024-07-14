@@ -3,8 +3,6 @@ import '../styles/01_ProfileForm.css';
 // import { sectionData } from '../data/sectionData.js';
 import { InputField } from '../components/InputFields.js';
 
-import Button from '@mui/material/Button';
-
 
 function ProfileForm({ sectionDataKey }) {
         // sectionDataKey が存在しない場合のエラーハンドリング

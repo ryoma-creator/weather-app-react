@@ -1229,54 +1229,142 @@ Jul 12     I could sleep without any trouble
 			wake up 7:50
 			8:20 start
 
-			### Development of a Resume Application
+			[Progress summary July 12]
+			**Implementation of Basic React Component Structure**
 
-			#### Understanding the Component-Based Structure with React
-			- Trying to understand the roles of `App.js`, `CategoryList.js`, `ProfileForm.js`, and `InputFields.js`.
+				- Created the basic structure for `App.js`, `CategoryList.js`, `ProfileForm.js`, and `InputFields.js`.
 
-			#### State Management and Data Flow
-			- Learning how to use the `useState` hook.
-			- Trying to understand how to pass data through props.
-			- Implementing state management for category selection.
+				**Introduction of State Management**
 
-			#### CSS Styling
-			- Learning how to use Flexbox.
-			- Implementing responsive design with media queries.
-			- Trying to understand the usage and meaning of the `calc()` function.
+				- Used the `useState` hook to manage the state of category selection.
 
-			#### Improving Form Inputs
-			- Considering the selection of appropriate `input` types.
-			- Learning how to add the `pattern` attribute.
-			- Trying to understand the implementation of file input (profile image).
+				**Basic Implementation of Data Flow**
 
-			#### Data Structure
-			- Trying to understand the structure and usage of `categoriesData` and `sectionData`.
+				- Passed data between components using props.
 
-			#### Unimplemented Features (Understanding and Planning Phase)
-			- Adding a practical experience section.
-			- Implementing edit and submit functions.
-			- Implementing data display after submission.
-			- Using the input mask library (`react-input-mask`).
-			- Introducing React DatePicker.
-			- Persisting data using local storage.
+				**Application of CSS Styling**
 
-			#### Areas with Insufficient Understanding
-			- Usage of `Array.from()` and `map()`.
-			- Appropriate usage and management of the `useState` hook.
-			- Meaning and usage of the `accept` attribute.
-			- Role and implementation of the `onSave` function.
+				- Implemented responsive design using Flexbox and media queries.
 
-			#### Considerations
-			- Whether to integrate a backend using SQL.
-			- Appropriate usage of libraries.
-			- Visually improving the application with background videos.
+				**Implementation of Basic Form Input Structure**
 
-			#### Questions
-			- Specific implementation methods for data saving and editing features.
-			- Implementation methods for the final resume display feature.
-			- Designing reusable components and practicing repetitive implementation.
+				- Implemented various input types (text, number, file).
 
-			#### Learning Direction
-			- Need to deepen understanding of basic React concepts and state management.
-			- Learning detailed control methods in CSS.
-			- Studying best practices for form processing and data management.
+
+				These advancements have led to the implementation of the basic structure and functionality of the application. However, features such as data storage and editing, as well as the final resume display, have not yet been implemented.
+
+
+
+						[Details what did I do]
+						### Development of a Resume Application
+
+						#### Understanding the Component-Based Structure with React
+						- Trying to understand the roles of `App.js`, `CategoryList.js`, `ProfileForm.js`, and `InputFields.js`.
+
+						#### State Management and Data Flow
+						- Learning how to use the `useState` hook.
+						- Trying to understand how to pass data through props.
+						- Implementing state management for category selection.
+
+						#### CSS Styling
+						- Learning how to use Flexbox.
+						- Implementing responsive design with media queries.
+						- Trying to understand the usage and meaning of the `calc()` function.
+
+						#### Improving Form Inputs
+						- Considering the selection of appropriate `input` types.
+						- Learning how to add the `pattern` attribute.
+						- Trying to understand the implementation of file input (profile image).
+
+						#### Data Structure
+						- Trying to understand the structure and usage of `categoriesData` and `sectionData`.
+
+						#### Unimplemented Features (Understanding and Planning Phase)
+						- Adding a practical experience section.
+						- Implementing edit and submit functions.
+						- Implementing data display after submission.
+						- Using the input mask library (`react-input-mask`).
+						- Introducing React DatePicker.
+						- Persisting data using local storage.
+
+						#### Areas with Insufficient Understanding
+						- Usage of `Array.from()` and `map()`.
+						- Appropriate usage and management of the `useState` hook.
+						- Meaning and usage of the `accept` attribute.
+						- Role and implementation of the `onSave` function.
+
+						#### Considerations
+						- Whether to integrate a backend using SQL.
+						- Appropriate usage of libraries.
+						- Visually improving the application with background videos.
+
+						#### Questions
+						- Specific implementation methods for data saving and editing features.
+						- Implementation methods for the final resume display feature.
+						- Designing reusable components and practicing repetitive implementation.
+
+						#### Learning Direction
+						- Need to deepen understanding of basic React concepts and state management.
+						- Learning detailed control methods in CSS.
+						- Studying best practices for form processing and data management.
+
+					gym　for condition ✔️
+
+
+Jul 13      cv app , To Do List
+						to learn next step for "CRUD" ,
+						I started to make "To do list" by React.
+
+					gym　for condition ✔️
+
+			### Key Learnings from Jul 13's Questions
+
+			1. **State Management in React**
+			- Usage of `useState` hook
+			- State updates (e.g., `setTasks`)
+
+			2. **Component Structure**
+			- Roles and relationships of `App.js`, `TodoList.js`, and `TodoItem.js`
+			- Passing props
+
+			3. **Event Handling**
+			- Handling form submissions and button clicks
+
+			4. **JavaScript Functions**
+			- Usage of `map` and `filter` functions
+			- Utilizing the spread operator (`...`)
+			- Using the ternary operator (`? :`)
+
+			5. **Task Operations Implementation**
+			- **Add**: Creating new task objects
+			- **Delete**: Using `filter` to remove specific tasks
+			- **Edit**: Using `map` and conditional updates
+			- **Toggle Completion**: Flipping boolean values (`!task.completed`)
+
+			6. **Unique ID Generation**
+			- Using `Date.now()`
+
+			7. **Form Input Handling**
+			- Retrieving and validating input values (using `trim()`)
+
+			8. **Conditional Rendering**
+			- Displaying a message when the task list is empty
+
+			9. **Data Structure**
+			- Structure of task objects (`id`, `name`, `completed`)
+
+			10. **Similarities and Differences with CV App**
+				- Common data management techniques
+				- Unique complexity of CV app (e.g., section management)
+
+			11. **React Developer Tools**
+				- Visualizing and inspecting state
+
+			12. **Data Flow Between Components**
+				- Passing props from parent to child components
+
+			13. **Immutable State Updates**
+				- Creating new objects or lists to update state
+
+			This list covers the main learning points from Jul 13 questions. By referring to this, you can review the fundamental concepts of the To-Do list application and key features of React.	
+									

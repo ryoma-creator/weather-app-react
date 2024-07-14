@@ -1,7 +1,7 @@
 import React from "react";
 import TodoItem from './TodoItem';
 
-function TodoList( tasks, onDeleteTask, onEditTask, onToggleCompletion ) {
+function TodoList({ tasks, onDeleteTask, onEditTask, onToggleCompletion }) {
     return (
         <div className="todo-list">
             {tasks.length === 0 ? (
@@ -16,8 +16,7 @@ function TodoList( tasks, onDeleteTask, onEditTask, onToggleCompletion ) {
                         onToggleCompletion={onToggleCompletion}
                     />
                 ))
-            )
-            }
+            )}
         </div>
     );
 }
