@@ -10,7 +10,8 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion}){
     const handleEdit = () => {
         onEdit(task.id, editedName);
         setIsEditing(false);
-    };    
+    };
+
 // onEdit ⇩
 // const editTask = (taskId, newName) => {
 //     setTasks(tasks.map(task =>
@@ -18,13 +19,12 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion}){
 //       ));
 //   };
 
-
-
 // {tasks.length === 0 ? (
 //     <p>Please add new task.</p>
 // ) : (
 // 要素が０より大きければ、to do listがあるのが前提なので以下が表示される
 // ToDoList.jsを参照
+
     return(
         <div className="todo-item">
             <input
