@@ -1410,15 +1410,30 @@ Jul 24
 
 
 Jul 25
+			💡		 brain supplement   ✔️
 			✊		gym　for condition ✔️
 			✨		motivation video   ✔️　(🆙 new habit)
 
-					To Do List
-				💡   - map + conditional rendering VS filter 
+					 To Do List
+				     - map + conditional rendering VS filter 
 						- conclusion ⇨ same 
 					 - filter a && b
-					 
+					 - Added task categorization and priority filtering. Implemented task priority with border color indication.
 					
+			💡		 brain supplement   ✔️
+			✊		gym　for condition ✔️
+
+					- Drag & Drop ⇦ ⚡️⛈️⚡️
+						- React Beautiful DnD README 
+					- Array.from
+					- splice
+					- understanding Library and how much I should understand...⇨ answer , no need as for now...
+					- Draggable
+						- where should I enclose and put...?
+						- understanding difference of droppable
+						-Understanding library Id and key Id
+						- draggableID = only strings ! (this developer decided the special rule...) 
+
 					compared to Jul 24, Easy to understand yesterday codes.
 
 					

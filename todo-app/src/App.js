@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import TodoList from './components/TodoList';
 import './App.css';
+// drag & drop
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
 function App(){
   const [tasks, setTasks] = useState([]);
@@ -61,7 +63,7 @@ function App(){
   // const [newPriority, setNewPriority] = useState('medium');
   // const [priorityFilter, setPriorityFilter] = useState('all');
   // tasks = setTasks([...tasks, { id: Date.now(), name: taskName, completed: false ,  category: newCategory 
-  
+
   const filteredTasks = tasks.filter(task =>
     (categoryFilter === 'all' || task.category === categoryFilter) &&
     (priorityFilter === 'all' || task.priority === priorityFilter)
@@ -95,6 +97,18 @@ function App(){
 //   )
 // ))}
 // mapでもfilterと同じものは作れる。⇧
+
+
+// drag & drop
+const onDragEnd = (result) => {
+  if (!result.destination) return;
+
+  const items = Array.from(tasks);
+  const [reorderedItem] = items.splice(result.source.index, 1);
+  items.splice(result.destination.index, 0, reorderedItem); 
+
+  setTasks(items);
+};
 
   return (
     <div>
@@ -156,14 +170,35 @@ function App(){
 
       </select>
 
+{/* drag & drop */}
+{/* 基本的な使い方:
+<DragDropContext />: ドラッグアンドドロップ機能を有効にしたい部分をラップ。
+<Droppable />: ドロップ可能なエリア。
+<Draggable />: ドラッグ可能なアイテム。 */}
 
-      <TodoList 
-        // tasks={tasks} filteredTasksに、dateが絞られて入っているので、代わりにこっちでOK
-        tasks={filteredTasks}
-        onDeleteTask={deleteTask}
-        onEditTask={editTask}
-        onToggleCompletion={toggleTaskCompletion}      
-      />
+      <DragDropContext onDragEnd={onDragEnd}>
+        <Droppable droppableId="todoList">
+          {(provided) => (
+            <div {...provided.droppableProps} ref={provided.innerRef}>
+
+
+              <TodoList 
+                // tasks={tasks} filteredTasksに、dateが絞られて入っているので、代わりにこっちでOK
+                tasks={filteredTasks}
+                onDeleteTask={deleteTask}
+                onEditTask={editTask}
+                onToggleCompletion={toggleTaskCompletion}      
+              />
+
+
+
+              {provided.placeholder}
+            </div>
+          )}
+        </Droppable>
+      </DragDropContext>
+
+
     </div>
   );
 }
