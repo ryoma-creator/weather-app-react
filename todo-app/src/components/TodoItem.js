@@ -25,8 +25,23 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion}){
 // 要素が０より大きければ、to do listがあるのが前提なので以下が表示される
 // ToDoList.jsを参照
 
+    const getPriorityColor = (priority) => {
+        switch(priority) {
+            case 'high': return 'red';
+            case 'medium': return 'yellow';
+            case 'low': return 'green';
+            default: return 'gray';
+        }
+    };
+
     return(
-        <div className="todo-item">
+        <div className="todo-item" style={{
+            borderColor: getPriorityColor(task.priority),
+            borderWidth: '2px',
+            borderStyle: 'solid',
+            padding: '10px',
+            margin: '5px'
+        }}>
             <input
                 type="checkbox"
                 checked={task.completed}
@@ -67,6 +82,10 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion}){
                 {task.name}
             </span>
             )}
+            <span className="task-meta">
+                Category: {task.category}, Priority: {task.priority}
+            </span>
+
             <button onClick={() => onDelete(task.id)}>Delete</button>
             {/* const deleteTask = (taskId) => {
     setTasks(tasks.filter(task => task.id !== taskId));

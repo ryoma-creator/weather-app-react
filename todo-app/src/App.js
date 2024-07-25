@@ -11,6 +11,9 @@ function App(){
   
   const [categoryFilter, setCategoryFilter] = useState('all');
 
+  const [newPriority, setNewPriority] = useState('medium');
+  const [priorityFilter, setPriorityFilter] = useState('all');
+
   // const addTask = (taskName) => {
   //   setTasks([...tasks, { id: Date.now(), name: taskName, completed: false }]);
   // };
@@ -23,11 +26,16 @@ function App(){
          name: newTask, 
          completed: false,
 
-         category: newCategory 
+         category: newCategory,
+         
+         priority: newPriority
+
         }]);
+        // reset⇩ after adding
         setNewTask('');
 
         setNewCategory('uncategorized')
+        setNewPriority('medium')
     }
   };
 
@@ -49,9 +57,14 @@ function App(){
 
   // new filter function 
   // const [categoryFilter, setCategoryFilter] = useState('all');
+
+  // const [newPriority, setNewPriority] = useState('medium');
+  // const [priorityFilter, setPriorityFilter] = useState('all');
   // tasks = setTasks([...tasks, { id: Date.now(), name: taskName, completed: false ,  category: newCategory 
+  
   const filteredTasks = tasks.filter(task =>
-    categoryFilter === 'all' || task.category === categoryFilter
+    (categoryFilter === 'all' || task.category === categoryFilter) &&
+    (priorityFilter === 'all' || task.priority === priorityFilter)
   );
   // task.categoryは、all以外のもの。NewCategoryのvalueには、allないので。
   // value={newCategory}
@@ -74,9 +87,20 @@ function App(){
 // タスクのカテゴリがフィルターと一致すれば true となり、そのタスクは含まれます。
 // 一致しなければ false となり、そのタスクは除外されます。
 
+// tasksのdataの中の、category: newCategory の部分だけtrueになるので、それに該当するものだけが残る仕組み
+
+// {tasks.map(task => (
+//   (selectedCategory === 'all' || task.category === selectedCategory) && (
+//     <TodoItem key={task.id} task={task} />
+//   )
+// ))}
+// mapでもfilterと同じものは作れる。⇧
+
   return (
     <div>
       <h1>To Do List</h1>
+
+
 
       <form onSubmit={addTask}>
         <input
@@ -86,6 +110,7 @@ function App(){
           placeholder="enter your new task"
         />
 
+{/* const [newCategory, setNewCategory] = useState('uncategorized'); */}
         <select
           value={newCategory}
           onChange={(e)=> setNewCategory(e.target.value)}
@@ -95,8 +120,20 @@ function App(){
           <option value="personal">Personal</option>
         </select>
 
+        <select
+          value={newPriority}
+          onChange={(e)=> setNewPriority(e.target.value)}
+        >
+          <option value='low'>Low</option>
+          <option value='medium'>Medium</option>
+          <option value='high'>High</option>
+
+        </select>
+
         <button type="submit">Add Task</button>
       </form>
+
+
 
       <select
           value={categoryFilter}
@@ -106,7 +143,18 @@ function App(){
           <option value="uncategorized">Uncategorized</option>
           <option value="work">Work</option>         
           <option value="personal">Personal</option>
-        </select>
+      </select>
+
+      <select
+        value={priorityFilter}
+        onChange={(e)=> setPriorityFilter(e.target.value)}
+      >
+        <option value='all'>All</option>        
+        <option value='low'>Low</option>
+        <option value='medium'>Medium</option>
+        <option value='high'>High</option>
+
+      </select>
 
 
       <TodoList 
