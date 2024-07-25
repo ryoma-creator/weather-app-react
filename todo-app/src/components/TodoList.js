@@ -19,7 +19,8 @@ function TodoList({ tasks, onDeleteTask, onEditTask, onToggleCompletion }) {
                             >
                             {/* ドラッグ可能なアイテム */}
                                 <TodoItem
-                                    key={task.id}
+            // TodoList.jsでは、TodoItemにkeyを渡す必要はありません。Draggableにすでにkeyを設定しているからです。
+                                    // key={task.id}
                                     task={task}
                                     onDelete={onDeleteTask}
                                     onEdit={onEditTask}

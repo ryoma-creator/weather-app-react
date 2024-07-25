@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TodoList from './components/TodoList';
 import './App.css';
 // drag & drop
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { DragDropContext, Droppable} from 'react-beautiful-dnd';
 
 function App(){
   const [tasks, setTasks] = useState([]);
@@ -105,9 +105,11 @@ const onDragEnd = (result) => {
 
   const items = Array.from(tasks);
   const [reorderedItem] = items.splice(result.source.index, 1);
-  items.splice(result.destination.index, 0, reorderedItem); 
+  // const [reorderedItem] = newTask.splice(result.source.index, 1);
+  newTask.splice(result.destination.index, 0, reorderedItem); 
 
   setTasks(items);
+  // setNewTask(newTask);
 };
 
   return (
