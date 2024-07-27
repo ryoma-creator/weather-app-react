@@ -25,26 +25,24 @@ function App(){
 
   const [count, setCount] = useState(0);
   const [name, setName] = useState('');
+  const [effectLogs, setEffectLogs] = useState([]);
 
-  // Effect 1: 依存配列なし
   useEffect(() => {
-    console.log('Effect 1: This runs after every render');
+    setEffectLogs(prev => [...prev, 'Effect 1: Runs after every render']);
   });
 
-  // Effect 2: 空の依存配列
   useEffect(() => {
-    console.log('Effect 2: This runs only on mount');
+    setEffectLogs(prev => [...prev, 'Effect 2: Runs only on mount']);
   }, []);
 
-  // Effect 3: count を依存配列に持つ
   useEffect(() => {
-    console.log('Effect 3: This runs when count changes:', count);
+    setEffectLogs(prev => [...prev, `Effect 3: Runs when count changes: ${count}`]);
   }, [count]);
 
-  // Effect 4: name を依存配列に持つ
   useEffect(() => {
-    console.log('Effect 4: This runs when name changes:', name);
+    setEffectLogs(prev => [...prev, `Effect 4: Runs when name changes: ${name}`]);
   }, [name]);
+
 
 
   const addTask = (e) => {
@@ -158,15 +156,6 @@ useEffect(() => {
     <div>
       <h1>To Do List</h1>
 
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment Count</button>
-      <br />
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Enter name"
-      />
 
 
 
