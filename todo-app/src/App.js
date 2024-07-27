@@ -23,26 +23,33 @@ function App(){
   //   setTasks([...tasks, { id: Date.now(), name: taskName, completed: false }]);
   // };
 
-  const [count, setCount] = useState(0);
-  const [name, setName] = useState('');
-  const [effectLogs, setEffectLogs] = useState([]);
 
-  useEffect(() => {
-    setEffectLogs(prev => [...prev, 'Effect 1: Runs after every render']);
-  });
+// useEffect Practice
+  // const [count, setCount] = useState(0);
+  // const [name, setName] = useState('');
+  // const [effectLogs, setEffectLogs] = useState([]);
+  // useEffect(() => {
+  //   setEffectLogs(prev => [...prev, 'Effect 1: Runs after every render']);
+  // });
+  // useEffect(() => {
+  //   setEffectLogs(prev => [...prev, 'Effect 2: Runs only on mount']);
+  // }, []);
+  // useEffect(() => {
+  //   setEffectLogs(prev => [...prev, `Effect 3: Runs when count changes: ${count}`]);
+  // }, [count]);
+  // useEffect(() => {
+  //   setEffectLogs(prev => [...prev, `Effect 4: Runs when name changes: ${name}`]);
+  // }, [name]);
 
-  useEffect(() => {
-    setEffectLogs(prev => [...prev, 'Effect 2: Runs only on mount']);
+  useEffect(()=>{
+    const storedTasks = JSON.parse(localStorage.getItem('tasks') || '[]');
+    setTasks(storedTasks);
   }, []);
-
-  useEffect(() => {
-    setEffectLogs(prev => [...prev, `Effect 3: Runs when count changes: ${count}`]);
-  }, [count]);
-
-  useEffect(() => {
-    setEffectLogs(prev => [...prev, `Effect 4: Runs when name changes: ${name}`]);
-  }, [name]);
-
+  // 「parse」という英単語には、「解析する」や「解釈する」
+  useEffect(()=>{
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  },[]);
+  // 「stringify」という英単語には、「文字列に変換する」
 
 
   const addTask = (e) => {
@@ -156,6 +163,27 @@ useEffect(() => {
     <div>
       <h1>To Do List</h1>
 
+
+      {/* // useEffect Practice */}
+      {/* <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment Count</button>
+      <br />
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        placeholder="Enter name"
+      />
+      <div>
+        <h3>Effect Logs:</h3>
+        <ul>
+          {effectLogs.map((log, index) => (
+            <li key={index}>{log}</li>
+          ))}
+        </ul>
+      </div>
+    </div> */}
 
 
 
