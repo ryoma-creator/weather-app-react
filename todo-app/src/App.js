@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+// useEffect
+import React, { useState, useEffect } from "react";
 import TodoList from './components/TodoList';
 import './App.css';
 // drag & drop
-import { DragDropContext, Droppable} from 'react-beautiful-dnd';
+import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
+
+
 
 function App(){
   const [tasks, setTasks] = useState([]);
@@ -19,6 +22,30 @@ function App(){
   // const addTask = (taskName) => {
   //   setTasks([...tasks, { id: Date.now(), name: taskName, completed: false }]);
   // };
+
+  const [count, setCount] = useState(0);
+  const [name, setName] = useState('');
+
+  // Effect 1: 依存配列なし
+  useEffect(() => {
+    console.log('Effect 1: This runs after every render');
+  });
+
+  // Effect 2: 空の依存配列
+  useEffect(() => {
+    console.log('Effect 2: This runs only on mount');
+  }, []);
+
+  // Effect 3: count を依存配列に持つ
+  useEffect(() => {
+    console.log('Effect 3: This runs when count changes:', count);
+  }, [count]);
+
+  // Effect 4: name を依存配列に持つ
+  useEffect(() => {
+    console.log('Effect 4: This runs when name changes:', name);
+  }, [name]);
+
 
   const addTask = (e) => {
     e.preventDefault();
@@ -99,6 +126,7 @@ function App(){
 // mapでもfilterと同じものは作れる。⇧
 
 
+
 // drag & drop
 const onDragEnd = (result) => {
   if (!result.destination) return;
@@ -106,15 +134,36 @@ const onDragEnd = (result) => {
   const items = Array.from(tasks);
   const [reorderedItem] = items.splice(result.source.index, 1);
   // const [reorderedItem] = newTask.splice(result.source.index, 1);
-  newTask.splice(result.destination.index, 0, reorderedItem); 
+  items.splice(result.destination.index, 0, reorderedItem); 
 
   setTasks(items);
   // setNewTask(newTask);
 };
 
+// useEffect
+useEffect(() => {
+  const storedTasks = JSON.parse(localStorage.getItem('tasks'));
+  if (storedTasks) {
+    setTasks(storedTasks);
+  }
+}, []);
+
+useEffect(() => {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}, [tasks]);
+
+
+
   return (
     <div>
       <h1>To Do List</h1>
+
+      <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
 
 
 

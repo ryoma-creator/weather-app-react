@@ -1,6 +1,6 @@
 import React from "react";
 import TodoItem from './TodoItem';
-import { Draggable} from 'react-beautiful-dnd';
+import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 
 function TodoList({ tasks, onDeleteTask, onEditTask, onToggleCompletion }) {
@@ -10,7 +10,11 @@ function TodoList({ tasks, onDeleteTask, onEditTask, onToggleCompletion }) {
                 <p>Please add new task.</p>
             ) : (
                 tasks.map((task, index) => (
-                    <Draggable key={task.id}　draggableId={task.id.toString()} index={index}>
+                    <Draggable 
+                    key={task.id}　
+                    draggableId={task.id.toString()} 
+                    // draggableId={`${task.id}`}
+                    index={index}>
                         {(provided) => (
                             <div 
                                 ref={provided.innerRef} 
