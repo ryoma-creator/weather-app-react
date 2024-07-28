@@ -8,8 +8,17 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 
 function App(){
-  const [tasks, setTasks] = useState([]);
+  // const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(()=>{
+    const storedTasks = localStorage.getItem('tasks');
+    return storedTasks ? JSON.parse(storedTasks) : [];
+  });
+  // この書き方は、「初期値を決めるための関数」
+  // アプリ起動時のデータ読み込みのタイミングが遅れる可能性があります。
+  // useState内の関数を使用すると、初期値の設定と同時にデータを読み込めます。
   // Listがある時点で、Data管理とわかる
+  // local storage保存を予定している場合、最初からこれだけ書いておけばOK.
+
   const [newTask, setNewTask] = useState('');
   
   const [newCategory, setNewCategory] = useState('uncategorized');
@@ -41,14 +50,10 @@ function App(){
   //   setEffectLogs(prev => [...prev, `Effect 4: Runs when name changes: ${name}`]);
   // }, [name]);
 
-  useEffect(()=>{
-    const storedTasks = JSON.parse(localStorage.getItem('tasks') || '[]');
-    setTasks(storedTasks);
-  }, []);
-  // 「parse」という英単語には、「解析する」や「解釈する」
+
   useEffect(()=>{
     localStorage.setItem('tasks', JSON.stringify(tasks));
-  },[]);
+  },[tasks]);
   // 「stringify」という英単語には、「文字列に変換する」
 
 
@@ -144,18 +149,6 @@ const onDragEnd = (result) => {
   setTasks(items);
   // setNewTask(newTask);
 };
-
-// useEffect
-useEffect(() => {
-  const storedTasks = JSON.parse(localStorage.getItem('tasks'));
-  if (storedTasks) {
-    setTasks(storedTasks);
-  }
-}, []);
-
-useEffect(() => {
-  localStorage.setItem('tasks', JSON.stringify(tasks));
-}, [tasks]);
 
 
 

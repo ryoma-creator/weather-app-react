@@ -1,12 +1,22 @@
 ーーーーーーIntroduction to This Fileーーーーーー
 
-Thank you for viewing.
+Thank you for viewing.💡
 
 These are the logs of the work I have done up to this point. Although I sometimes can't record everything due to extensive learning, it serves as a rough guide to what I have been doing.
 
 The most recent learning and work logs are at the bottom.
 
 If you are curious about what I have done and what I have learned, you can copy the data from this file and paste it into your AI assistant to get an overview of the situation.
+
+ーーーーーー(In Japanese)ーーーーーーーーーーーーーーーー
+
+ご閲覧ありがとうございます。
+これらは、日々私が現在まで行ってきた作業の履歴となります。
+学習しすぎて、たまに全ては記載できていないですが、大体何を行ってきたかの目安となります。
+
+最新版の習得、作業履歴は、一番下にございます。
+
+もし、何を行ったのか、どのようなものを私が学習したのか、気になった場合、このファイル内のデータをコピーし、お手持ちの"AI上"に貼り付けて、状況を伺ってみるのも、一つの手となります。
 
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
@@ -1508,14 +1518,15 @@ Jul 28
 			💡		 brain supplement   ✔️
 			✊		gym　for condition ✔️
 
-					Understanding..
+					Understanding..💡
 			✅　		 - Local Storage
 					 	- JSON.parse()
 						- JSON.stringify()
 						- logic
-			✅　	     - learning plan for start of typescript
-
-
+			  　	  - learning plan for start of typescript
+					
+					Learning... 🔍
+					  - useState(() => computeInitialState()) 
 
 
 
