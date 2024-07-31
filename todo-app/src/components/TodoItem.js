@@ -43,10 +43,16 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
             </>
           )}
         </div>
-        <div className="action-buttons">
-          <CheckedIcon/>
+        <div className="action-buttons">         
           <button onClick={() => onToggleCompletion(task.id)}>
-            <i className={`fas ${task.completed ? 'fa-check-circle' : 'fa-check-circle'}`}></i>
+            {task.completed ? (
+              <div className="checked-icon">
+                <CheckedIcon/>
+              </div>
+            ) : (
+              <i className="fas fa-check-circle"></i>
+            )}
+            {/* <i className={`fas ${task.completed ? 'fa-check-circle' : 'fa-check-circle'}`}></i> */}
           </button>
           <button onClick={() => setIsEditing(true)}>
             <i className="fas fa-edit"></i>
