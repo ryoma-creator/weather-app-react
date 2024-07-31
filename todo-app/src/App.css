@@ -1,112 +1,181 @@
-body {
-  background-color: #402F70;
+.todo-item {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  color: #E5AFC1;
-}
-
-.todo-list-container {
-  background-color: #93548C;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  width: 90%;
-  max-width: 400px;
+  padding: 16px;
+  margin: 16px 0px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
   text-align: center;
 }
 
-.todo-list-container h1 {
-  margin-bottom: 20px;
-  color: #E5AFC1;
+.todo-item:hover {
+  background-color: #84DCCF;
 }
 
-input[type="text"] {
-  width: 80%;
-  padding: 10px;
+.priority-indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+
+.priority-high {
+  background-color: #ff4757;
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+}
+
+.priority-medium {
+  background-color: #ffa502;
+  box-shadow: 0 0 10px rgba(255, 165, 2, 0.5);
+}
+
+.priority-low {
+  background-color: #2ed573;
+  box-shadow: 0 0 10px rgba(46, 213, 115, 0.5);
+}
+
+.task-content {
+  flex-grow: 1;
+}
+
+.task-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.task-meta {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.4;
+}
+
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.todo-app {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: white;
+}
+
+h1 .fas .fa-list-alt {
+  color:  #84DCCF;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"], select, .add-button {
+  flex-grow: 1;
+  padding: 10px 15px;
   border: none;
   border-radius: 25px;
-  margin-bottom: 20px;
+  margin-right: 10px;
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
-button.add-btn {
-  padding: 10px 20px;
+input[type="text"]:hover {
+  transform: none;
   border: none;
+}
+
+
+.add-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 8px 8px;
   border-radius: 50%;
-  background-color: #E5AFC1;
-  color: #402F70;
   cursor: pointer;
-  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.add-button:hover {
+  background-color:  #84DCCF;
+  transform: translateY(-2px);
+}
+
+.add-button .add-icon {
+  color: inherit; /* ボタンの色を引き継ぐ */
+  font-size: 24px; 
+}
+
+
+
+
+.action-buttons button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
   margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-button.add-btn:hover {
-  background-color: #D494A4;
+.action-buttons button:hover {
+  transform: scale(1.2);
 }
 
-.todo-controls {
+.hover {
+  border: 2px solid transparent;  /* 透明なボーダーを追加 */
+  transition: transform 0.3s ease, border-color 0.3s ease;  /* トランジションを追加 */
+}
+
+.hover:hover {
+  transform: translateY(-2px);
+  border: 2px solid white;
+}
+
+
+
+.filters {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-button.control-btn {
-  padding: 10px;
-  border: none;
-  border-radius: 25px;
-  background-color: #E5AFC1;
-  color: #402F70;
-  cursor: pointer;
-  font-size: 14px;
+.filters select {
   flex: 1;
   margin: 0 5px;
-}
-
-button.control-btn:hover {
-  background-color: #D494A4;
-}
-
-ul.todo-list {
-  list-style: none;
-  padding: 0;
-}
-
-.todo-item {
-  background-color: #402F70;
-  border-radius: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.todo-item span {
-  font-size: 16px;
-  flex: 1;
-}
-
-button.delete-btn {
-  background-color: #E5AFC1;
-  color: #402F70;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-button.delete-btn:hover {
-  background-color: #D494A4;
-}
-
-input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
 }

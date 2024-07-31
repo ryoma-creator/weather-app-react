@@ -154,7 +154,8 @@ const onDragEnd = (result) => {
 
   return (
     <div>
-      <h1>To Do List</h1>
+      
+      <h1><i class="fas fa-list-alt"></i> Todo List</h1>
 
 
       {/* // useEffect Practice */}
@@ -179,17 +180,21 @@ const onDragEnd = (result) => {
     </div> */}
 
 
-
+{/* Enter Form / Explore*/}
       <form onSubmit={addTask}>
-        <input
-          type="text"
-          value={newTask}
-          onChange={(e) => setNewTask(e.target.value)}
-          placeholder="enter your new task"
-        />
-
+        <div className="input-container">
+          <input className="task-input hover"
+            type="text"
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+            placeholder="enter your new task"
+          />
+          <button className='add-button' type="submit" >
+            <i className="fas fa-plus-circle add-icon"></i>
+          </button>
+        </div>
 {/* const [newCategory, setNewCategory] = useState('uncategorized'); */}
-        <select
+        <select className="category-select hover"
           value={newCategory}
           onChange={(e)=> setNewCategory(e.target.value)}
         >
@@ -198,7 +203,7 @@ const onDragEnd = (result) => {
           <option value="personal">Personal</option>
         </select>
 
-        <select
+        <select className="priority-select hover"
           value={newPriority}
           onChange={(e)=> setNewPriority(e.target.value)}
         >
@@ -208,12 +213,12 @@ const onDragEnd = (result) => {
 
         </select>
 
-        <button type="submit">Add Task</button>
+
       </form>
 
 
 
-      <select
+      <select className="hover" filter-category
           value={categoryFilter}
           onChange={(e)=> setCategoryFilter(e.target.value)}
         >
@@ -223,7 +228,7 @@ const onDragEnd = (result) => {
           <option value="personal">Personal</option>
       </select>
 
-      <select
+      <select className="hover" filter-priority
         value={priorityFilter}
         onChange={(e)=> setPriorityFilter(e.target.value)}
       >

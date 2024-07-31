@@ -1,97 +1,60 @@
 import React, { useState } from "react";
-
-//tasks{ id: Date.now(), name: taskName, completed: false }
-//Data example
-
-function TodoItem({ task, onDelete, onEdit, onToggleCompletion}){
+function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
     const [isEditing, setIsEditing] = useState(false);
     const [editedName, setEditedName] = useState(task.name);
-
+  
     const handleEdit = () => {
-        onEdit(task.id, editedName);
-        setIsEditing(false);
+      onEdit(task.id, editedName);
+      setIsEditing(false);
     };
-
-// onEdit ⇩
-// const editTask = (taskId, newName) => {
-//     setTasks(tasks.map(task =>
-//       task.id === taskId ? { ...task, name: newName } : task
-//       ));
-//   };
-
-// {tasks.length === 0 ? (
-//     <p>Please add new task.</p>
-// ) : (
-// 要素が０より大きければ、to do listがあるのが前提なので以下が表示される
-// ToDoList.jsを参照
-
-    const getPriorityColor = (priority) => {
-        switch(priority) {
-            case 'high': return 'red';
-            case 'medium': return 'yellow';
-            case 'low': return 'green';
-            default: return 'gray';
-        }
+  
+    const getPriorityIcon = (priority) => {
+      switch(priority) {
+        case 'high': return '!!!';
+        case 'medium': return '!!';
+        case 'low': return '!';
+        default: return '?';
+      }
     };
-
-    return(
-        <div className="todo-item" style={{
-            borderColor: getPriorityColor(task.priority),
-            borderWidth: '2px',
-            borderStyle: 'solid',
-            padding: '10px',
-            margin: '5px'
-        }}>
-            <input
-                type="checkbox"
-                checked={task.completed}
-                onChange={() => onToggleCompletion(task.id)}
-// const toggleTaskCompletion = (taskId) => {
-//     setTasks(tasks.map(task =>
-//       task.id === taskId ? { ...task, completed: !task.completed } : task
-//       ));
-//   };
-// チェックをon/offにするだけのもの
-            />
-
-{/* const [isEditing, setIsEditing] = useState(false); */}
-            {isEditing ? (
-                    <input
-                        type="text"
-// const [editedName, setEditedName] = useState(task.name);
-                        value={editedName}
-                        onChange={(e) => setEditedName(e.target.value)}
-                        onBlur={handleEdit}
-// const handleEdit = () => {
-//     onEdit(task.id, editedName);
-//     setIsEditing(false);
-// }; 
-// onEdit ⇩
-// const editTask = (taskId, newName) => {
-//     setTasks(tasks.map(task =>
-//       task.id === taskId ? { ...task, name: newName } : task
-//       ));
-//   };   
-                        autoFocus
-                    />
-            ) : (
-            <span
-                style={{ textDecoration: task.completed ? 'line-through' : 'none'}}
-                onDoubleClick={() => setIsEditing(true)}
-            > 
-                {task.name}
-            </span>
-            )}
-            <span className="task-meta">
-                Category: {task.category}, Priority: {task.priority}
-            </span>
-
-            <button onClick={() => onDelete(task.id)}>Delete</button>
-            {/* const deleteTask = (taskId) => {
-    setTasks(tasks.filter(task => task.id !== taskId));
-  }; */}
+  
+    return (
+      <div className={`todo-item hover ${task.completed ? 'completed' : ''}`}>
+        <div className={`priority-indicator priority-${task.priority}`}>
+          {getPriorityIcon(task.priority)}
         </div>
+        <div className="task-content">
+          {isEditing ? (
+            <input
+              type="text"
+              value={editedName}
+              onChange={(e) => setEditedName(e.target.value)}
+              onBlur={handleEdit}
+              autoFocus
+            />
+          ) : (
+            <>
+              <div className="task-name">{task.name}</div>
+              <div className="task-meta">
+                <i className={`fas ${task.category === 'work' ? 'fa-briefcase' : 'fa-user'}`}></i>
+                {task.category}
+              </div>
+            </>
+          )}
+        </div>
+        <div className="action-buttons">
+          <button onClick={() => onToggleCompletion(task.id)}>
+            <i className={`fas ${task.completed ? 'fa-check-circle' : 'fa-check-circle'}`}></i>
+          </button>
+          <button onClick={() => setIsEditing(true)}>
+            <i className="fas fa-edit"></i>
+          </button>
+          <button onClick={() => onDelete(task.id)}>
+            <i class="fas fa-window-close"></i>
+            {/* <i className="fas fa-trash"></i> */}
+          </button>
+        </div>
+      </div>
     );
-}
+  }
 
-export default TodoItem;
+  export default TodoItem;
