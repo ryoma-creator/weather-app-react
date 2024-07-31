@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import CheckedIcon from './animations/CheckedIcon';
+
 function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
     const [isEditing, setIsEditing] = useState(false);
     const [editedName, setEditedName] = useState(task.name);
@@ -42,6 +44,7 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
           )}
         </div>
         <div className="action-buttons">
+          <CheckedIcon/>
           <button onClick={() => onToggleCompletion(task.id)}>
             <i className={`fas ${task.completed ? 'fa-check-circle' : 'fa-check-circle'}`}></i>
           </button>
