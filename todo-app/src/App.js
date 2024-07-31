@@ -21,6 +21,8 @@ function App(){
 
   const [newTask, setNewTask] = useState('');
   
+  const [showFilters, setShowFilters] = useState(false);
+
   const [newCategory, setNewCategory] = useState('uncategorized');
   
   const [categoryFilter, setCategoryFilter] = useState('all');
@@ -153,11 +155,8 @@ const onDragEnd = (result) => {
 
 
   return (
-    <div>
-      
-      <h1><i class="fas fa-list-alt"></i> Todo List</h1>
-
-
+    <div className="todo-app">
+      <h1><i className="fas fa-list-alt"></i> Todo List</h1>
       {/* // useEffect Practice */}
       {/* <div>
       <p>Count: {count}</p>
@@ -187,12 +186,50 @@ const onDragEnd = (result) => {
             type="text"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
-            placeholder="enter your new task"
+            placeholder="Add new task"
           />
+{/* Add button */}
           <button className='add-button' type="submit" >
             <i className="fas fa-plus-circle add-icon"></i>
           </button>
         </div>
+
+ {/*右上に持ってくるFilter　クリックすると開く仕組み  */}
+ <button onClick={() => setShowFilters(!showFilters)}>
+        <i className="fas fa-filter"></i>
+      </button>
+      {showFilters && (
+        <div className="filter-modal">
+          <div className="category-filters">
+          {/* フィルターとソートのオプション */}
+            <select 
+              className="hover"
+              value={categoryFilter}
+              onChange={(e)=> setCategoryFilter(e.target.value)}
+            >
+              <option value='all'>All Category</option>
+              <option value="uncategorized">Uncategorized</option>
+              <option value="work">Work</option>         
+              <option value="personal">Personal</option>
+            </select>
+          </div>  
+
+        <div className="priority-filters">
+          <select className="hover" filter-priority
+            value={priorityFilter}
+            onChange={(e)=> setPriorityFilter(e.target.value)}
+          >
+            <option value='all'>All</option>        
+            <option value='low'>Low</option>
+            <option value='medium'>Medium</option>
+            <option value='high'>High</option>
+
+          </select>         
+        </div>
+        </div>
+
+      )} 
+
 {/* const [newCategory, setNewCategory] = useState('uncategorized'); */}
         <select className="category-select hover"
           value={newCategory}
@@ -217,27 +254,6 @@ const onDragEnd = (result) => {
       </form>
 
 
-
-      <select className="hover" filter-category
-          value={categoryFilter}
-          onChange={(e)=> setCategoryFilter(e.target.value)}
-        >
-          <option value='all'>All Category</option>
-          <option value="uncategorized">Uncategorized</option>
-          <option value="work">Work</option>         
-          <option value="personal">Personal</option>
-      </select>
-
-      <select className="hover" filter-priority
-        value={priorityFilter}
-        onChange={(e)=> setPriorityFilter(e.target.value)}
-      >
-        <option value='all'>All</option>        
-        <option value='low'>Low</option>
-        <option value='medium'>Medium</option>
-        <option value='high'>High</option>
-
-      </select>
 
 {/* drag & drop */}
 {/* 基本的な使い方:

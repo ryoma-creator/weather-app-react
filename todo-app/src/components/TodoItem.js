@@ -4,6 +4,8 @@ import CheckedIcon from './animations/CheckedIcon';
 function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
     const [isEditing, setIsEditing] = useState(false);
     const [editedName, setEditedName] = useState(task.name);
+    const [isHovered, setIsHovered] = useState(false);
+    
   
     const handleEdit = () => {
       onEdit(task.id, editedName);
@@ -18,9 +20,14 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
         default: return '?';
       }
     };
+
+    const handleMouseEnter = () => setIsHovered(true);
+    const handleMouseLeave = () => setIsHovered(false);
   
     return (
+      
       <div className={`todo-item hover ${task.completed ? 'completed' : ''}`}>
+        {/* この部分で、タスクが完了状態（task.completed が true）の場合に completed クラスが追加 */}
         <div className={`priority-indicator priority-${task.priority}`}>
           {getPriorityIcon(task.priority)}
         </div>
@@ -44,13 +51,17 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
           )}
         </div>
         <div className="action-buttons">         
-          <button onClick={() => onToggleCompletion(task.id)}>
+          <button 
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => onToggleCompletion(task.id)}
+          >
             {task.completed ? (
               <div className="checked-icon">
                 <CheckedIcon/>
               </div>
             ) : (
-              <i className="fas fa-check-circle"></i>
+              <i className={`fas ${isHovered ? 'fa-check-circle' : 'fa-circle'}`}></i>
             )}
             {/* <i className={`fas ${task.completed ? 'fa-check-circle' : 'fa-check-circle'}`}></i> */}
           </button>
