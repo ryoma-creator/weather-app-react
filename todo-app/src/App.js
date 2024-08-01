@@ -156,50 +156,16 @@ const onDragEnd = (result) => {
 
   return (
     <div className="todo-app">
+      <div className="header">
       <h1><i className="fas fa-list-alt"></i> Todo List</h1>
-      {/* // useEffect Practice */}
-      {/* <div>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment Count</button>
-      <br />
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Enter name"
-      />
-      <div>
-        <h3>Effect Logs:</h3>
-        <ul>
-          {effectLogs.map((log, index) => (
-            <li key={index}>{log}</li>
-          ))}
-        </ul>
-      </div>
-    </div> */}
-
-
-{/* Enter Form / Explore*/}
-      <form onSubmit={addTask}>
-        <div className="input-container">
-          <input className="task-input hover"
-            type="text"
-            value={newTask}
-            onChange={(e) => setNewTask(e.target.value)}
-            placeholder="Add new task"
-          />
-{/* Add button */}
-          <button className='add-button' type="submit" >
-            <i className="fas fa-plus-circle add-icon"></i>
-          </button>
-        </div>
-
  {/*右上に持ってくるFilter　クリックすると開く仕組み  */}
+ <div className="filters">
  <button onClick={() => setShowFilters(!showFilters)}>
         <i className="fas fa-filter"></i>
       </button>
       {showFilters && (
-        <div className="filter-modal">
+        <div className="filter-dropdown">
+          <h3>Sort by</h3>
           <div className="category-filters">
           {/* フィルターとソートのオプション */}
             <select 
@@ -229,6 +195,24 @@ const onDragEnd = (result) => {
         </div>
 
       )} 
+</div>
+
+    </div>
+{/* Enter Form / Explore*/}
+      <form onSubmit={addTask}>
+        <div className="input-container">
+          <input className="task-input hover"
+            type="text"
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+            placeholder="Add new task"
+          />
+{/* Add button */}
+          <button className='add-button' type="submit" >
+            <i className="fas fa-plus-circle add-icon"></i>
+          </button>
+        </div>
+
 
 {/* const [newCategory, setNewCategory] = useState('uncategorized'); */}
         <select className="category-select hover"
