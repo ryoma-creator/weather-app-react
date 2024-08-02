@@ -30,6 +30,9 @@ function App(){
   const [newPriority, setNewPriority] = useState('medium');
   const [priorityFilter, setPriorityFilter] = useState('all');
 
+  const [isExpanded, setIsExpanded] = useState(false);
+  // 隠れメニュー
+
   // const addTask = (taskName) => {
   //   setTasks([...tasks, { id: Date.now(), name: taskName, completed: false }]);
   // };
@@ -152,6 +155,8 @@ const onDragEnd = (result) => {
   // setNewTask(newTask);
 };
 
+const handleFocus = () => setIsExpanded(true);
+const handleClick = () => setIsExpanded(false);
 
 
   return (
@@ -161,11 +166,12 @@ const onDragEnd = (result) => {
  {/*右上に持ってくるFilter　クリックすると開く仕組み  */}
  <div className="filters">
  <button onClick={() => setShowFilters(!showFilters)}>
-        <i className="fas fa-filter"></i>
+          <i className="material-icons">swap_vert</i>
       </button>
       {showFilters && (
         <div className="filter-dropdown">
           <h3>Sort by</h3>
+          <div className="filters-item">
           <div className="category-filters">
           {/* フィルターとソートのオプション */}
             <select 
@@ -193,28 +199,32 @@ const onDragEnd = (result) => {
           </select>         
         </div>
         </div>
+        </div>
 
       )} 
 </div>
 
     </div>
+
+
+
+
+
 {/* Enter Form / Explore*/}
-      <form onSubmit={addTask}>
-        <div className="input-container">
-          <input className="task-input hover"
-            type="text"
-            value={newTask}
-            onChange={(e) => setNewTask(e.target.value)}
-            placeholder="Add new task"
-          />
-{/* Add button */}
-          <button className='add-button' type="submit" >
-            <i className="fas fa-plus-circle add-icon"></i>
-          </button>
-        </div>
-
-
-{/* const [newCategory, setNewCategory] = useState('uncategorized'); */}
+   <form onSubmit={addTask}>
+  <div className={`input-container ${isExpanded ? 'expanded' : ''}`}>
+    <input
+      className="task-input hover"
+      type="text"
+      value={newTask}
+      onChange={(e) => setNewTask(e.target.value)}
+      placeholder="Add new task"
+      onFocus={handleFocus}
+      // onBlur={handleBlur}
+    />
+    {isExpanded && (
+      <div className="expanded-options">
+        {/* カテゴリーと優先度の選択肢 */}
         <select className="category-select hover"
           value={newCategory}
           onChange={(e)=> setNewCategory(e.target.value)}
@@ -233,9 +243,15 @@ const onDragEnd = (result) => {
           <option value='high'>High</option>
 
         </select>
-
-
-      </form>
+ 
+{/* Add button */}
+        <button className='add-button' type="submit">
+          <i className="fas fa-plus-circle add-icon"></i>
+        </button>
+      </div>
+    )}
+  </div>
+</form>
 
 
 
