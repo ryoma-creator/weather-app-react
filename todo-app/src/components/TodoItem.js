@@ -5,18 +5,25 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
     const [isEditing, setIsEditing] = useState(false);
     const [editedName, setEditedName] = useState(task.name);
     const [isHovered, setIsHovered] = useState(false);
+    const [editingPriority, setEditingPriority] = useState(false);
     
   
     const handleEdit = () => {
       onEdit(task.id, editedName);
       setIsEditing(false);
     };
+    
+    const priorityIcons = {
+      high: '🔥',
+      medium: '🔶',
+      low: '🔽'
+    };
   
     const getPriorityIcon = (priority) => {
       switch(priority) {
-        case 'high': return '!!!';
-        case 'medium': return '!!';
-        case 'low': return '!';
+        case 'high': return priorityIcons.high;
+        case 'medium': return priorityIcons.medium;
+        case 'low': return priorityIcons.low;
         default: return '?';
       }
     };
@@ -71,7 +78,8 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
               {/* 入力したTask名 末尾 */}
 
               <div className="task-meta">
-                <i className={`fas ${task.category === 'work' ? 'fa-briefcase' : 'fa-user'}`}></i>
+              <i className={`fas ${task.category === 'work' ? 'fa-briefcase' : task.category === 'personal' ? 'fa-user' : ''}`}></i>
+                {/* <i className={`fas ${task.category === 'work' ? 'fa-briefcase' : 'fa-user'}`}></i> */}
                 {/* {task.category} */}
               </div>
             </>
@@ -79,12 +87,16 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
         </div>
 
 
-        <div className="action-buttons">         
+        <div className="action-buttons">        
+
+        
+
         {/* Priority Icon */}
         <div className={`priority-indicator priority-${task.priority}`}>
           {getPriorityIcon(task.priority)}
         </div>
         {/* Priority Icon 末尾*/}
+
 
         {/* Edit Button */}
           <button onClick={() => setIsEditing(true)}>

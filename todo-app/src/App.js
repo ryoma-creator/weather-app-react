@@ -32,6 +32,15 @@ function App(){
 
   const [isExpanded, setIsExpanded] = useState(false);
   // 隠れメニュー
+  const [completedTasks, setCompletedTasks] = useState([]);
+
+  // completed , incompleted menu!
+  const completeTask = (taskId) => {
+    const taskToComplete = tasks.find(task => task.id === taskId);
+    setCompletedTasks([...completedTasks, taskToComplete]);
+    setTasks(tasks.filter(task => task.id !== taskId));
+  };
+  // 保留中！
 
   // const addTask = (taskName) => {
   //   setTasks([...tasks, { id: Date.now(), name: taskName, completed: false }]);
@@ -159,6 +168,11 @@ const handleFocus = () => setIsExpanded(true);
 const handleClick = () => setIsExpanded(false);
 
 
+const deleteAllCompleted = () => {
+  setTasks([]);
+};
+// 全削除
+
   return (
     <div className="todo-app">
       <div className="header">
@@ -222,6 +236,9 @@ const handleClick = () => setIsExpanded(false);
       onFocus={handleFocus}
       // onBlur={handleBlur}
     />
+  {/* Enter Form / Explore末尾*/}
+
+  {/* 隠れメニュー */}
     {isExpanded && (
       <div className="expanded-options">
         {/* カテゴリーと優先度の選択肢 */}
@@ -230,7 +247,12 @@ const handleClick = () => setIsExpanded(false);
           onChange={(e)=> setNewCategory(e.target.value)}
         >
           <option value="uncategorized">Uncategorized</option>
-          <option value="work">Work</option>         
+          <option value="work">
+
+            <i className='fas fa-briefcase'></i>
+               Work
+            </option>    
+
           <option value="personal">Personal</option>
         </select>
 
@@ -250,8 +272,12 @@ const handleClick = () => setIsExpanded(false);
         </button>
       </div>
     )}
+     {/* 隠れメニューメニュー末尾 */}
   </div>
 </form>
+
+<button onClick={deleteAllCompleted}>Delete All</button>
+
 
 
 
@@ -285,6 +311,7 @@ const handleClick = () => setIsExpanded(false);
 
 
     </div>
+    
   );
 }
 
