@@ -1,10 +1,26 @@
-/* 全体 末尾*/
+全体 末尾
 body {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  @apply bg-black text-white;
+}
+
+body {
+  background-color: black !important;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
   min-height: 100vh;
 
   font-family: 'Roboto', sans-serif;
-  color: #20272D;
+  color: white;
+}
+
+
+.delete-all{
+  background: black;
+  color:white;
+}
+
+.filter{
+  background: black;
+  color:white;
 }
 
 .task-input, .todo-item, .expanded-options {
@@ -13,6 +29,15 @@ body {
 }
 /* 全幅を統一 */
 
+.menu {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  flex-grow: 1;
+  background-color: #333;
+  color: white;
+  
+}
 
 .todo-app {
   margin: 0 auto;
@@ -52,11 +77,14 @@ h1 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 20px;
-  color: #20272D;
+  /* color: #20272D; */
+  color: white;
 }
 
 .fa-list-alt {
-  color:  #06DDB3;
+  /* color:  #06DDB3; */
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  color:#1c1f2b
 }
 
 /* header部分末尾 */
@@ -64,7 +92,8 @@ h1 {
 /* フィルター */
 .filters {
   position: relative;
-  z-index: 1; /* 他の要素の上に表示されるようにする */
+  z-index: 1; /* 他の要素の
+  上に表示されるようにする */
 }
 
 .fa-filter {
@@ -83,7 +112,8 @@ h1 {
   position: absolute;
   top: 100%;
   right: 0;
-  background: white;
+  background-color: #333;
+  color: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   padding: 8px 8px 12px 8px;
@@ -96,20 +126,23 @@ h1 {
   margin-top: 0;
   margin: 6px;
   font-size: 14px;
-  color: #333;
+  color: white;
   text-align: center;
+  
 }
 
 .filters {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  
 }
 
 
 .filters select {
   flex: 1;
   margin: 0 5px;
+  background-color: #333;
 }
 
 .filters-item {
@@ -120,7 +153,7 @@ h1 {
   padding: 8px 16px;
   margin: 8px 0px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #333;
   transition: all 0.3s ease;
   text-align: center;
 }
@@ -140,9 +173,10 @@ h1 {
 input[type="text"] {
   padding: 10px 15px;
   border: none;
-  border-radius: 25px;
+  border-radius: 15;
   flex-grow: 1;
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: transparent; */
+  background-color: #333;
   color: white;
 }
 
@@ -152,14 +186,14 @@ input[type="text"]:hover {
 }
 
 .task-input:focus {
-  box-shadow: 0 0 0 2px #04ddb3; /* 輪郭に色をつける */
+  /* box-shadow: 0 0 0 2px #04ddb3; 輪郭に色をつける */
   outline: none; /* デフォルトのアウトラインを消す場合 */
 }
 
 /* Add */
 .add-button {
   background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  color:  #ff4545, #00ff99, #006aff, #ff0095, #ff4545;
   border: none;
   padding: 4px 4px;
   border-radius: 50%;
@@ -168,9 +202,11 @@ input[type="text"]:hover {
 }
 
 .add-button:hover {
-  background-color:  #84DCCF;
+  /* background-color:  #84DCCF; */
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
   transform: translateY(-2px);
-  box-shadow: 0 0 0 2px #04ddb3;
+  /* box-shadow: 0 0 0 2px #04ddb3; */
+  box-shadow: 0 0 0 2px  #ff4545, #00ff99, #006aff, #ff0095, #ff4545;
 }
 
 .add-button .add-icon {
@@ -184,32 +220,32 @@ input[type="text"]:hover {
 
 
 /* 隠れメニュー */
-
+/* 
 input[type="text"]:focus-within {
   border-radius: 25px 25px 0 0;
-}
+} */
 
 .expanded-options, .todo-item{
   width: 100%;
-
+}
 
 .input-container {
   border-radius: 25px;
   transition: border-radius 0.3s ease;
 }
 
-.input-container.expanded {
+/* .input-container.expanded {
   border-radius: 25px 25px 0 0;
-}}
+}} */
 
 .expanded-options{
   /* width: 100%;
   box-sizing: border-box; */
-  border-radius: 0 0 25px 25px;
+  /* border-radius: 0 0 25px 25px; */
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.2)
+  background-color: transparent;
 }
 
 
@@ -329,3 +365,60 @@ button:hover .fa-circle {
 
 
 
+.category-select, .priority-select {
+  background-color: transparent;
+  border: none;
+  transform: none;
+}
+
+
+/* card */
+/* App.css */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.card {
+  position: relative;
+  
+  background-color: #1c1f2b;
+  text-align: center;
+  margin: 24px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after, .card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 102%;
+  height: 110%;
+  background: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.card::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+.card::after {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}

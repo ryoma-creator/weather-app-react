@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import CheckedIcon from './animations/CheckedIcon';
 
+import FlagIcon from '@mui/icons-material/Flag';
+import PriorityHighIcon from '@mui/icons-material/PriorityHigh';
+import LowPriorityIcon from '@mui/icons-material/LowPriority';
+
 function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
     const [isEditing, setIsEditing] = useState(false);
     const [editedName, setEditedName] = useState(task.name);
@@ -13,10 +17,16 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
       setIsEditing(false);
     };
     
+    // const priorityIcons = {
+    //   high: '🔥',
+    //   medium: '🔶',
+    //   low: '🔽'
+    // };
+
     const priorityIcons = {
-      high: '🔥',
-      medium: '🔶',
-      low: '🔽'
+      high: <PriorityHighIcon color="error" />,
+      medium: <FlagIcon color="warning" />,
+      low: <LowPriorityIcon color="success" />
     };
   
     const getPriorityIcon = (priority) => {
@@ -33,11 +43,10 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
   
     return (
       
-      <div className={`todo-item hover ${task.completed ? 'completed' : ''}`}>
+      <div className={`todo-item hover ${task.completed ? 'completed' : 'card'}`}>
         {/* この部分で、タスクが完了状態（task.completed が true）の場合に completed クラスが追加 */}
 
 
-            
                 {/* CheckIconのところ */}
                   <div className="action-buttons">  
                 <button 

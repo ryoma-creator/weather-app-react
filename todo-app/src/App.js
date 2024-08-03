@@ -5,6 +5,12 @@ import './App.css';
 // drag & drop
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
+import { motion } from 'framer-motion';
+import ChipTabs from './ChipTabs';
+import './index.css'; 
+
+
+
 
 
 function App(){
@@ -31,6 +37,8 @@ function App(){
   const [priorityFilter, setPriorityFilter] = useState('all');
 
   const [isExpanded, setIsExpanded] = useState(false);
+ 
+  
   // 隠れメニュー
   const [completedTasks, setCompletedTasks] = useState([]);
 
@@ -42,6 +50,9 @@ function App(){
   };
   // 保留中！
 
+
+
+  
   // const addTask = (taskName) => {
   //   setTasks([...tasks, { id: Date.now(), name: taskName, completed: false }]);
   // };
@@ -65,6 +76,8 @@ function App(){
   // }, [name]);
 
 
+
+  
   useEffect(()=>{
     localStorage.setItem('tasks', JSON.stringify(tasks));
   },[tasks]);
@@ -174,17 +187,21 @@ const deleteAllCompleted = () => {
 // 全削除
 
   return (
+    
     <div className="todo-app">
       <div className="header">
-      <h1><i className="fas fa-list-alt"></i> Todo List</h1>
+      <h1 className="card"><i className="fas fa-list-alt"></i> Todo List</h1>
+ 
+
+      
  {/*右上に持ってくるFilter　クリックすると開く仕組み  */}
  <div className="filters">
- <button onClick={() => setShowFilters(!showFilters)}>
-          <i className="material-icons">swap_vert</i>
+      <button className="filter" onClick={() => setShowFilters(!showFilters)}>
+         <i class="fas fa-chevron-down"></i>
       </button>
       {showFilters && (
         <div className="filter-dropdown">
-          <h3>Sort by</h3>
+          <h3>Filter by</h3>
           <div className="filters-item">
           <div className="category-filters">
           {/* フィルターとソートのオプション */}
@@ -221,10 +238,8 @@ const deleteAllCompleted = () => {
     </div>
 
 
-
-
-
 {/* Enter Form / Explore*/}
+<div className="menu card">
    <form onSubmit={addTask}>
   <div className={`input-container ${isExpanded ? 'expanded' : ''}`}>
     <input
@@ -242,11 +257,11 @@ const deleteAllCompleted = () => {
     {isExpanded && (
       <div className="expanded-options">
         {/* カテゴリーと優先度の選択肢 */}
-        <select className="category-select hover"
+        <select className="category-select"
           value={newCategory}
           onChange={(e)=> setNewCategory(e.target.value)}
         >
-          <option value="uncategorized">Uncategorized</option>
+          <option value="uncategorized">No Category</option>
           <option value="work">
 
             <i className='fas fa-briefcase'></i>
@@ -256,7 +271,7 @@ const deleteAllCompleted = () => {
           <option value="personal">Personal</option>
         </select>
 
-        <select className="priority-select hover"
+        <select className="priority-select"
           value={newPriority}
           onChange={(e)=> setNewPriority(e.target.value)}
         >
@@ -265,6 +280,8 @@ const deleteAllCompleted = () => {
           <option value='high'>High</option>
 
         </select>
+
+
  
 {/* Add button */}
         <button className='add-button' type="submit">
@@ -275,11 +292,32 @@ const deleteAllCompleted = () => {
      {/* 隠れメニューメニュー末尾 */}
   </div>
 </form>
+</div>
+<button className="delete-all" onClick={deleteAllCompleted}>Delete All</button>
 
-<button onClick={deleteAllCompleted}>Delete All</button>
+<div className="text-center">
+      <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
+    </div>
 
+<div className="App">
+      <ChipTabs />
+    </div>
+    <div className="bg-blue-500 text-white p-4 m-4 rounded">
+  This is a test div with Tailwind classes
+</div>
 
+<motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  className="bg-green-500 text-white p-4 m-4 rounded"
+>
+  This is a test motion div
+</motion.div>
 
+<div className="text-center">
+      <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
+    </div>
 
 {/* drag & drop */}
 {/* 基本的な使い方:
