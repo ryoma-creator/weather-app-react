@@ -8,7 +8,8 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { motion } from 'framer-motion';
 import ChipTabs from './ChipTabs';
 import './index.css'; 
-
+import SpotlightButton from './components/SpotlightButton';
+import SlideTabs from './components/SlideTabs';
 
 
 
@@ -257,6 +258,12 @@ const deleteAllCompleted = () => {
     {isExpanded && (
       <div className="expanded-options">
         {/* カテゴリーと優先度の選択肢 */}
+        {/* <div className="App">
+           <ChipTabs />
+        </div> */}
+
+        <div><SpotlightButton/></div>
+
         <select className="category-select"
           value={newCategory}
           onChange={(e)=> setNewCategory(e.target.value)}
@@ -271,7 +278,7 @@ const deleteAllCompleted = () => {
           <option value="personal">Personal</option>
         </select>
 
-        <select className="priority-select"
+        {/* <select className="priority-select"
           value={newPriority}
           onChange={(e)=> setNewPriority(e.target.value)}
         >
@@ -279,7 +286,7 @@ const deleteAllCompleted = () => {
           <option value='medium'>Medium</option>
           <option value='high'>High</option>
 
-        </select>
+        </select> */}
 
 
  
@@ -293,20 +300,26 @@ const deleteAllCompleted = () => {
   </div>
 </form>
 </div>
-<button className="delete-all" onClick={deleteAllCompleted}>Delete All</button>
-
-<div className="text-center">
-      <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
-    </div>
 
 <div className="App">
-      <ChipTabs />
-    </div>
-    <div className="bg-blue-500 text-white p-4 m-4 rounded">
-  This is a test div with Tailwind classes
+           <ChipTabs />
 </div>
 
-<motion.div
+        <div><SpotlightButton/></div>
+
+        <div><SlideTabs/></div>
+<button className="delete-all" onClick={deleteAllCompleted}>Delete All</button>
+
+{/* <div className="text-center">
+      <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
+    </div> */}
+
+
+    {/* <div className="bg-blue-500 text-white p-4 m-4 rounded">
+  This is a test div with Tailwind classes
+</div> */}
+
+{/* <motion.div
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 1 }}
@@ -317,7 +330,7 @@ const deleteAllCompleted = () => {
 
 <div className="text-center">
       <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
-    </div>
+    </div> */}
 
 {/* drag & drop */}
 {/* 基本的な使い方:

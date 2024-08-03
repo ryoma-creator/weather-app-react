@@ -8,7 +8,9 @@ function TodoList({ tasks, onDeleteTask, onEditTask, onToggleCompletion }) {
     return (
         <div className="todo-list">
             {tasks.length === 0 ? (
-                <p>Please add new task.</p>
+                <div className="text-center">
+                     <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
+                </div>
             ) : (
                 tasks.map((task, index) => (
                     <Draggable 
