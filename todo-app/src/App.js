@@ -11,7 +11,8 @@ import './index.css';
 import SpotlightButton from './components/SpotlightButton';
 import SlideTabs from './components/SlideTabs';
 
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 
 function App(){
@@ -38,18 +39,17 @@ function App(){
   const [priorityFilter, setPriorityFilter] = useState('all');
 
   const [isExpanded, setIsExpanded] = useState(false);
- 
-  
   // 隠れメニュー
-  const [completedTasks, setCompletedTasks] = useState([]);
 
+
+  const [completedTasks, setCompletedTasks] = useState([]);
   // completed , incompleted menu!
-  const completeTask = (taskId) => {
-    const taskToComplete = tasks.find(task => task.id === taskId);
-    setCompletedTasks([...completedTasks, taskToComplete]);
-    setTasks(tasks.filter(task => task.id !== taskId));
-  };
-  // 保留中！
+  
+  const [newDeadline, setDeadline] = useState(null);
+
+
+
+
 
 
 
@@ -95,7 +95,8 @@ function App(){
 
          category: newCategory,
          
-         priority: newPriority
+         priority: newPriority,
+         deadline: newDeadline,
 
         }]);
         // reset⇩ after adding
@@ -116,11 +117,44 @@ function App(){
       ));
   };
 
+  // const toggleTaskCompletion = (taskId) => {
+  //   setTasks(tasks.map(task =>
+  //     task.id === taskId ? { ...task, completed: !task.completed } : task
+  //     ));
+  // };　version Up for complete and incomplete
+//   const completeTask = (taskId) => {
+//   const taskToComplete = tasks.find(task => task.id === taskId);
+//   setCompletedTasks([...completedTasks, taskToComplete]);
+//   setTasks(tasks.filter(task => task.id !== taskId));
+// };
+// このコードは、タスクが完了したときに以下の二つの配列を更新するためのもの
+// completedTasks: 完了したタスクの配列。新たに完了したタスクを追加
+// tasks: 未完了のタスクの配列。完了したタスクを取り除く
   const toggleTaskCompletion = (taskId) => {
-    setTasks(tasks.map(task =>
-      task.id === taskId ? { ...task, completed: !task.completed } : task
-      ));
+    const taskToToggle = tasks.find(task => task.id === taskId);
+    // 指定されたIDのタスクを見つける
+    if (!taskToToggle) {
+      console.error('Task not found');
+      return;
+    }
+
+    if (taskToToggle.completed) {
+      // タスクが既に完了しているかチェック
+      setCompletedTasks(completedTasks.filter(task => task.id !== taskId));
+      // 完了済みリストからこのタスクを削除。
+      // 取り除きたいId以外をListに残す。空のuseStateへ入れる。
+      setTasks([...tasks, { ...taskToToggle, completed: false }]);
+      // タスクを未完了状態に戻し、通常のタスクリストに追加。
+    } else {
+      // タスクを完了済みに移動
+      // タスクがまだ完了していない場合の処理。
+      setTasks(tasks.filter(task => task.id !== taskId));
+      // 通常のタスクリストからこのタスクを削除します。
+      setCompletedTasks([...completedTasks, { ...taskToToggle, completed: true }]);
+      // タスクを完了状態にし、完了済みリストに追加します。
+    }
   };
+
 
   // new filter function 
   // const [categoryFilter, setCategoryFilter] = useState('all');
@@ -262,7 +296,7 @@ const deleteAllCompleted = () => {
            <ChipTabs />
         </div> */}
 
-        <div><SpotlightButton/></div>
+        <div><SlideTabs/></div>
 
         <select className="category-select"
           value={newCategory}
@@ -310,6 +344,12 @@ const deleteAllCompleted = () => {
         <div><SlideTabs/></div>
 <button className="delete-all" onClick={deleteAllCompleted}>Delete All</button>
 
+<DatePicker
+  selected={newTask.deadline}
+  onChange={(date) => setNewTask({...newTask, deadline: date})}
+  placeholderText="Set due date"
+/>
+
 {/* <div className="text-center">
       <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
     </div> */}
@@ -349,7 +389,8 @@ const deleteAllCompleted = () => {
                 tasks={filteredTasks}
                 onDeleteTask={deleteTask}
                 onEditTask={editTask}
-                onToggleCompletion={toggleTaskCompletion}      
+                onToggleCompletion={toggleTaskCompletion} 
+                completedTasks={completedTasks}     
               />
 
 

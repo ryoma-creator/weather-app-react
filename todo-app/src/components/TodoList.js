@@ -4,7 +4,7 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 
 
-function TodoList({ tasks, onDeleteTask, onEditTask, onToggleCompletion }) {
+function TodoList({ tasks, completedTasks, onDeleteTask, onEditTask, onToggleCompletion }) {
     return (
         <div className="todo-list">
             {tasks.length === 0 ? (
@@ -37,7 +37,19 @@ function TodoList({ tasks, onDeleteTask, onEditTask, onToggleCompletion }) {
                         )}
                     </Draggable>
                 ))
+                
             )}
+ <h2>Completed</h2>
+      {completedTasks.map((task, index) => (
+        <TodoItem
+          key={task.id}
+          task={task}
+          onDelete={onDeleteTask}
+          onEdit={onEditTask}
+          onToggleCompletion={onToggleCompletion}
+        />
+      ))}
+            
         </div>
     );
 }

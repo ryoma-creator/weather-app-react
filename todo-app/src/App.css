@@ -3,35 +3,6 @@ body {
   @apply bg-black text-white;
 }
 
-/* ChipTabs.css */
-.chip-tabs-container {
-  display: flex;
-  gap: 10px;
-}
-
-.chip {
-  position: relative;
-  padding: 10px 20px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.selected {
-  color: white;
-}
-
-.chip-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, violet, indigo);
-  border-radius: 8px;
-}
-
-
 body {
   background-color: black !important;
   /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
@@ -451,3 +422,28 @@ button:hover .fa-circle {
     --angle: 360deg;
   }
 }
+
+
+/* SlideTabs.js */
+.tab {
+  /* タブの文字色を変更 */
+  color: #ffffff;
+  /* タブの高さを変更 */
+  height: 20px;
+}
+
+.cursor {
+  /* カーソルの高さを変更 */
+  height: 100%; /* タブの高さに合わせてカーソルの高さを100%に設定 */
+  /* カーソルの幅を変更 */
+  width: auto; /* 自動調整に変更するか、固定値を設定 */
+  /* カーソルの色を変更 */
+  background-color: #000000;
+}
+
+/* 選択されたタブの文字色 */
+.tab.selected {
+  color: #ff0000; /* 選択されたタブの文字色を赤に変更（例） */
+}
+
+/* SlideTabs.js 末尾*/
