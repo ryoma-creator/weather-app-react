@@ -301,7 +301,8 @@ const deleteAllCompleted = () => {
 
         {/* <div><SlideTabs/></div> */}
 
-        <select className="category-select"
+{/*ギミック⇨ShitingDropDonwへ */}
+        {/* <select className="category-select"
           value={newCategory}
           onChange={(e)=> setNewCategory(e.target.value)}
         >
@@ -313,7 +314,7 @@ const deleteAllCompleted = () => {
             </option>    
 
           <option value="personal">Personal</option>
-        </select>
+        </select> */}
 
         {/* <select className="priority-select"
           value={newPriority}

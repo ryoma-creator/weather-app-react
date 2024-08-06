@@ -5,6 +5,9 @@ import {
   FiChevronDown,
   FiHome,
   FiPieChart,
+  FiChevronsDown,
+  FiChevronsLeft,
+  FiChevronsUp,
 } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import ChipTabs from './ChipTabs';
@@ -156,7 +159,7 @@ const Nub = ({ selected }) => {
       animate={{ left }}
       transition={{ duration: 0.25, ease: "easeInOut" }}
       className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-tl border border-neutral-600 bg-neutral-900 z-50"
-    />
+    /> 
   );
 };
 
@@ -193,11 +196,11 @@ const Category = () => {
 const Priority = () => {
 
     const tabs = [
-        { text: "Low", icon: FiHome },
-        { text: "Medium", icon: FiBarChart2 },
-        { text: "High", icon: FiPieChart },
+        { text: "Low", icon: FiChevronsDown },
+        { text: "Medium", icon: FiChevronsLeft },
+        { text: "High", icon: FiChevronsUp},
       ];
-      
+
     const [selected, setSelected] = useState(tabs[1]);
 
   return (
@@ -232,10 +235,10 @@ const Chip = ({
         selected
           ? "text-white"
           : "text-slate-300 hover:text-slate-200 hover:bg-slate-700"
-      } text-xs transition-colors px-2.5 py-0.5 rounded-md relative`}
+      } text-sm transition-colors px-2.5 py-0.5 rounded-md relative flex flex-col items-center justify-center`}
     >
-      <Icon className="mb-2 text-xl text-indigo-300" />
-      <span className="text-xs">{text}</span>
+      <Icon className="mb-2 text-xl text-indigo-300 z-10" />
+      <span className="text-xs z-10">{text}</span>
       {selected && (
         <motion.span
           layoutId="pill-tab"
