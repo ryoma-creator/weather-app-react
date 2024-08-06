@@ -15,6 +15,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import ShiftingDropDown from './components/ShiftingDropDown';
 
+import FilterTabs from './components/FilterTabs';
+import AddButton from './components/AddButton';
+import { Tabs } from 'antd';
+
+
 
 function App(){
   // const [tasks, setTasks] = useState([]);
@@ -227,11 +232,10 @@ const deleteAllCompleted = () => {
     <div className="todo-app">
       <div className="header">
       <h1 className="card"><i className="fas fa-list-alt"></i> Todo List</h1>
- 
 
-      
- {/*右上に持ってくるFilter　クリックすると開く仕組み  */}
- <div className="filters">
+ {/* 右上に持ってくるFilter　クリックすると開く仕組み  */}
+
+ {/* <div className="filters">
       <button className="filter" onClick={() => setShowFilters(!showFilters)}>
          <i class="fas fa-chevron-down"></i>
       </button>
@@ -239,9 +243,9 @@ const deleteAllCompleted = () => {
         <div className="filter-dropdown">
           <h3>Filter by</h3>
           <div className="filters-item">
-          <div className="category-filters">
+          <div className="category-filters"> */}
           {/* フィルターとソートのオプション */}
-            <select 
+            {/* <select 
               className="hover"
               value={categoryFilter}
               onChange={(e)=> setCategoryFilter(e.target.value)}
@@ -250,10 +254,10 @@ const deleteAllCompleted = () => {
               <option value="uncategorized">Uncategorized</option>
               <option value="work">Work</option>         
               <option value="personal">Personal</option>
-            </select>
+            </select> */}
           </div>  
 
-        <div className="priority-filters">
+        {/* <div className="priority-filters">
           <select className="hover" filter-priority
             value={priorityFilter}
             onChange={(e)=> setPriorityFilter(e.target.value)}
@@ -264,15 +268,18 @@ const deleteAllCompleted = () => {
             <option value='high'>High</option>
 
           </select>         
-        </div>
-        </div>
+        </div> */}
+        {/* </div>
         </div>
 
       )} 
 </div>
 
-    </div>
+    </div> */}
 
+    <div>
+    　<FilterTabs/>
+    </div>
 
 {/* Enter Form / Explore*/}
 <div className="menu card">
@@ -298,6 +305,7 @@ const deleteAllCompleted = () => {
         </div> */}
 
         <div><ShiftingDropDown/></div>
+     
 
         {/* <div><SlideTabs/></div> */}
 
@@ -329,9 +337,10 @@ const deleteAllCompleted = () => {
 
  
 {/* Add button */}
-        <button className='add-button' type="submit">
+        <AddButton/>
+        {/* <button className='add-button' type="submit">
           <i className="fas fa-plus-circle add-icon"></i>
-        </button>
+        </button> */}
       </div>
     )}
      {/* 隠れメニューメニュー末尾 */}
@@ -339,11 +348,13 @@ const deleteAllCompleted = () => {
 </form>
 </div>
 
-<div className="App">
-           <ChipTabs />
-</div>
 
-        <div><SpotlightButton/></div>
+
+{/* <div className="App">
+           <ChipTabs />
+</div> */}
+
+        {/* <div><SpotlightButton/></div>
 
         <div><SlideTabs/></div>
 <button className="delete-all" onClick={deleteAllCompleted}>Delete All</button>
@@ -352,7 +363,7 @@ const deleteAllCompleted = () => {
   selected={newTask.deadline}
   onChange={(date) => setNewTask({...newTask, deadline: date})}
   placeholderText="Set due date"
-/>
+/> */}
 
 {/* <div className="text-center">
       <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
