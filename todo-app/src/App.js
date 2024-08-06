@@ -6,13 +6,14 @@ import './App.css';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 import { motion } from 'framer-motion';
-import ChipTabs from './ChipTabs';
+import ChipTabs from './components/ChipTabs';
 import './index.css'; 
 import SpotlightButton from './components/SpotlightButton';
 import SlideTabs from './components/SlideTabs';
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import ShiftingDropDown from './components/ShiftingDropDown';
 
 
 function App(){
@@ -296,7 +297,9 @@ const deleteAllCompleted = () => {
            <ChipTabs />
         </div> */}
 
-        <div><SlideTabs/></div>
+        <div><ShiftingDropDown/></div>
+
+        {/* <div><SlideTabs/></div> */}
 
         <select className="category-select"
           value={newCategory}
