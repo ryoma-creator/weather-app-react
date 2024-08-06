@@ -2,21 +2,28 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import '../App.css';
 import '../index.css'; 
+import {
+  FiArrowRight,
+  FiBarChart2,
+  FiChevronDown,
+  FiHome,
+  FiPieChart,
+} from "react-icons/fi";
 // import { FiAlertCircle } from "react-icons/fi";
-import { FiAlertCircle, FiAlertTriangle, FiAlertOctagon } from "react-icons/fi";
+
 
 
 const tabs = [
-  { text: "Low", icon: FiAlertCircle },
-  { text: "Medium", icon: FiAlertTriangle },
-  { text: "High", icon: FiAlertOctagon },
+  { text: "Low", icon: FiChevronDown },
+  { text: "Medium", icon: FiHome },
+  { text: "High", icon: FiPieChart },
 ];
 
 const ChipTabs = () => {
   const [selected, setSelected] = useState(tabs[0]);
 
   return (
-    <div className="text-xs px-2 bg-slate-900 flex items-center flex-wrap gap-4 divide-x divide-neutral-700 mb-2 text-indigo-300">
+    <div className="">
       {tabs.map((tab) => (
         <Chip
           text={tab.text}
@@ -37,8 +44,10 @@ const Chip = ({
 //  icon を直接使うと小文字で始まってしまうので、Icon としてrename
   selected,
   setSelected,
+
 }) => {
   return (
+    <div className="grid grid-cols-2 gap-4 divide-x divide-neutral-700">
     <button
       onClick={() => setSelected(text)}
       className={`${
@@ -47,8 +56,8 @@ const Chip = ({
           : "text-slate-300 hover:text-slate-200 hover:bg-slate-700"
       } text-xs transition-colors px-2.5 py-0.5 rounded-md relative`}
     >
-      <Icon className="w-4 h-4" />
-      <span className="relative z-10">{text}</span>
+      <Icon className="mb-2 text-xl text-indigo-300" />
+      <span className="text-xs">{text}</span>
       {selected && (
         <motion.span
           layoutId="pill-tab"
@@ -57,6 +66,7 @@ const Chip = ({
         ></motion.span>
       )}
     </button>
+    </div>
   );
 };
 
