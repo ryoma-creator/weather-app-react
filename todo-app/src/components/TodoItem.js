@@ -11,7 +11,20 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
     const [isHovered, setIsHovered] = useState(false);
     const [editingPriority, setEditingPriority] = useState(false);
     
-  
+    const formatDeadline = (deadline) => {
+      if (!deadline) return '';
+      const today = new Date();
+      const deadlineDate = new Date(deadline);
+      if (
+        today.getDate() === deadlineDate.getDate() &&
+        today.getMonth() === deadlineDate.getMonth() &&
+        today.getFullYear() === deadlineDate.getFullYear()
+      ) {
+        return 'Today';
+      }
+      return deadlineDate.toLocaleDateString();
+    };
+
     const handleEdit = () => {
       onEdit(task.id, editedName);
       setIsEditing(false);
@@ -90,6 +103,7 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
               <i className={`fas ${task.category === 'work' ? 'fa-briefcase' : task.category === 'personal' ? 'fa-user' : ''}`}></i>
                 {/* <i className={`fas ${task.category === 'work' ? 'fa-briefcase' : 'fa-user'}`}></i> */}
                 {/* {task.category} */}
+                
               </div>
             </>
           )}
