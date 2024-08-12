@@ -1,14 +1,16 @@
 import { FiSend } from "react-icons/fi";
 
-const AddButton = () => {
+const AddButton = ({ type }) => {
   return (
     <div className="bg-transparent flex items-center justify-center">
-      <NeumorphismButton />
+      <NeumorphismButton 
+        type={ type }
+      />
     </div>
   );
 };
 
-const NeumorphismButton = () => {
+const NeumorphismButton = ({ type = "submit" }) => {
   return (
     <button
       className={`

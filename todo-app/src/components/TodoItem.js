@@ -11,19 +11,19 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
     const [isHovered, setIsHovered] = useState(false);
     const [editingPriority, setEditingPriority] = useState(false);
     
-    const formatDeadline = (deadline) => {
-      if (!deadline) return '';
-      const today = new Date();
-      const deadlineDate = new Date(deadline);
-      if (
-        today.getDate() === deadlineDate.getDate() &&
-        today.getMonth() === deadlineDate.getMonth() &&
-        today.getFullYear() === deadlineDate.getFullYear()
-      ) {
-        return 'Today';
-      }
-      return deadlineDate.toLocaleDateString();
-    };
+    // const formatDeadline = (deadline) => {
+    //   if (!deadline) return '';
+    //   const today = new Date();
+    //   const deadlineDate = new Date(deadline);
+    //   if (
+    //     today.getDate() === deadlineDate.getDate() &&
+    //     today.getMonth() === deadlineDate.getMonth() &&
+    //     today.getFullYear() === deadlineDate.getFullYear()
+    //   ) {
+    //     return 'Today';
+    //   }
+    //   return deadlineDate.toLocaleDateString();
+    // };
 
     const handleEdit = () => {
       onEdit(task.id, editedName);
@@ -37,16 +37,16 @@ function TodoItem({ task, onDelete, onEdit, onToggleCompletion }) {
     // };
 
     const priorityIcons = {
-      high: <PriorityHighIcon color="error" />,
-      medium: <FlagIcon color="warning" />,
-      low: <LowPriorityIcon color="success" />
+      High: <PriorityHighIcon color="error" />,
+      Medium: <FlagIcon color="warning" />,
+      Low: <LowPriorityIcon color="success" />
     };
   
     const getPriorityIcon = (priority) => {
       switch(priority) {
-        case 'high': return priorityIcons.high;
-        case 'medium': return priorityIcons.medium;
-        case 'low': return priorityIcons.low;
+        case 'High': return priorityIcons.High;
+        case 'Medium': return priorityIcons.Medium;
+        case 'Low': return priorityIcons.Low;
         default: return '?';
       }
     };

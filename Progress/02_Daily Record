@@ -1560,6 +1560,8 @@ Aug 3       ✅Tailland CSS first time  too many things...
 			✅  try to get started library component site
 			  seeing and choosing from Library (over 10 site) to know what I can use
 			✅ Short Cut / Comment out + command F
+			✅ Libraty Compornent Name and Shape 
+				- basic name, I needed to understand first / tab. nav. etc....everything
 
 			  
 Aug 4		✅ Making logic for Completed or incompleted  for to do list
@@ -1583,4 +1585,76 @@ Aug 6
 		  🔥✅  Making Original Component from Libray first time
 				- integrating Library component into another
 				- tab + chips on ToDo-app
-			✅ Check Over 30 Library Website to find best component
+			✅  Check Over 30 Library Website to find best component Library
+				- Libraty Compornent Name and Shape 
+				- basic name, I needed to understand first to find my image / tab. nav. etc....everything
+			more...etc
+
+Aug 7            Understanding 
+			✅ 	Method Chaining
+					- fint + map (on my ToDo App filter)
+					(ex)filterTabs
+						.find((filterTab) => filterTab.name === activeFilterTab)
+						.filters.map((filter) => (...))
+						
+Aug 8       Private busy days
+Aug 9       Rest with Web making Video on Tailwind css
+
+Aug 10      Notice / Forgetting basic props flow from parent to child 
+			 - CSS / Library / Tailwind / Icon / Animation ⇨ forget React.js		
+
+			Utilize AI for Efficient Development
+			- By having AI handle the creation, you can reduce issues with libraries and errors, making implementation smoother. 
+			This is especially useful when time is limited or when you don’t want to spend too much time dealing with library operations.
+
+			Plan Ahead and Avoid Wasting Time
+			- Plan and visualize what you need to do before starting work to proceed more efficiently. 
+			Continuing work when tired can be a waste of time.
+
+			Start with Simple Libraries or Tools
+			- Before diving into complex libraries or tools, start with simpler and more understandable ones. 
+			This helps avoid spending excessive time fixing errors and dealing with complicated issues.
+
+Aug 11 		
+			✅ Git and GitHub Basics
+
+			Remote repository setup
+			File management and version control
+
+			✅ VS Code Workflow
+
+			File organization and management
+			Extension installation for enhanced productivity
+
+			✅ Tailwind CSS Configuration
+
+			Custom color and font setup in tailwind.config.js
+			Global styles application using @layer base
+
+			　 Next.js Integration
+
+			Google Fonts import with next/font/google
+			Font application in components
+
+			✅ Project File Structure
+
+			Understanding folder hierarchy
+			Efficient file naming conventions
+
+			✅ Finder Operations
+
+			Project relocation impact on VS Code settings
+
+			✅ Code Snippets and Shortcuts
+
+			Usage of 'rafce' for React component creation
+
+			✅ CSS Fundamentals
+
+			Global styling techniques
+			Responsive design principles
+
+			✅ Development Best Practices
+
+			Keeping focus on personal growth
+			Learning from professional developers' techniques
