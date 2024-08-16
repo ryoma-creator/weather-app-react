@@ -1658,3 +1658,55 @@ Aug 11
 
 			Keeping focus on personal growth
 			Learning from professional developers' techniques
+
+			
+Aug 12    Break
+		
+Aug 13, 14 , 15 ⇩ 
+
+			Understanding
+		**Creation of a Portfolio Website**
+
+		Besides routing, I created the Navbar, Home, About, Skills, Work, and Contact sections over the past few days. During that time, I mainly experienced, struggled with, and learned the following:
+
+		✅ **Custom Component Creation / Implementing Container Components and Applying Styles to Child Elements**
+		- I spent dozens of hours on this, but there were components where styles were applied correctly and others where they were not. 
+		I tried changing the structure of the divs, checked the parent elements, but couldn't get it to work. 
+		- What I learned is that, at this point, using config and index.css to reduce the amount of code is the way to go. Regarding layout, 
+		I understood that without proper guidance from professionals, relying solely on AI has its limits.
+
+		✅ **Utilizing Tailwind's @apply Directive**
+		- Mastered creating custom classes for improved reusability over the past few days.
+
+		✅ **Controlling Layout with a Two-Layer div Structure (Separating Overall Layout from Content)**
+
+		✅ **Practicing Responsive Design**
+		- Understanding and using breakpoints (sm, md, lg, xl, 2xl).
+		- Dynamically adjusting text size (setting based on device size).
+
+		✅ **Understanding the Difference Between h-full and h-screen and Their Appropriate Use**
+		- Grasping the non-inheritable nature of layout properties.
+
+		✅ **Mimicking Professional Usage of Visual Studio Code**
+		- Previously, I had created a To-Do list app from scratch by myself. However, this time, by observing professionals through videos, I learned their methods, which led to more efficient development.
+
+		✅ **Acquiring Necessary Plugins, such as Tailwind**
+
+		✅ **Improving Debugging and Problem-Solving Skills**
+		- I faced challenges in applying CSS uniformly with Tailwind and React. Additionally, certain features required unique methods for implementation, such as:
+
+		✅ **Discovering Elements That Cannot Be Used with Tailwind CSS/index.css/@apply**
+		- Alternative methods for `!important` (e.g., defining custom classes in index.css).
+		- I learned that some things cannot be used with @apply. For instance, when implementing hover effects on images, I wanted to use `!important` but couldn't do so with @apply, so I had to change the approach (using linear-gradient).
+
+		- Managing image paths using variables.
+
+		- Handling post-build reflection issues (re-running `npm start`).
+
+		This isn't everything, but it's what I remember learning, so I'm documenting it. There's more.
+
+		✅ **Got accustomed to Tailwind over the past few days, can now operate it myself, and can use index.css as well.**
+		✅ **I understood the boundaries of what can't be done (custom components).**
+		✅ **By watching other professionals' Tailwind CSS YouTube videos, I clearly understood the concepts. When I was choosing a portfolio on the 11th, I couldn't understand whether it was Tailwind CSS or Next.js.**
+
+				
