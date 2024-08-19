@@ -11,14 +11,14 @@ const WeatherDisplay = () => {
             // event.keyは任意の名称じゃない
           axios.get(url).then((response) => {
             // この部分が非同期で実行
-            setData(response.data)
+            setData(response.data);
             // このコードは上の処理を待たずに実行
-            console.log(response.data)
+            console.log(response.data);
           })
-          setLocation('')
           .catch((error) => {
             console.error("oh, something error is happening! :", error)
-          })
+          });
+          setLocation('')
         }
       }
 
@@ -32,8 +32,14 @@ const WeatherDisplay = () => {
     // The formula to convert the obtained Celsius (°C) to Fahrenheit (°F).
     // 取得した摂氏（°C）を華氏（°F）へ変換する計算式
 
+    const isDaytime = data.weather && data.weather[0].icon.includes('d');
+    // 朝と夜の識別  例えば、"01d" は晴れの日中、"01n" は晴れの夜 / "d or "n"
+    // DayTime/NightTime
+    // 重要！ date.weather &&　っていうエラーハンドリングしてないと見つからなかった場合、ホワイトアウトする。
+
     return (
-    <div className='weather-display common-screen-size position-relative p-1 bg-black/ text-white/95'>
+    <div className={`weather-display common-screen-size position-relative p-1 text-white/95
+    ${ isDaytime ? 'bg-white/10' :'bg-black/90'}`}>
       <div className="search flex justify-center">
         <input
          className='responsive-bar-size mt-2 text-center border-2 border-white/80 rounded-full p-1 bg-white/10 placeholder:text-[#f8f8f8]'
@@ -56,13 +62,20 @@ const WeatherDisplay = () => {
 
        </div>
 
-        <div className="container flex flex-col justify-between max-w-[700px] h-full max-h-[500px]  m-auto px-4 relative top-[10%]">
+        <div className="container flex flex-col justify-between responsive-screen-size h-[80%]  m-auto px-4 relative top-[5%]">
 
-            <div className="">
+            <div className="w-[97%] sm:w-full">
                 <div className="location">
-                    <p className='responsive-text-size'>{data.name}</p>
+                    <p className='responsive-text-size'>{data.name}
+                    { isDaytime ? 
+                        <p className='inline-block pl-2'>☀️</p> :
+                        <p className='inline-block pl-2'>🌙</p> 
+                    }                   
+                    </p>
+
+
                 </div>
-                <div className="temp">
+                <div className="temp ">
                 {data.main ?
                 <h1 className='responsive-title-size common-line-height'>
                    {Math.round(celsiousToFahrenheit(data.main.temp))}°F <br/> {Math.round(data.main.temp)}°C </h1>
@@ -73,16 +86,19 @@ const WeatherDisplay = () => {
                 <div className="description common-rotated-description">
                 {data.weather ?
                 <>
-                <p className='responsive-text-size'>{data.weather[0].main}</p>
-                <img className=''
-                src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} 
-                alt="weather icon"
-                />
+                <div className='flex items-center '>
+                    <p className='responsive-text-size'>{data.weather[0].main}</p>
+                    <img className=''
+                    src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} 
+                    alt="weather icon"
+                    />
+                </div>
                 </>
                  : null
                  }
                 </div>
             </div>
+        
             
             { data.name !== undefined && 
                 <div className="common-bottom-section">
@@ -93,6 +109,7 @@ const WeatherDisplay = () => {
                     }
                         <p>Feels Like</p>
                     </div>
+
                     <div className="humidity">
                         {data.main ?
                         <p className='responsive-text-size'>{data.main.humidity}%</p>                 
