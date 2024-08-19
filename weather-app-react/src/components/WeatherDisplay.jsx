@@ -15,16 +15,25 @@ const WeatherDisplay = () => {
             // このコードは上の処理を待たずに実行
             console.log(response.data)
           })
+          setLocation('')
           .catch((error) => {
             console.error("oh, something error is happening! :", error)
           })
         }
       }
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=71078e6e60b4e2e3ce7a48a05dbcad80`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=71078e6e60b4e2e3ce7a48a05dbcad80`
+    // &units=metric metricは、摂氏（°C）
+    // &units=imperial imperial は華氏（°F）
+
+    const celsiousToFahrenheit = (celsius) => {
+        return (celsius * 9/5) + 32;
+    }
+    // The formula to convert the obtained Celsius (°C) to Fahrenheit (°F).
+    // 取得した摂氏（°C）を華氏（°F）へ変換する計算式
 
     return (
-    <div className='weather-display common-screen-size position-relative p-1 bg-black/40 text-white/95'>
+    <div className='weather-display common-screen-size position-relative p-1 bg-black/ text-white/95'>
       <div className="search flex justify-center">
         <input
          className='responsive-bar-size mt-2 text-center border-2 border-white/80 rounded-full p-1 bg-white/10 placeholder:text-[#f8f8f8]'
@@ -51,31 +60,55 @@ const WeatherDisplay = () => {
 
             <div className="">
                 <div className="location">
-                    <p className='responsive-text-size'>Tokyo</p>
+                    <p className='responsive-text-size'>{data.name}</p>
                 </div>
                 <div className="temp">
-                    <h1 className='responsive-title-size common-line-height'>60°F</h1>
+                {data.main ?
+                <h1 className='responsive-title-size common-line-height'>
+                   {Math.round(celsiousToFahrenheit(data.main.temp))}°F <br/> {Math.round(data.main.temp)}°C </h1>
+                    // Math.round 例: Math.round(3.7) は 4 を返し、Math.round(3.2) は 3         
+                : null
+                }
                 </div>
                 <div className="description common-rotated-description">
-                    <p className='responsive-text-size'>Clouds</p>
-                </div>
-            </div>
-
-            <div className="common-bottom-section">
-                <div className="feels">
-                    <p className='responsive-text-size'>65°F</p>
-                    <p>Feels Like</p>
-                </div>
-                <div className="humidity">
-                    <p className='responsive-text-size'>20%</p>
-                    <p>Humidity</p>
-                </div>
-                <div className="wind">
-                    <p className='responsive-text-size'>12MPH</p>
-                    <p>Wind Speed</p>
+                {data.weather ?
+                <>
+                <p className='responsive-text-size'>{data.weather[0].main}</p>
+                <img className=''
+                src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} 
+                alt="weather icon"
+                />
+                </>
+                 : null
+                 }
                 </div>
             </div>
             
+            { data.name !== undefined && 
+                <div className="common-bottom-section">
+                    <div className="feels">
+                        {data.main ?
+                        <p className='responsive-text-size'>{data.main.feels_like}°C</p>                 
+                        : null
+                    }
+                        <p>Feels Like</p>
+                    </div>
+                    <div className="humidity">
+                        {data.main ?
+                        <p className='responsive-text-size'>{data.main.humidity}%</p>                 
+                        : null
+                    }
+                        <p>Humidity</p>
+                    </div>
+                    <div className="wind">
+                        {data.main ?
+                        <p className='responsive-text-size'>{data.wind.speed}MPH</p>                 
+                        : null
+                    }
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            }  
         </div>
     </div>
     )
