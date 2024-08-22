@@ -1,10 +1,33 @@
 import React, {useState} from 'react'
 import sunsetImage from '../assets/sunset.jpg'
 import axios from 'axios'
+import RainEffect from './RainEffect';
+
+const getWeatherEffect = (weatherMain) => {
+    switch(weatherMain.toLowerCase()) {
+      case 'clear':
+        return 'sunny';
+      case 'clouds':
+        return 'cloudy';
+      case 'rain':
+      case 'drizzle':
+        return 'rainy';
+      case 'thunderstorm':
+        return 'stormy';
+      case 'snow':
+        return 'snowy';
+      default:
+        return 'default';
+    }
+  }
+
+  
 
 const WeatherDisplay = () => {
     const [data, setData] = useState({})
     const [location, setLocation] = useState('')
+
+    const weatherEffect = data.weather ? getWeatherEffect(data.weather[0].main) : 'default';
 
     const searchLocation = (event) => {
         if (event.key === 'Enter') {
@@ -32,14 +55,15 @@ const WeatherDisplay = () => {
     // The formula to convert the obtained Celsius (°C) to Fahrenheit (°F).
     // 取得した摂氏（°C）を華氏（°F）へ変換する計算式
 
-    const isDaytime = data.weather && data.weather[0].icon.includes('d');
+    const isDaytime = data.weather && data.weather[0] ? data.weather[0].icon.includes('d') : null;
     // 朝と夜の識別  例えば、"01d" は晴れの日中、"01n" は晴れの夜 / "d or "n"
     // DayTime/NightTime
     // 重要！ date.weather &&　っていうエラーハンドリングしてないと見つからなかった場合、ホワイトアウトする。
 
     return (
     <div className={`weather-display common-screen-size position-relative p-1 text-white/95
-    ${ isDaytime ? 'bg-white/10' :'bg-black/90'}`}>
+    ${data.weather ? (isDaytime ? 'bg-white/10' : 'bg-black/90') : ''}`}>
+
       <div className="search flex justify-center">
         <input
          className='responsive-bar-size mt-2 text-center border-2 border-white/80 rounded-full p-1 bg-white/10 placeholder:text-[#f8f8f8]'
@@ -57,6 +81,7 @@ const WeatherDisplay = () => {
            className='absolute inset-0 top-0 left-0 bg-no-repeat bg-center bg-cover -z-[10]'
            style={{ backgroundImage: `url(${sunsetImage})`}}
        >
+        {weatherEffect === 'rainy' && <RainEffect />}
         {/* flex flex-col justify-between */}
         
 
@@ -66,11 +91,13 @@ const WeatherDisplay = () => {
 
             <div className="w-[97%] sm:w-full">
                 <div className="location">
-                    <p className='responsive-text-size'>{data.name}
-                    { isDaytime ? 
-                        <p className='inline-block pl-2'>☀️</p> :
-                        <p className='inline-block pl-2'>🌙</p> 
-                    }                   
+                    <p className='responsive-text-size uppercase'>{data.name}
+
+                    {data.weather && (
+                        isDaytime ? 
+                        <span className='inline-block pl-2'>☀️</span> :
+                        <span className='inline-block pl-2'>🌙</span> 
+                    )}                 
                     </p>
 
 
