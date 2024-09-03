@@ -1717,27 +1717,133 @@ Jul 16
 
 Jul 17  review / nav bar / writing challenge / {}` / props pass name
 
-Jul 17-Weather App- until around 23 ?
-	[Summary]
----
-### Weather App Development Summary (July 17-) - 
-**Key Learnings and Achievements**
+Jul 17-[Weather App]- until around 23 ? ()
+		[Summary]
+	---
+	### Weather App Development Summary (July 17-) - 
+	**Key Learnings and Achievements**
 
 
-Jul 23 ..? Summerry (on progress)
+Jul 23 ..? [E-Commerce]
+Summerry (on progress)
 
 Main
-New Skill➡️Error➡️Took 2hours for every new skill such as Next.js, Css in js, Git... ext
-context, 
-API, 
-Effect, 
-reducer
-+a　（css new tec ,New setting　rafce, etc...）
+	New Skill➡️Error➡️Took 2hours for every new skill such as Next.js, Css in js, Git... ext
+	context, 
+	API, 
+	Effect, 
+	reducer
+	+a　（css new tec ,New setting　rafce, etc...）
 
+	⇩
+	これを、ここ10日間で学びつつ、
+	E-commerseの作成を行ってきた。
+	個別にもう一度確認したいところがある。
+
+Recordを描かない経験
+
+２週間描かないでみた。
+
+何を行ってきたのか、記憶のとっかかりがなく、
+自分がどんな成長をしているのか、
+どんな利益を得てきたのかわからなく、空っぽのようになった。
+
+その結果、利益を得てきたという感覚がなく、
+それが自信や、モチベーションに影響してしまった。
+
+またどこまで学び成長したのか把握してないので、どこを復習して定着すべきかの自分の守備範囲を守ることも定かでなくなった。
+
+その結果、自分のレベルを現実的に分析しづらく過去の記憶が忘れかけているのに、次のレベルに手を出そうとするという、定着せず進む自体が発生した。
+
+早期にイメージを得るというのは効果があるが、ここが気になる。
+
+✅経験して学んだこと/振り返り。
+新しいものをやった時に発生した設定のエラー系。
+後述するのものもそうだが、新しいtailwindとか他のものをすることで、installやsetting系のものでエラーやgit等うまくいかず、問題が発生ていた。また、やり直すことで、以前のgitが残り、同期？がうまくいかずそこでエラーの再対処が発生していた。最終的にはエラーは、一括で、現在のローカルのものに書き換えるというものでforceすればすぐ治ることに気づけたが、知らない時は異常に時間がかかった。一つの小さなエラーで2時間は悪戦苦闘していた。
+
+その中で、新しいものを習っていったが、(context, API, Effect, reducer)
+小さい規模で行っていないので、
+段階的ではなかった。(e-commerseは基礎だとは思うが。)
 ⇩
-これを、ここ10日間で学びつつ、
-E-commerseの作成を行ってきた。
+個別にもう一度確認したいところがある。
+⇩
+個別にe-commerse内のものを学習しなおした方がいい。そして最後にe-commerseで習ったものを通してもう一度全体をつなげて俯瞰してみて、理解できているか行った方がいい。
 
 
+Sep 1 
+	Gym
 
+    Analyzing and Review from 17 to 30 what I did from remanining messages.
+	Understanding AI can not make sammary from my remaning message
+	Understanding lack of review and lacking review attribute to lack of understanding my knowledge how much I learn , where is on my stage now, and which point I should review.
+
+	UseEffect - understanding there is 4 types
+				- Understanding Using DOM pattern (Windon,Document,specific API..)
+				- You can use by library or custom hooks
+				- reviewing DOM to understand
+
+	UI css    - understanding overflow-y
+				- h-problem
+
+	Reduce Method - understanding
+				- parsefloat()
+				- toFixed
+
+	Clean Code
+	     		- Destructuring Assignment
+				  - cart.reduce((sum, { price, amount })
+				- Early Return
+
+	Error       - cart.length > 0 vs cart (if its API, 
+					it might something happen, 
+					so Length should be included for null , undefined NaN..etc)
+
+ 
+Sep 2 
+				Complete E-commerse 
+				 - Footer
+				 - adding Ai picture from stable difusion
+
+				Using photoshop
+				 - edit for bg remove / transparent
+
+				searching
+				 - typescript
+				 - making plan for next
+				
+				Gym
+
+
+Sep 3
+				Framer Motion
+				- Learning how to write export not to be error...
+				 - export default AnimatedComponent;
+				  - export { AnimatedComponent };
+				- <AnimatedComponent> should not be enclosed by
+				other div with css, It does not animate.
+				- <AnimatedComponent> can not enclose other components
+				- I understand, I need to refer from professionals first
+				how to use motion not just only Ai 
+
+				- unrstand motion basics
+				- understand motion can use by just motion.h1 or div....easily
+
+				- error → <Link> should be not used by motion / should be enclosed by motion.div instead
+			✅  - understanding variants parents and children
+			    - understanding 'initial' and so on were just arbitary name.
+
+				Learning Typescript Basics
+				- finding and reading , watching though for it
+
+				seeing Idea for e-commerse	
+			     - watching 3D showcase items codes how to make with motion
+
+sep 4			watching portfolio site idea
+				
+				reviewing basic by react officals
+
+
+				
+
+				
 
