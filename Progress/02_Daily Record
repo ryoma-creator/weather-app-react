@@ -1910,11 +1910,17 @@ Sep ８          Next Js
 					- need to run dev again after rename your file on Next js
 					- How to use Image component on Next js
 				rounting
-					-
+					-　segment
+					- layout.tsx is not just only app / you can make it for within directory you need to affect
+					- render with other segments and layout.jsx
 
 				typescript
 					- Destructuring + type / function processUser({ id, name, age }: { id: number; name: string; age: number }) {
 					- diffrence of type and interface
 
-				
+Sep ９
+				Typescript
+					- watching video to observe 
+						- TodoList
+						- catImage Api watching video
 
