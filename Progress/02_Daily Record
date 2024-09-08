@@ -1841,9 +1841,80 @@ Sep 3
 sep 4			watching portfolio site idea
 				
 				reviewing basic by react officals
-
-
 				
+				Swiper
+
+				Ripples
+				 - error → understanding how I can apply for it
+				
+				Making custom button children
+				 - reviwing how to pass props properly
+				
+				Link → use button custom component
+				 → Button as={Link}
+
+Sep ５　　　　　　Next Js
+				Rest
+
+Sep	6           Next js
+
+				making react js　➡️ next js
+				understanding struture of app, pages.js layout.js
+				 - ex ➡️ laout.js smilar to index.html&app.js route 
+				  - children equal to dynamic site nested by routes...
+				
+				intall error 
+			     - learning alias...
+				 it makes easy code for import,file pass, module name
+				 import Button from '../../components/Button';
+				 ⇩
+				 import Button from '@/components/Button';
+
+				 hadling erorr... gpt AI roop. 
+				 gpt is really useless. he even give wrong info such as true.
+				 what I learnt was I need to think with Claude
+
+ Sep 7          Next js
+					- officals site...
+					- next js / though youtube many video... 
+					  - watching how are they making and why
+					- app ,
+					 - serverside component
+					  - page.js , folder , static, dynamic....
+					   - build time, Inter, 
+					   
+
+				Typescript
+					- officals site...
+					 - typescipt with to do list (half)
+					  - typescript with youtube
+					   - interface, type... and so on
+					   https://nextjs.org/learn/dashboard-app/optimizing-fonts-images
+
+Sep ８          Next Js 
+				layout.jsx
+					- How to wrtie on specific file on next js such as layout.js and so on
+					- understanding range for specif writing on next js 
+					 - The files that mainly require a special format are those related to routing.
+					- typescript + next js writing way on layout.js
+					- About children on layout.js
+						- In the context of layout.js, children refers to other pages or components that are placed within that layout
+					- layout.js understanding font/ google
+					  - .className is object data key on google fonts which is unvisible for us.
+					  - const inter = Inter({ subsets: ['latin'] }); / adding into className data to variable
+					   - return it to call for it.  inter.className ➡️ variable + key
+					     -`${inter.className} antialiased`} after call it, adding font shape by + anatialiased
+					- subsets/ font family
+					- need to use ${} for goole fonts on CSS
+					- need to use file .tsx
+					- need to run dev again after rename your file on Next js
+					- How to use Image component on Next js
+				rounting
+					-
+
+				typescript
+					- Destructuring + type / function processUser({ id, name, age }: { id: number; name: string; age: number }) {
+					- diffrence of type and interface
 
 				
 
