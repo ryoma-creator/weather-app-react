@@ -1913,6 +1913,11 @@ Sep ８          Next Js
 					-　segment
 					- layout.tsx is not just only app / you can make it for within directory you need to affect
 					- render with other segments and layout.jsx
+				
+				Official Next JS
+					Chapter 3 to 4(halfway though 4) 
+					https://nextjs.org/learn/dashboard-app/creating-layouts-and-pages
+
 
 				typescript
 					- Destructuring + type / function processUser({ id, name, age }: { id: number; name: string; age: number }) {
@@ -1923,4 +1928,59 @@ Sep ９
 					- watching video to observe 
 						- TodoList
 						- catImage Api watching video
+
+				Next Js
+					- useRounter / useParams
+					- review previous chapters
+					- chapter 4
+					- client-side Navigation
+					- Link / A
+					  - Automatic code-splitting and prefetching
+					   - prevant error / load all ➡️ react / partially road ➡️ next js
+					    -  split by route segment
+					  - prefech once next js see Link
+					  	- save loading time by prefetching
+					- usePathname
+					 - which page or route the user is on.
+				　  - turn server component into a Client Component.
+					- error ➡️ json file , version was not compatible
+					 ➡️ need to knew restart for typescript to remove error
+					
+					Verscel
+					Database
+
+					posgre SQL
+					.env file setting
+Sep 10          
+					Next Js
+					Verscel
+					Database
+					fixing error 
+					 - to see success
+
+					API END point
+					
+					Error .... transfering react to Next JS
+
+					Typescript
+					"Type" 
+
+					generics
+					 - API 
+					  - generics = alike variable
+
+Sep 11             Typescript
+					- tuple
+					
+Sep 12             Rest
+
+Sep 13 				Next js / portfolio website (ver.2)
+					- nav var 
+						- layout and so on
+					- className ${}
+					- usepathName and how it works
+					- how to make animation page move on Next js
+
+Sep 14				review
+
 
