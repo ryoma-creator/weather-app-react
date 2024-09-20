@@ -9,7 +9,7 @@ function TodoList({ tasks, completedTasks, onDeleteTask, onEditTask, onToggleCom
         <div className="todo-list">
             {tasks.length === 0 ? (
                 <div className="text-center">
-                     <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
+                     <h1 className="text-4xl font-bold text-white-500">Let's get started on To-do list!</h1>
                 </div>
             ) : (
                 tasks.map((task, index) => (
