@@ -1984,3 +1984,60 @@ Sep 13 				Next js / portfolio website (ver.2)
 Sep 14				review
 
 
+Portfolio / Next Js 
+
+I COULD NOT WRITE HERE
+TOO MUCH I Learned and BUSY
+  I was recording what to do on my memo (not here)
+
+Sep-Oct
+---
+
+Oct 10
+
+	UX animation 
+		- useRef
+		- useScroll / scrollYprogress and so on
+		- useTransform
+		- raf(time)
+		- Gsap 
+		- motion
+		- lenis
+		- SCSS 
+
+		getting and finding code website and image , idea
+
+		Making component for Ideal scroll animation effect
+
+		Understanding to use git hub code if I make exactly same one
+
+		Hard gym workingout for condition
+
+		etc 
+		- margin-top: 100vh; margin-bottom: 100vh;
+        - sticky
+		- scale
+
+Oct 11
+		- parallax effect + trying to create my idea
+
+		- understanding I can make other people component by source code from git hub exactly
+		
+
+		- understanding ParallaxScroll.jsx
+		 - - and + → - is up , + is down
+		 - scss module can use for other file if you import
+		 - unique kye id ,  key={l_${I}}
+		 - Math.floor(Math.random() * -75) - 25
+		 - third point of useTransform → [0, 0.5 , 1] → [0, 0, 950]
+		 - scss → module → import → style → className
+		 - scss →  &:nth-of-type(1){  &:nth-of-type(2){
+		 -  const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+			const images = [
+				{ src: Picture1, y: 0 },
+	
+		Trying to make new component → holizntal effect with slide....
+		 - looking for codes and idea on youtube
+
+Oct 12 
+		
